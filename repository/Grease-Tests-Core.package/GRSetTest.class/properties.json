@@ -1,0 +1,14 @@
+{
+	"category" : "Grease-Tests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GRSetTest",
+	"pools" : [
+		 ],
+	"super" : "GRCollectionTest",
+	"type" : "normal" }

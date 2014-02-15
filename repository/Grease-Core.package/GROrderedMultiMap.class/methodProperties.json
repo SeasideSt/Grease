@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:" : "lr 7/25/2011 19:52",
+		"allAt:" : "jf 2/15/2010 15:39",
+		"allAt:ifAbsent:" : "jf 2/15/2010 15:39",
+		"at:add:" : "jf 2/15/2010 13:24",
+		"removeKey:ifAbsent:" : "jf 2/15/2010 14:43" } }

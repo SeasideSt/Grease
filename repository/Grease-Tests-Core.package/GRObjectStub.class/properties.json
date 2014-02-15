@@ -1,0 +1,14 @@
+{
+	"category" : "Grease-Tests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"foo" ],
+	"name" : "GRObjectStub",
+	"pools" : [
+		 ],
+	"super" : "GRObject",
+	"type" : "normal" }

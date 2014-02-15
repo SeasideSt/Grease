@@ -1,0 +1,14 @@
+{
+	"category" : "Grease-Tests-Pharo-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"countingStream" ],
+	"name" : "GRCountingStreamTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

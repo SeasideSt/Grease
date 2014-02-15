@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"isAbstract" : "jok 3/26/2010 17:21" },
+	"instance" : {
+		"isHomogeneous" : "jok 3/29/2010 13:20",
+		"isSequenced" : "jok 3/29/2010 12:54",
+		"isUnique" : "jok 3/29/2010 13:02",
+		"testAddFirst" : "pmm 9/1/2012 15:24",
+		"testBeginsWithEmptySubCollection" : "pmm 9/1/2012 15:21",
+		"testBeginsWithSubCollection" : "pmm 9/1/2012 15:20",
+		"testCopyAfter" : "lr 7/25/2011 18:28",
+		"testCopyAfterLast" : "lr 7/25/2011 18:28",
+		"testCopyUpTo" : "pmm 1/22/2012 16:30",
+		"testCopyUpToLast" : "lr 7/25/2011 18:34",
+		"testEndsWithEmptySubCollection" : "pmm 9/1/2012 15:20",
+		"testEndsWithSubCollection" : "pmm 9/1/2012 15:20",
+		"testSort" : "pmm 9/1/2012 15:20" } }

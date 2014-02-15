@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"onExceptionReturn:" : "lr 7/25/2011 18:34",
+		"testDefaultActionResume" : "pmm 9/1/2012 15:31",
+		"testDeprecatedApi" : "lr 1/25/2010 23:31",
+		"testErrorInitialization" : "jf 9/30/2009 00:56",
+		"testIsResumable" : "jf 11/3/2009 00:39",
+		"testNotificationInitialization" : "jf 9/30/2009 00:57",
+		"testOnDoImplicitReturn" : "pmm 9/1/2012 15:31",
+		"testOnDoNonLocalReturn" : "jf 11/3/2009 00:53",
+		"testSignalError" : "jf 11/3/2009 00:39",
+		"testSignalErrorClassSide" : "jf 11/3/2009 00:39",
+		"testSignalNotification" : "jf 11/3/2009 00:39",
+		"testSignalNotificationClassSide" : "jf 11/3/2009 00:39",
+		"testSignalWithError" : "jf 11/3/2009 00:39",
+		"testSignalWithErrorClassSide" : "jf 11/3/2009 00:39",
+		"testSignalWithNotification" : "jf 11/3/2009 00:39",
+		"testSignalWithNotificationClassSide" : "jf 11/3/2009 00:39" } }
