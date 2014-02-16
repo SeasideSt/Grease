@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"baseline:" : "JohanBrichau 02/16/2014 01:48" } }
+		"baseline:" : "JohanBrichau 02/16/2014 01:48",
+		"greaseCoreAndTestsForSqueakAndPharo1x:" : "JohanBrichau 02/16/2014 03:50",
+		"slimeForSqueakPharo1xPharo2x:" : "JohanBrichau 02/16/2014 03:49" } }
