@@ -34,6 +34,16 @@ REPOSITORY_LINE="  repository: '$REPOSITORY';"
 OUTPUT_PATH="${PROJECT_HOME}/tests/travisCI.st"
 
 cat - >> $OUTPUT_PATH << EOF
+(Smalltalk includesKey: #UserGlobals) ifTrue:[
+ "Load latest GLASS1 when on Gemstone"
+ [ Metacello new
+    baseline: 'GLASS1';
+    repository: 'github://glassdb/glass:master/repository';
+    load.
+  ] on: Warning
+    do:[:ex | Transcript show: ex greaseString. ex resume].
+].
+
  Transcript cr; show: 'travis--->${OUTPUT_PATH}'.
  "Load the configuration or baseline"
  Metacello new

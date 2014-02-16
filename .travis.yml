@@ -2,11 +2,11 @@ language: erlang
 
 env:
 
-   - ST=Pharo-1.4 BASELINE=Grease LOADS="Tests" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=Pharo-2.0 BASELINE=Grease LOADS="Tests" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=Pharo-3.0 BASELINE=Grease LOADS="Tests" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=GemStone-2.4.4.1 BASELINE=Grease LOADS="Tests" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=GemStone-3.1.0.5 BASELINE=Grease LOADS="Tests" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
+   - ST=Pharo-1.4 BASELINE=Grease LOADS=Tests REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
+   - ST=Pharo-2.0 BASELINE=Grease LOADS=Tests REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
+   - ST=Pharo-3.0 BASELINE=Grease LOADS=Tests REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
+   - ST=GemStone-2.4.4.1 BASELINE=Grease LOADS=Tests REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
+   - ST=GemStone-3.1.0.5 BASELINE=Grease LOADS=Tests REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
 
 install:
    - export PROJECT_HOME="$(pwd)"
