@@ -52,6 +52,7 @@ cat - >> $OUTPUT_PATH << EOF
  $REPOSITORY_LINE
    load: #( ${LOADS} ).
   "Run the tests"
+  Smalltalk at: #Author ifPresent:[Author fullName: 'Travis'].
   TravisCIHarness
     value: #( '${FULL_CONFIG_NAME}' )
     value: 'TravisCISuccess.txt' 
