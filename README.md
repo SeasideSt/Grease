@@ -1,7 +1,7 @@
 The Grease Portability Library  [![Build Status](https://travis-ci.org/glassdb/Grease.png?branch=master)](https://travis-ci.org/glassdb/Grease)
 ======
 
-The main repository of Grease is on Smalltalkhub: (http://www.smalltalkhub.com/#!/~Seaside).
+The main repository of Grease is on Smalltalkhub: (http://www.smalltalkhub.com/#!/~Seaside/Grease11).
 This repository mirrors it and is the reference repository for Grease in Gemstone/GLASS. 
 The Travis CI builds currently test Grease for Pharo1.4, Pharo2.0, Pharo3.0, Gemstone2.4.4.1 and Gemstone3.1.0.5
 
