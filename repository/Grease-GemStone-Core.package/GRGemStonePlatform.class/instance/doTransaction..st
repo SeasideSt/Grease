@@ -1,18 +1,20 @@
-transactions
+*grease-gemstone-core
 doTransaction: aBlock
 	"Evaluate aBlock in a transaction. 
 	 Return true if the transaction succeeds and false if the transaction fails.
 	 Nested calls are allowed and will always return true.
 	 See System class>>transactionConflicts for dealing with failed transactions."
 
-	System inTransaction
-		ifTrue: [ "We alread in a transaction, so just evaluate the block"
-			aBlock value.
-			^true].
+	"Ensure that each block evaluation is mutually exclusive: https://code.google.com/p/glassdb/issues/detail?id=355"
 	self transactionMutex critical: [
 		"Get the transactionMutex, and perform the transaction."
-		[ 
-			self doBeginTransaction.
-			aBlock value.
-		] ensure: [ 
-			^self doCommitTransaction]].
+		System inTransaction
+			ifTrue: [ "We already are in a transaction, so just evaluate the block"
+					aBlock value.
+					^ true]
+			ifFalse:[ 
+					[
+						self doBeginTransaction.
+						aBlock value
+					] ensure: [ ^self doCommitTransaction]]]
+	
