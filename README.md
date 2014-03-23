@@ -3,7 +3,7 @@ The Grease Portability Library  [![Build Status](https://travis-ci.org/glassdb/G
 
 The main repository of Grease is on Smalltalkhub: (http://www.smalltalkhub.com/#!/~Seaside/Grease11).
 This repository mirrors it and is the reference repository for Grease in Gemstone/GLASS. 
-The Travis CI builds currently test Grease for Pharo1.4, Pharo2.0, Pharo3.0, Gemstone2.4.4.1 and Gemstone3.1.0.5
+The Travis CI builds currently test Grease for Pharo1.4, Pharo2.0, Pharo3.0, Squeak 4.4, Gemstone2.4.4.1 and Gemstone3.1.0.5
 
 Grease enhances the ANSI Smalltalk standard. With only a few exceptions, we assume platforms are fully ANSI-compliant. Platforms want to support Seaside and standardization makes this easier for the project’s developers and its porters.
 
