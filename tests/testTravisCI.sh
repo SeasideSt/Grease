@@ -53,6 +53,7 @@ cat - >> $OUTPUT_PATH << EOF
    load: #( ${LOADS} ).
   "Run the tests"
   Smalltalk at: #Author ifPresent:[:author | author fullName: 'Travis'].
+  ((Smalltalk includesKey: #Utilities) and:[Utilities respondsTo: #setAuthorInitials:]) ifTrue:[Utilities setAuthorInitials: 'TCI'].
   TravisCIHarness
     value: #( '${FULL_CONFIG_NAME}' )
     value: 'TravisCISuccess.txt' 
