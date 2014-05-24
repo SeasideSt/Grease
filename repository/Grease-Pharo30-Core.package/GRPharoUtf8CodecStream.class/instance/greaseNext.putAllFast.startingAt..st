@@ -6,7 +6,7 @@ greaseNext: anInteger putAllFast: aByteString startingAt: startIndex
 	nextIndex = 0 ifTrue: [ ^ stream greaseNext: anInteger putAll: aByteString startingAt: startIndex ].
 	[	
 		nextIndex >= (startIndex + anInteger) ifTrue: [
-			^ stream greaseNext: startIndex + anInteger - nextIndex + 1 putAll: aByteString startingAt: lastIndex ].
+			^ stream greaseNext: startIndex + anInteger - lastIndex  putAll: aByteString startingAt: lastIndex ].
 		nextIndex > lastIndex ifTrue: [
 			stream greaseNext: nextIndex - lastIndex putAll: aByteString startingAt: lastIndex ].
 		stream nextPutAll: (Latin1ToUtf8Encodings at: (aByteString byteAt: nextIndex) + 1).

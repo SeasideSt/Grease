@@ -1,3 +1,3 @@
 file library
 removeSelector: aSymbol from: aClass
-	aClass removeSelectorSilently: aSymbol
+	aClass removeSelector: aSymbol

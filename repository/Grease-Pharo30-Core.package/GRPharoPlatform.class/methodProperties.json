@@ -28,7 +28,7 @@
 		"readWriteCharacterStream" : "dkh 9/4/2009 09:14",
 		"removeFromShutDownList:" : "jf 1/21/2009 17:31",
 		"removeFromStartUpList:" : "jf 1/21/2009 17:31",
-		"removeSelector:from:" : "jf 1/21/2009 17:31",
+		"removeSelector:from:" : "JohanBrichau 4/19/2014 13:44",
 		"secureHashFor:" : "DamienCassou 8/27/2013 18:30",
 		"semaphoreClass" : "lr 7/25/2011 19:51",
 		"stackDepth" : "jf 1/21/2009 17:31",
