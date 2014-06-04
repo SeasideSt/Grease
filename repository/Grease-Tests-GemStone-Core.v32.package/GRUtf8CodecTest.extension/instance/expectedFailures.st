@@ -1,5 +1,3 @@
 *grease-tests-gemstone-core
 expectedFailures
-	^ #( 
-		#testCodecUtf8Bom				"GemStone interprest bom character as a space ... nicht richtig"
-		)
+  ^ #()	"all tests pass in GemStone 3.2"
