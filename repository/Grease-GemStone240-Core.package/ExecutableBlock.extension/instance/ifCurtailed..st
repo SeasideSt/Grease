@@ -1,4 +1,4 @@
-*grease-gemstone-core
+*grease-gemStone240-core
 ifCurtailed: aBlock
 
 	| wasCurtailed |
