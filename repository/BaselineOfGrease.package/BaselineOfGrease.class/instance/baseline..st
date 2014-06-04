@@ -143,6 +143,4 @@ baseline: spec
     do: [ 
       spec
         package: 'Grease-Tests-GemStone-Core'
-          with: [ spec includes: #('Grease-Tests-GemStone-Core.v32') ];
-        package: 'Grease-Tests-GemStone-Core.v32'
-          with: [ spec requires: #('Grease-Tests-GemStone-Core') ] ]
+        with: [ spec file: 'Grease-Tests-GemStone-Corev.v32' ] ]
