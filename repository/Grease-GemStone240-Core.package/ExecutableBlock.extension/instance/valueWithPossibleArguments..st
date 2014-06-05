@@ -1,4 +1,4 @@
-*grease-gemstone-core
+*grease-gemStone240-core
 valueWithPossibleArguments: anArray 
      "Evaluate the block represented by the receiver with the arguments provided."
   | n args | 
