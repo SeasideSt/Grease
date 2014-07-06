@@ -9,4 +9,6 @@ resolveWith: aDictionary
 					aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Pharo20-') ifAbsent: [
 						"try -Pharo30-"
 						aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Pharo30-') ifAbsent: [
-							self error: self name printString , ' depends on unknown package ' , each printString ] ] ] ] ]
+							"try -Pharo40-"
+							aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Pharo40-') ifAbsent: [
+								self error: self name printString , ' depends on unknown package ' , each printString ] ] ] ] ]]

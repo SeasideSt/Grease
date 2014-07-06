@@ -2,7 +2,7 @@ running
 checkMethod: aContext 
 	| periods position |
 	aContext parseTree nodesDo: [ :node |
-		node isSequence ifTrue: [
+		(node isSequence and:[node periods notEmpty]) ifTrue: [
 			periods := OrderedCollection withAll: node periods.
 			1 to: node statements size - 1 do: [ :index |
 				position := periods removeFirst.
