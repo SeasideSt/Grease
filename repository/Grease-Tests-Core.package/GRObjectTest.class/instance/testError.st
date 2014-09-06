@@ -1,6 +1,6 @@
 tests
 testError
-	"Make sure #error: signals a subclass of WAPlatformError."
+	"Make sure #error: signals a subclass of GRError."
 	self 
 		should: [ GRObject new error: 'oh dear' ]
 		raise: GRError.
