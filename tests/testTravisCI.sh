@@ -64,10 +64,15 @@ GsDeployer deploy: [
  Transcript cr; show: 'travis--->${OUTPUT_PATH}'.
  "Load the configuration or baseline"
  Metacello new
- $PROJECT_LINE
- $VERSION_LINE
- $REPOSITORY_LINE
-   load: #( ${LOADS} ).
+  $PROJECT_LINE
+  $VERSION_LINE
+  $REPOSITORY_LINE
+  onWarning: [ :ex | 
+        Transcript
+          cr;
+          show: ex description.
+        ex resume ];
+  load: #( ${LOADS} ).
   "Run the tests"
   Smalltalk at: #Author ifPresent:[:author | author fullName: 'Travis'].
   ((Smalltalk includesKey: #Utilities) and:[(Smalltalk at: #Utilities) respondsTo: #setAuthorInitials:]) ifTrue:[(Smalltalk at: #Utilities) setAuthorInitials: 'TCI'].
