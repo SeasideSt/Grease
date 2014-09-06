@@ -18,7 +18,7 @@ testGreaseString
 	self assert: 15.25 greaseString = '15.25'.
 	self assert: nil greaseString isString.
 	self assert: (4 @ 2) greaseString = '4@2'.
-	"#seasideString for a byte array should not do any decoding
+	"#greaseString for a byte array should not do any decoding
 	this is in place to catch encoding errors early"
 	self assert: #(101 97 ) asByteArray greaseString ~= 'ea'.
 	self assert: #(101 97 ) asByteArray greaseString isString.

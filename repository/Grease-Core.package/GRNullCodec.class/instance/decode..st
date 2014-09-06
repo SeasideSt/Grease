@@ -1,5 +1,5 @@
 convenience
 decode: aString
-	"Overridden for efficencey."
+	"Overridden for efficiency."
 
 	^ aString

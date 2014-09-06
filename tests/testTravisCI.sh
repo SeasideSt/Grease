@@ -35,22 +35,40 @@ OUTPUT_PATH="${PROJECT_HOME}/tests/travisCI.st"
 
 cat - >> $OUTPUT_PATH << EOF
 (Smalltalk includesKey: #UserGlobals) ifTrue:[
- "Load latest GLASS1 when on Gemstone"
- [ Metacello new
-    baseline: 'GLASS1';
-    repository: 'github://glassdb/glass:master/repository';
+"Upgrade GLASS to to 1.0-beta.9.3"
+Gofer new
+    url: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository';
+    package: 'ConfigurationOfGLASS';
     load.
-  ] on: Warning
-    do:[:ex | Transcript show: ex greaseString. ex resume].
-].
+ConfigurationOfGLASS project updateProject.
+GsDeployer
+  deploy: [ (ConfigurationOfGLASS project version: '1.0-beta.9.3') load ].
+"Install GLASS from github"
+GsDeployer deploy: [
+ Metacello new
+  baseline: 'GLASS1';
+  repository: 'github://glassdb/glass:master/repository';
+  get.
+ Metacello new
+  baseline: 'GLASS1';
+  repository: 'github://glassdb/glass:master/repository';
+  onConflict: [ :ex | ex allow ];
+  onWarning: [ :ex | 
+        Transcript
+          cr;
+          show: ex description.
+        ex resume ];
+  load: 'default' ].
+  ].
 
  Transcript cr; show: 'travis--->${OUTPUT_PATH}'.
  "Load the configuration or baseline"
  Metacello new
- $PROJECT_LINE
- $VERSION_LINE
- $REPOSITORY_LINE
-   load: #( ${LOADS} ).
+  $PROJECT_LINE
+  $VERSION_LINE
+  $REPOSITORY_LINE
+  onConflict: [ :ex | ex allow ]; "Needed because there is a load conflict between Grease loaded via GLASS1 and this explicit load"
+  load: #( ${LOADS} ).
   "Run the tests"
   Smalltalk at: #Author ifPresent:[:author | author fullName: 'Travis'].
   ((Smalltalk includesKey: #Utilities) and:[(Smalltalk at: #Utilities) respondsTo: #setAuthorInitials:]) ifTrue:[(Smalltalk at: #Utilities) setAuthorInitials: 'TCI'].

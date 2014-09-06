@@ -1,6 +1,6 @@
 file library
 localNameOf: aFilename
-	"Answer the local name of a file indentified by an absolute file path.
+	"Answer the local name of a file identified by an absolute file path.
 	
 	Eg.
 	If the platform is Windwos and aFilename is 'C:\Windows\win32.dll' then it would answer 'win32.dll'.
