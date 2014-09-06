@@ -59,6 +59,7 @@ GsDeployer deploy: [
           show: ex description.
         ex resume ];
   load: 'default' ].
+  ].
 
  Transcript cr; show: 'travis--->${OUTPUT_PATH}'.
  "Load the configuration or baseline"
