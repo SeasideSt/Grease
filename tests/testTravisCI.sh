@@ -67,11 +67,7 @@ GsDeployer deploy: [
   $PROJECT_LINE
   $VERSION_LINE
   $REPOSITORY_LINE
-  onWarning: [ :ex | 
-        Transcript
-          cr;
-          show: ex description.
-        ex resume ];
+  onConflict: [ :ex | ex allow ]; "Needed because there is a load conflict between Grease loaded via GLASS1 and this explicit load"
   load: #( ${LOADS} ).
   "Run the tests"
   Smalltalk at: #Author ifPresent:[:author | author fullName: 'Travis'].
