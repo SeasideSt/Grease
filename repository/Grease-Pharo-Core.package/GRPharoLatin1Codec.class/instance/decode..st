@@ -1,5 +1,5 @@
 conversion
 decode: aStringOrByteArray
-	"Overridden for efficencey."
+	"Overridden for efficiency."
 
 	^ aStringOrByteArray asString
