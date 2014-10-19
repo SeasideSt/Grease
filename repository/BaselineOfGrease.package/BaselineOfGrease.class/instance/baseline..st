@@ -137,7 +137,9 @@ baseline: spec
         package: 'Grease-GemStone-Core'
           with: [ spec includes: #('Grease-GemStone300-Core') ];
         package: 'Grease-GemStone300-Core'
-          with: [ spec requires: #('Grease-GemStone-Core') ] ].
+          with: [ spec 
+				requires: #('Grease-GemStone-Core');
+				postLoadDoIt: #initializeLatin1ToUtf8Encodings ] ].
   spec
     for: #'gs3.2.x'
     do: [ 
