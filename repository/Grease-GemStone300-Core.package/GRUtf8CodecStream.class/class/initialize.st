@@ -9,4 +9,4 @@ initialize
         Latin1ToUtf8Encodings
           at: index
           put:
-            (String with: (Character codePoint: index - 1)) encodeAsUTF8intoString ] ]
+            (String with: (Character codePoint: index - 1)) encodeAsUTF8 asString ] ]
