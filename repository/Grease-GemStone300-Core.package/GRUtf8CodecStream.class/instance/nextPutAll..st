@@ -4,10 +4,4 @@ nextPutAll: aString
 
   binary
     ifTrue: [ stream nextPutAll: aString asString ]
-    ifFalse: [ 
-      aString size > 8
-        ifTrue: [ stream nextPutAll: (aString encodeAsUTF8 changeClassTo: String) ]
-        ifFalse: [ 
-          | str |
-          str := aString encodeAsUTF8intoString.
-          stream nextPutAll: str ] ]
+    ifFalse: [ stream nextPutAll: aString encodeAsUTF8intoString ]
