@@ -11,6 +11,7 @@
 		"asMethodReturningByteArrayLiteral:named:" : "lr 7/25/2011 19:51",
 		"asMethodReturningByteArrayWithCache:named:" : "pmm 2/20/2009 17:44",
 		"base64Decode:" : "jf 1/21/2009 17:31",
+		"bindingOf:" : "JohanBrichau 7/12/2015 17:21",
 		"compile:into:classified:" : "pmm 9/12/2013 11:28",
 		"contentsOfFile:binary:" : "JohanBrichau 10/4/2014 10:05",
 		"directoriesIn:" : "pmm 8/19/2012 10:19",
