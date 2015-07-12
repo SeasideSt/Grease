@@ -9,6 +9,7 @@
 		"addToStartUpList:" : "jf 1/22/2009 02:10",
 		"asMethodReturningByteArray:named:" : "jf 1/22/2009 02:11",
 		"base64Decode:" : "pmm 8/27/2011 15:12",
+		"bindingOf:" : "pmm 8/23/2014 11:42",
 		"compile:into:classified:" : "jf 1/22/2009 02:11",
 		"contentsOfFile:binary:" : "jf 1/22/2009 02:11",
 		"convertToSmalltalkNewlines:" : "lr 4/15/2010 19:15",

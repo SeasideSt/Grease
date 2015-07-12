@@ -22,4 +22,8 @@ testGreaseString
 	this is in place to catch encoding errors early"
 	self assert: #(101 97 ) asByteArray greaseString ~= 'ea'.
 	self assert: #(101 97 ) asByteArray greaseString isString.
-	self assert: Object new greaseString isString
+	self assert: Object new greaseString isString.
+	"Printing scaled decimals (https://github.com/SeasideSt/Grease/issues/1)"
+	self assert: 1.21s3 greaseString = '1.210'.
+	self assert: -1.21s3 greaseString = '-1.210'.
+	
