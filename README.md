@@ -18,6 +18,7 @@ Grease is widely adopted. Implementations exist already for all platforms that s
 ##Travis builds
 
 The [Travis CI builds](https://travis-ci.org/SeasideSt/Grease) currently test Grease for the following platforms and versions:
+
 | Squeak          | Pharo            | GemStone             |
 | --------------- | ---------------- | -------------------- |
 | Squeak 5.0      | Pharo 5.0        | GemStone 3.3.0       |
