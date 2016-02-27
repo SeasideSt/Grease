@@ -25,9 +25,32 @@ The [Travis CI builds](https://travis-ci.org/SeasideSt/Grease) currently test Gr
 | Squeak 4.5      | Pharo 4.0        | GemStone 3.2.12      |
 |                 | Pharo 3.0        | GemStone 3.1.0.6     |
 
-##GemStone Installation
+##Installation
 
-GsUpgrader works on all versions of GemStone against all Versions of GLASS:
+###Squeak and Pharo
+
+Make sure you have the [MetacelloPreview version](https://github.com/dalehenrich/metacello-work), otherwise the load will not work. You have two options for loading: from Smalltalkhub or from Github.
+
+Load from Smalltalkhub:
+```Smalltalk
+Metacello new
+    configuration: 'Grease';
+    repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
+    version: #stable;
+    load
+```
+-or-
+Load from: Github:
+```Smalltalk
+Metacello new
+    baseline: 'Grease';
+    githubUser: 'SeasideSt' project: 'Grease' commitish: '' path: 'repository';
+    load
+```
+###GemStone
+
+Grease is part of the GLASS setup. You can upgrade your version of Grease using [GsUpgrader](https://github.com/GsDevKit/gsUpgrader).
+GsUpgrader works on all versions of GemStone against all versions of GLASS:
 
 ```Smalltalk
 Gofer new

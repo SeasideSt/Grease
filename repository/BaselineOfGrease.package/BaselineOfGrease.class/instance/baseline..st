@@ -41,8 +41,10 @@ baseline: spec
           with: [ spec includes: #('Grease-Tests-Squeak-Core') ];
         package: 'Grease-Squeak5-Core'
           with: [ spec requires: #('Grease-Core') ];
+        package: 'Grease-Tests-Pharo-Core'
+          with: [ spec requires: #('Grease-Tests-Core') ];
         package: 'Grease-Tests-Squeak-Core'
-          with: [ spec requires: #('Grease-Tests-Core') ].
+          with: [ spec requires: #('Grease-Tests-Pharo-Core') ].
       self slimeForSqueakPharo1xPharo2x: spec ].
   spec
     for: #'pharo1.0'
