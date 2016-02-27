@@ -3,7 +3,6 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'Grease',
       #directory : 'packages',
-      #onWarningLog : true,
       #load : [ 'CI' ],
       #platforms : [ #squeak, #pharo ]
     },
