@@ -5,7 +5,14 @@ SmalltalkCISpec {
       #directory : 'packages',
       #onWarningLog : true,
       #load : [ 'CI' ],
-      #platforms : [ #squeak, #pharo, #gemstone ]
+      #platforms : [ #squeak, #pharo ]
+    },
+    SCIMetacelloLoadSpec {
+      #baseline : 'Grease',
+      #directory : 'packages',
+      #onWarningLog : true,
+      #load : [ 'CI' ],
+      #platforms : [ #gemstone ]
     }
   ]
 }
