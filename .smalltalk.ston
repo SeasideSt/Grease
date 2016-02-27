@@ -2,13 +2,13 @@ SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'Grease',
-      #directory : 'packages',
+      #directory : 'repository',
       #load : [ 'CI' ],
       #platforms : [ #squeak, #pharo ]
     },
     SCIMetacelloLoadSpec {
       #baseline : 'Grease',
-      #directory : 'packages',
+      #directory : 'repository',
       #onWarningLog : true,
       #load : [ 'CI' ],
       #platforms : [ #gemstone ]
