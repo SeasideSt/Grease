@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-language: erlang
-sudo: true
-env:
-
-   - ST=Pharo-1.4 BASELINE=Grease LOADS="'Tests'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=Pharo-2.0 BASELINE=Grease LOADS="'Tests'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=Pharo-3.0 BASELINE=Grease LOADS="'Tests'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=Pharo-4.0 BASELINE=Grease LOADS="'Tests'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=Squeak-4.4 BASELINE=Grease LOADS="'Tests'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=Squeak-4.5 BASELINE=Grease LOADS="'Tests'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=Squeak-5.0 BASELINE=Grease LOADS="'Tests'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=GemStone-2.4.4.2 BASELINE=Grease LOADS="'Tests'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=GemStone-3.1.0.6 BASELINE=Grease LOADS="'Tests'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=GemStone-3.2.10 BASELINE=Grease LOADS="'Tests'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-
-install:
-=======
 language: smalltalk
 sudo: false
 smalltalk:
@@ -29,8 +11,6 @@ smalltalk:
   - GemStone-2.4.4.1
   - GemStone-3.1.0.6
   - GemStone-3.2.10
-
->>>>>>> d840e1c... try smalltalkCI
 
 env:
   global:
