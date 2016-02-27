@@ -5,7 +5,7 @@ SmalltalkCISpec {
       #directory : 'packages',                                // Path to packages if FileTree is used
       #onWarningLog : true,                                   // Handle Warnings and log message to Transcript (GemStone)
       #load : [ 'CI' ],                                       // Define MC load attributes
-      #platforms : [ #squeak, #pharo, #gemstone ],            // Define compatible platforms
+      #platforms : [ #squeak, #pharo, #gemstone ]             // Define compatible platforms
     }
   ]
 }
