@@ -38,7 +38,7 @@ baseline: spec
         package: 'Grease-Core'
           with: [ spec includes: #('Grease-Squeak5-Core') ];
         package: 'Grease-Tests-Core'
-          with: [ spec includes: #('Grease-Tests-Squeak-Core') ];
+          with: [ spec includes: #('Grease-Tests-Squeak-Core' 'Grease-Tests-Squeak5-Core') ];
         package: 'Grease-Squeak5-Core'
           with: [ spec requires: #('Grease-Core') ];
         package: 'Grease-Tests-Squeak-Core'
