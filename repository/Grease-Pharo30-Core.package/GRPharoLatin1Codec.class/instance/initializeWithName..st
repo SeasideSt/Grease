@@ -1,4 +1,4 @@
 initialization
 initializeWithName: aString 
 	self initialize.
-	name := aString.
+	name := aString
