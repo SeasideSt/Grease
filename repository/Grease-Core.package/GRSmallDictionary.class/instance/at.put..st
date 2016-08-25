@@ -5,5 +5,5 @@ at: aKey put: aValue
 	| index |
 	index := self findIndexFor: aKey.
 	^ index = 0
-		ifFalse: [ values at: index put: aValue ]
+		ifFalse: [ table at: index + 1 put: aValue ]
 		ifTrue: [ self privateAt: aKey put: aValue ]

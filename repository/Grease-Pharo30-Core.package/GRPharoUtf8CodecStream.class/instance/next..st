@@ -39,7 +39,7 @@ next: anInteger
 		unicode ifNil: [ self invalidUtf8 ].
 		unicode = 16rFEFF "ignore BOM" ifFalse: [
 			count := count + 1.
-			output at: count put: (Character codePoint: unicode). ].
+			output at: count put: (Character codePoint: unicode) ].
 		unicode := nil ].
 	^ count < anInteger
 		ifTrue: [ output first: count ]

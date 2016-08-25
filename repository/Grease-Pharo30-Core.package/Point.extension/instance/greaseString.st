@@ -6,8 +6,8 @@ greaseString
 	^ String streamContents: [ :stream |
 		x printOn: stream.
 		stream nextPut: $@.
-		(y notNil and: [y negative])
+		(y notNil and: [ y negative ])
 			ifTrue: [
 				"Avoid ambiguous @- construct"
-				stream space].
+				stream space ].
 		y printOn: stream ]
