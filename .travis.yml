@@ -15,3 +15,6 @@ smalltalk:
 cache:
   directories:
     - $SMALLTALK_CI_CACHE
+matrix:
+  allow_failures:
+    - smalltalk: Pharo-6.0
