@@ -25,5 +25,5 @@ testGreaseString
 	self assert: Object new greaseString isString.
 	"Printing scaled decimals (https://github.com/SeasideSt/Grease/issues/1)"
 	self assert: 1.21s3 greaseString = '1.210'.
-	self assert: -1.21s3 greaseString = '-1.210'.
+	self assert: -1.21s3 greaseString = '-1.210'
 	
