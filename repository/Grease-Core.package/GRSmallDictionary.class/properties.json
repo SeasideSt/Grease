@@ -4,10 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "pmm 8/22/2016 11:49",
+	"commentStamp" : "jf 2/15/2010 15:51",
 	"instvars" : [
 		"size",
-		"table" ],
+		"keys",
+		"values" ],
 	"name" : "GRSmallDictionary",
 	"pools" : [
 		 ],

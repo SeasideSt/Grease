@@ -1,0 +1,14 @@
+{
+	"category" : "Grease-Tests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GROrderedMultiMap2Test",
+	"pools" : [
+		 ],
+	"super" : "GROrderedMultiMapTest",
+	"type" : "normal" }

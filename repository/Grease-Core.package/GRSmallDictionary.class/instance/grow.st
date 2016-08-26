@@ -1,8 +1,10 @@
 private
 grow
-	| newTable |
-	"#replaceFrom:to:with:startingAt: would be better but not portable"
-	newTable := Array new: 4 * size.
-	1 to: size * 2 do: [ :index |
-		newTable at: index put: (table at: index) ].
-	table := newTable
+	| newKeys newValues |
+	newKeys := Array new: 2 * size.
+	newValues := Array new: 2 * size.
+	1 to: size do: [ :index |
+		newKeys at: index put: (keys at: index).
+		newValues at: index put: (values at: index) ].
+	keys := newKeys.
+	values := newValues
