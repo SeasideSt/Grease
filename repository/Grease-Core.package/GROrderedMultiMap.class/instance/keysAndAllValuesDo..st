@@ -2,9 +2,9 @@ enumerating
 keysAndAllValuesDo: aTwoArgumentBlock
 	| seenKeys |
 	seenKeys := GRSmallOrderedSet new.
-	1 to: size * 2 - 1 by: 2 do: [ :index |
+	1 to: size do: [ :index |
 		| key |
-		key := table at: index.
+		key := keys at: index.
 		(seenKeys includes: key) ifFalse: [
 			aTwoArgumentBlock
 				value: key

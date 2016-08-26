@@ -2,4 +2,5 @@ initialization
 initialize: anInteger
 	self initialize.
 	size := 0.
-	table := Array new: anInteger * 2
+	keys := Array new: anInteger.
+	values := Array new: anInteger
