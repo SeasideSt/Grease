@@ -3,8 +3,6 @@ The Grease Portability Library  [![Build Status](https://travis-ci.org/SeasideSt
 
 The main repository of Grease is on Smalltalkhub: (http://www.smalltalkhub.com/#!/~Seaside/Grease11). This repository mirrors it.
 
-The Travis CI builds currently test Grease for Pharo1.4, Pharo2.0, Pharo3.0, Pharo4.0, Squeak 4.4, Squeak 4.5, Gemstone 2.4.4.1, Gemstone 3.1.0.6 and Gemstone 3.2.2
-
 Grease enhances the ANSI Smalltalk standard. With only a few exceptions, we assume platforms are fully ANSI-compliant. Platforms want to support Seaside and standardization makes this easier for the project’s developers and its porters.
 
 Grease defines expected APIs with unit tests. Platforms can quickly determine if they are compatible and users can examine the tests to determine exactly which behaviours they can count on.
@@ -17,9 +15,42 @@ Grease does not try to solve all problems. We are not testing Sockets or HTTP cl
 
 Grease is widely adopted. Implementations exist already for all platforms that support Seaside 3.x. As well as Seaside, new versions of Magritte, Pier, and Monticello are already being implemented on top of Grease.
 
-##GemStone Installation
+##Travis builds
 
-GsUpgrader works on all versions of GemStone against all Versions of GLASS:
+The [Travis CI builds](https://travis-ci.org/SeasideSt/Grease) currently test Grease for the following platforms and versions:
+
+| Squeak          | Pharo            | GemStone             |
+| --------------- | ---------------- | -------------------- |
+| Squeak 5.0      | Pharo 5.0        | GemStone 3.3.0       |
+| Squeak 4.5      | Pharo 4.0        | GemStone 3.2.12      |
+|                 | Pharo 3.0        | GemStone 3.1.0.6     |
+
+##Installation
+
+###Squeak and Pharo
+
+Make sure you have the [MetacelloPreview version](https://github.com/dalehenrich/metacello-work), otherwise the load will not work. You have two options for loading: from Smalltalkhub or from Github.
+
+Load from Smalltalkhub:
+```Smalltalk
+Metacello new
+    configuration: 'Grease';
+    repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
+    version: #stable;
+    load
+```
+-or-
+Load from: Github:
+```Smalltalk
+Metacello new
+    baseline: 'Grease';
+    githubUser: 'SeasideSt' project: 'Grease' commitish: '' path: 'repository';
+    load
+```
+###GemStone
+
+Grease is part of the GLASS setup. You can upgrade your version of Grease using [GsUpgrader](https://github.com/GsDevKit/gsUpgrader).
+GsUpgrader works on all versions of GemStone against all versions of GLASS:
 
 ```Smalltalk
 Gofer new

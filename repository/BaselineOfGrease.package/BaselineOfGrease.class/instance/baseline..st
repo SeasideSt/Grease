@@ -16,7 +16,7 @@ baseline: spec
         group: 'Tests' with: #('Core Tests' 'Slime Tests');
         group: 'default' with: #('Slime') ].
   spec
-    for: #'squeak'
+    for: #'squeak4.x'
     do: [ 
       spec
         package: 'Grease-Core'
@@ -31,6 +31,21 @@ baseline: spec
         package: 'Grease-Tests-Squeak-Core'
           with: [ spec requires: #('Grease-Tests-Pharo-Core') ].
       self slimeForSqueakPharo1xPharo2x: spec ].
+  spec
+    for: #'squeak5.x'
+    do: [ 
+      spec
+        package: 'Grease-Core'
+          with: [ spec includes: #('Grease-Squeak5-Core') ];
+        package: 'Grease-Tests-Core'
+          with: [ spec includes: #('Grease-Tests-Squeak-Core' 'Grease-Tests-Squeak5-Core') ];
+        package: 'Grease-Squeak5-Core'
+          with: [ spec requires: #('Grease-Core') ];
+        package: 'Grease-Tests-Squeak-Core'
+          with: [ spec requires: #('Grease-Tests-Core') ];
+        package: 'Grease-Tests-Squeak5-Core'
+          with: [ spec requires: #('Grease-Tests-Squeak-Core') ].
+      self  slimeForSqueakPharo1xPharo2x: spec ].
   spec
     for: #'pharo1.0'
     do: [ 
@@ -86,7 +101,7 @@ baseline: spec
         group: 'Slime' with: #('Grease-Slime');
         group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
   spec
-    for: #'pharo4.x'
+    for: #(#'pharo4.x' #'pharo5.x')
     do: [ 
       spec
         package: 'Grease-Core'
