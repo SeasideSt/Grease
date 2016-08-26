@@ -4,4 +4,4 @@ at: aKey ifPresent: aBlock
 
 	| index |
 	index := self findIndexFor: aKey.
-	^ index = 0 ifFalse: [ aBlock value: (values at: index) ]
+	^ index = 0 ifFalse: [ aBlock value: (table at: index + 1) ]
