@@ -10,8 +10,8 @@ smalltalk:
   - Squeak-4.6
   - Squeak-4.5
   - GemStone-3.1.0.6
-  - GemStone-3.2.12
-  - GemStone-3.3.0
+  - GemStone-3.2.15
+  - GemStone-3.3.3
 cache:
   directories:
     - $SMALLTALK_CI_CACHE
