@@ -1,5 +1,6 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"greaseNext:putAll:startingAt:" : "jf 5/22/2010 20:26" } }
+		"greaseNext:putAll:startingAt:" : "jf 5/22/2010 20:26"
+	},
+	"class" : { }
+}

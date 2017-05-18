@@ -1,15 +1,14 @@
 {
-	"category" : "Grease-Pharo30-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GRCodec",
+	"category" : "Grease-Pharo30-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"name",
-		"urlCodec" ],
+		"urlCodec"
+	],
 	"name" : "GRPharoGenericCodec",
-	"pools" : [
-		 ],
-	"super" : "GRCodec",
-	"type" : "normal" }
+	"type" : "normal"
+}
