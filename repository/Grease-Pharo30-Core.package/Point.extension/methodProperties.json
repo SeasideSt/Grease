@@ -1,5 +1,6 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"greaseString" : "pmm 8/25/2016 10:59" } }
+		"greaseString" : "pmm 8/25/2016 10:59"
+	},
+	"class" : { }
+}
