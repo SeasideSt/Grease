@@ -1,14 +1,15 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"setUp" : "pmm 8/25/2016 14:33",
-		"testAdd" : "pmm 8/25/2016 14:21",
-		"testAddAll" : "pmm 8/25/2016 14:25",
 		"testCopy" : "pmm 8/25/2016 14:49",
-		"testDo" : "pmm 8/25/2016 14:09",
-		"testIncludes" : "pmm 8/25/2016 14:49",
+		"testAddAll" : "pmm 8/25/2016 14:25",
+		"setUp" : "pmm 8/25/2016 14:33",
 		"testIsEmpty" : "pmm 8/25/2016 14:49",
 		"testRemove" : "pmm 8/25/2016 14:51",
+		"testDo" : "pmm 8/25/2016 14:09",
+		"testSize" : "pmm 8/25/2016 14:10",
 		"testRemoveIfAbsent" : "pmm 8/25/2016 14:52",
-		"testSize" : "pmm 8/25/2016 14:10" } }
+		"testIncludes" : "pmm 8/25/2016 14:49",
+		"testAdd" : "pmm 8/25/2016 14:21"
+	},
+	"class" : { }
+}
