@@ -1,3 +1,6 @@
 accessing
 allAt: aKey
-	^ self privateAllAt: aKey startingAt: 1
+	^ Array streamContents: [ :stream |
+		1 to: size do: [ :index |
+			(keys at: index) = aKey
+				ifTrue: [ stream nextPut: (values at: index) ] ] ]

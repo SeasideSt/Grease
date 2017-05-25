@@ -1,4 +1,5 @@
 copying
 postCopy
 	super postCopy.
-	table := table copy
+	keys := keys copy.
+	values := values copy

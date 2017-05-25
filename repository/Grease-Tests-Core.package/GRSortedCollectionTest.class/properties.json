@@ -1,14 +1,11 @@
 {
-	"category" : "Grease-Tests-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "GRSortedCollectionTest",
-	"pools" : [
-		 ],
 	"super" : "GRAbstractSequenceableCollectionTest",
-	"type" : "normal" }
+	"category" : "Grease-Tests-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRSortedCollectionTest",
+	"type" : "normal"
+}
