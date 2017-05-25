@@ -1,7 +1,7 @@
 *Grease-Pharo60-Core
-greasePharo30Core
+greasePharo60Core
 	^ self new
-		name: 'Grease-Pharo30-Core';
+		name: 'Grease-Pharo60-Core';
 		addDependency: 'Grease-Core';
 		url: #greaseUrl;
 		yourself
