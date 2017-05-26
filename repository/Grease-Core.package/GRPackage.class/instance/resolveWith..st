@@ -13,8 +13,10 @@ resolveWith: aDictionary
 							aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Pharo40-') ifAbsent: [
 								"try -Pharo50-"
 								aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Pharo50-') ifAbsent: [
-									"try -Squeak-"
-									aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Squeak-') ifAbsent: [
-										"try -Squeak5-"
-										aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Squeak5-') ifAbsent: [
-											self error: self name printString , ' depends on unknown package ' , each printString ] ] ] ] ] ] ] ] ]
+									"try -Pharo60-"
+									aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Pharo60-') ifAbsent: [
+										"try -Squeak-"
+										aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Squeak-') ifAbsent: [
+											"try -Squeak5-"
+											aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Squeak5-') ifAbsent: [
+											self error: self name printString , ' depends on unknown package ' , each printString ] ] ] ] ] ] ] ] ] ]
