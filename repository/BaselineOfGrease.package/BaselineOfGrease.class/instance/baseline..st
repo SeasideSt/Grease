@@ -120,6 +120,25 @@ baseline: spec
         group: 'Slime' with: #('Grease-Pharo40-Slime');
         group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
   spec
+    for: #(#'pharo6.x')
+    do: [ 
+      spec
+        package: 'Grease-Core'
+          with: [ spec includes: #('Grease-Pharo60-Core') ];
+        package: 'Grease-Tests-Core'
+          with: [ spec includes: #('Grease-Tests-Pharo20-Core') ];
+        package: 'Grease-Pharo60-Core'
+          with: [ spec requires: #('Grease-Core') ];
+        package: 'Grease-Tests-Pharo20-Core'
+          with: [ spec requires: #('Grease-Tests-Core') ];
+        package: 'Grease-Pharo40-Slime'
+          with: [ spec requires: #('Grease-Core') ];
+        package: 'Grease-Tests-Slime'
+          with: [ spec requires: #('Grease-Pharo40-Slime') ].
+      spec
+        group: 'Slime' with: #('Grease-Pharo40-Slime');
+        group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
+  spec
     for: #'gemstone'
     do: [ 
       spec
@@ -128,14 +147,14 @@ baseline: spec
               spec
                 className: 'ConfigurationOfGsCore';
                 versionString: #'stable';
-                repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
+                repository: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ];
         project: 'UTF8'
           with: [ 
               spec
                 className: 'ConfigurationOfGsMisc';
                 versionString: #'stable';
                 loads: #('Utf8Encoding');
-                repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
+                repository: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ];
         project: 'System-Digital-Signatures'
           copyFrom: 'UTF8'
           with: [ spec loads: #('System-Digital-Signatures') ];
@@ -193,7 +212,7 @@ baseline: spec
                 requires: #('Grease-GemStone-Core');
                 postLoadDoIt: #'initializeLatin1ToUtf8Encodings' ] ].
   spec
-    for: #(#'gs3.2.x' #'gs3.3.x')
+    for: #(#'gs3.2.x' #'gs3.3.x' #'gs3.4.x')
     do: [ 
       spec
         package: 'Grease-Tests-GemStone-Core'
