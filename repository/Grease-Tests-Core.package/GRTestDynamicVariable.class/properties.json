@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "DynamicVariable",
+	"super" : "GRDynamicVariable",
 	"category" : "Grease-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
