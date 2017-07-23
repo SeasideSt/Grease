@@ -23,7 +23,7 @@ baseline: spec
         package: 'Grease-Core'
           with: [ spec includes: #('Grease-Squeak5-Core') ];
         package: 'Grease-Tests-Core'
-          with: [ spec includes: #('Grease-Squeak5-Core' 'Grease-Tests-Squeak-Core' 'Grease-Tests-Squeak5-Core') ];
+          with: [ spec requires: #('Grease-Squeak5-Core'); includes: #('Grease-Tests-Squeak-Core' 'Grease-Tests-Squeak5-Core') ];
         package: 'Grease-Squeak5-Core'
           with: [ spec requires: #('Grease-Core') ];
         package: 'Grease-Tests-Squeak-Core'
@@ -39,7 +39,7 @@ baseline: spec
         package: 'Grease-Core'
           with: [ spec includes: #('Grease-Pharo30-Core') ];
         package: 'Grease-Tests-Core'
-          with: [ spec includes: #('Grease-Pharo30-Core' 'Grease-Tests-Pharo20-Core') ];
+          with: [ spec requires: #('Grease-Pharo30-Core'); includes: #('Grease-Tests-Pharo20-Core') ];
         package: 'Grease-Pharo30-Core'
           with: [ spec requires: #('Grease-Core') ];
         package: 'Grease-Tests-Pharo20-Core'
@@ -57,7 +57,7 @@ baseline: spec
         package: 'Grease-Core'
           with: [ spec includes: #('Grease-Pharo30-Core') ];
         package: 'Grease-Tests-Core'
-          with: [ spec includes: #('Grease-Pharo30-Core' 'Grease-Tests-Pharo20-Core') ];
+          with: [ spec requires: #('Grease-Pharo30-Core'); includes: #('Grease-Tests-Pharo20-Core') ];
         package: 'Grease-Pharo30-Core'
           with: [ spec requires: #('Grease-Core') ];
         package: 'Grease-Tests-Pharo20-Core'
@@ -76,7 +76,7 @@ baseline: spec
         package: 'Grease-Core'
           with: [ spec includes: #('Grease-Pharo60-Core') ];
         package: 'Grease-Tests-Core'
-          with: [ spec includes: #('Grease-Pharo60-Core' 'Grease-Tests-Pharo20-Core') ];
+          with: [ spec requires: #('Grease-Pharo60-Core'); includes: #('Grease-Tests-Pharo20-Core') ];
         package: 'Grease-Pharo60-Core'
           with: [ spec requires: #('Grease-Core') ];
         package: 'Grease-Tests-Pharo20-Core'
@@ -118,7 +118,7 @@ baseline: spec
                 requires: #('GsCore');
                 includes: #('Grease-GemStone-Core') ];
         package: 'Grease-Tests-Core'
-          with: [ spec includes: #('Grease-Tests-GemStone-Core') ];
+          with: [ spec requires: #('Grease-GemStone-Core'); includes: #('Grease-Tests-GemStone-Core') ];
         package: 'Grease-GemStone-Core'
           with: [ 
               spec
