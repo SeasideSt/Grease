@@ -1,3 +1,3 @@
 defaults
-default
+defaultValue
 	^ 'default test value'
