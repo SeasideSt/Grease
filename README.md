@@ -1,3 +1,5 @@
+**IMPORTANT**: Since version 1.3.0, this is the main repository of Grease. Versions older than 1.1.9 can be found in the [Smalltalkhub repository](http://www.smalltalkhub.com/#!/~Seaside/Grease11). Check out the [releases list](https://github.com/SeasideSt/Grease/releases) for all version numbers in this repository.
+
 The Grease Portability Library  [![Build Status](https://travis-ci.org/SeasideSt/Grease.png?branch=master)](https://travis-ci.org/SeasideSt/Grease)
 ======
 
@@ -28,26 +30,41 @@ The [Travis CI builds](https://travis-ci.org/SeasideSt/Grease) currently test Gr
 
 ## Installation
 
-### Squeak and Pharo
+#### Prerequisite on Squeak and Pharo <3.0
 
-Make sure you have the [MetacelloPreview version](https://github.com/dalehenrich/metacello-work), otherwise the load will not work. You have two options for loading: from Smalltalkhub or from Github.
+Make sure you have the [MetacelloPreview version](https://github.com/dalehenrich/metacello-work), otherwise the load will not work.
 
-Load from Smalltalkhub:
+### Squeak and Pharo >=3.0
+
+Load the latest code from master (i.e. stable):
+
+```Smalltalk
+Metacello new
+    baseline: 'Grease';
+    githubUser: 'SeasideSt' project: 'Grease' commitish: 'master' path: 'repository';
+    load
+```
+-or-
+
+Load a specific version:
+
+```Smalltalk
+Metacello new
+    baseline: 'Grease';
+    githubUser: 'SeasideSt' project: 'Grease' commitish: 'v1.3.0' path: 'repository';
+    load
+```
+-or-
+
+Legacy: load from Smalltalkhub:
 ```Smalltalk
 Metacello new
     configuration: 'Grease';
     repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
-    version: #stable;
+    version: '1.0.0';
     load
 ```
--or-
-Load from: Github:
-```Smalltalk
-Metacello new
-    baseline: 'Grease';
-    githubUser: 'SeasideSt' project: 'Grease' commitish: '' path: 'repository';
-    load
-```
+
 ### GemStone
 
 Grease is part of the GLASS setup. You can upgrade your version of Grease using [GsUpgrader](https://github.com/GsDevKit/gsUpgrader).
