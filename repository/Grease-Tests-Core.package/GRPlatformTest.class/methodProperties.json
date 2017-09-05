@@ -55,6 +55,7 @@
 		"testReadStreamReset" : "lr 1/23/2009 11:41",
 		"testTerminate" : "mlucas-smith 6/3/2009 22:33",
 		"testReadWriteStreamAtEnd" : "jf 9/30/2009 00:19",
+		"testThisContext" : "pmm 9/5/2017 13:18",
 		"testReadWriteStreamSkip" : "jf 9/30/2009 00:19",
 		"testReadStreamNegativeSkip" : "jf 9/14/2009 13:52",
 		"testReadWriteStreamNext" : "jf 9/30/2009 00:19",

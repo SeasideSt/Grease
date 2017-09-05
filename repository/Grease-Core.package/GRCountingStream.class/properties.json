@@ -1,14 +1,13 @@
 {
-	"category" : "Grease-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "pmm 6/25/2012 20:39",
-	"instvars" : [
-		"count" ],
-	"name" : "GRCountingStream",
-	"pools" : [
-		 ],
 	"super" : "GRDelegatingStream",
-	"type" : "normal" }
+	"category" : "Grease-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"count"
+	],
+	"name" : "GRCountingStream",
+	"type" : "normal"
+}
