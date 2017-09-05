@@ -1,0 +1,9 @@
+{
+	"instance" : {
+		"testWithValue" : "pmm 9/5/2017 14:39",
+		"testWithoutValue" : "pmm 9/5/2017 14:39",
+		"testWithNestedValue" : "pmm 9/5/2017 14:38",
+		"testAnswer" : "pmm 9/5/2017 14:37"
+	},
+	"class" : { }
+}

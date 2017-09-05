@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 9/5/2017 14:34",
+	"super" : "GRNotification",
+	"category" : "Grease-Core-Utilities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRNotificationBasedDynamicVariable",
+	"type" : "normal"
+}
