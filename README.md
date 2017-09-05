@@ -1,4 +1,4 @@
-The Grease Portability Library  [![Build Status](https://travis-ci.org/SeasideSt/Grease.png?branch=master)](https://travis-ci.org/SeasideSt/Grease)
+The Grease Portability Library [![Build Status](https://travis-ci.org/SeasideSt/Grease.svg?branch=master)](https://travis-ci.org/SeasideSt/Grease) 
 ======
 
 The main repository of Grease is on Smalltalkhub: (http://www.smalltalkhub.com/#!/~Seaside/Grease11). This repository mirrors it.
