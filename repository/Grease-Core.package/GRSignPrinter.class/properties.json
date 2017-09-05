@@ -1,15 +1,14 @@
 {
-	"category" : "Grease-Core-Text",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GRPrinter",
+	"category" : "Grease-Core-Text",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"negativePrinter",
-		"positivePrinter" ],
+		"positivePrinter"
+	],
 	"name" : "GRSignPrinter",
-	"pools" : [
-		 ],
-	"super" : "GRPrinter",
-	"type" : "normal" }
+	"type" : "normal"
+}

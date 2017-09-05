@@ -1,14 +1,11 @@
 {
-	"category" : "Grease-Core-Collections",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "jf 2/15/2010 16:04",
-	"instvars" : [
-		 ],
-	"name" : "GROrderedMultiMap2",
-	"pools" : [
-		 ],
 	"super" : "GRSmallDictionary2",
-	"type" : "normal" }
+	"category" : "Grease-Core-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GROrderedMultiMap2",
+	"type" : "normal"
+}

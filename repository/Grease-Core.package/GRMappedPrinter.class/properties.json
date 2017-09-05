@@ -1,15 +1,14 @@
 {
-	"category" : "Grease-Core-Text",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GRPrinter",
+	"category" : "Grease-Core-Text",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"next",
-		"block" ],
+		"block"
+	],
 	"name" : "GRMappedPrinter",
-	"pools" : [
-		 ],
-	"super" : "GRPrinter",
-	"type" : "normal" }
+	"type" : "normal"
+}

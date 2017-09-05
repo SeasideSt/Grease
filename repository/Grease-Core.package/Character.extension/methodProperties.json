@@ -1,5 +1,6 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"print:on:" : "lr 7/24/2008 18:20" } }
+		"print:on:" : "lr 7/24/2008 18:20"
+	},
+	"class" : { }
+}

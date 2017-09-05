@@ -1,13 +1,16 @@
 {
-	"class" : {
-		"new" : "jf 7/10/2011 23:28",
-		"selector:" : "jf 7/10/2011 23:27" },
 	"instance" : {
-		"argumentCount" : "jf 7/10/2011 23:02",
-		"basicPerformFor:withArguments:" : "jf 7/10/2011 23:20",
-		"initializeWithSelector:" : "jf 7/10/2011 23:01",
-		"invalidArgumentCount" : "jf 7/10/2011 23:25",
 		"mergeArguments:" : "jf 7/10/2011 23:14",
+		"argumentCount" : "jf 7/10/2011 23:02",
 		"printOn:" : "jf 7/10/2011 23:36",
 		"valueFor:withArguments:" : "jf 7/10/2011 23:37",
-		"valueFor:withPossibleArguments:" : "jf 7/10/2011 23:19" } }
+		"basicPerformFor:withArguments:" : "jf 7/10/2011 23:20",
+		"valueFor:withPossibleArguments:" : "jf 7/10/2011 23:19",
+		"invalidArgumentCount" : "jf 7/10/2011 23:25",
+		"initializeWithSelector:" : "jf 7/10/2011 23:01"
+	},
+	"class" : {
+		"new" : "jf 7/10/2011 23:28",
+		"selector:" : "jf 7/10/2011 23:27"
+	}
+}
