@@ -1,7 +1,7 @@
 accessing
 use: anObject during: aBlock
   | p oldValue result |
-  "Proper implementation instead of use 'super value:during:' because that one does not return value, perhaps this should be fixed in DynamicVariable?"
+  "We cannot just do a super call to value:during: because the GS implementation does not return a result value and also does not produce an error when the dynamic var was not found."
   p := Processor activeProcess.
   oldValue := p environmentAt: self.
   [ 
