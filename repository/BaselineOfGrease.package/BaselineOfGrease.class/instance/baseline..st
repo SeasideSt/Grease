@@ -97,14 +97,14 @@ baseline: spec
               spec
                 className: 'ConfigurationOfGsCore';
                 versionString: #'stable';
-                repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
+                repository: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ];
         project: 'UTF8'
           with: [ 
               spec
                 className: 'ConfigurationOfGsMisc';
                 versionString: #'stable';
                 loads: #('Utf8Encoding');
-                repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
+                repository: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ];
         project: 'System-Digital-Signatures'
           copyFrom: 'UTF8'
           with: [ spec loads: #('System-Digital-Signatures') ];
