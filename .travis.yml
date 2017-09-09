@@ -9,13 +9,21 @@ smalltalk:
   - Pharo-3.0
   - Squeak-trunk
   - Squeak-5.1
-  - GemStone-3.1.0.6
-  - GemStone-3.2.16
-  - GemStone-3.3.4
-cache:
-  directories:
-    - $SMALLTALK_CI_CACHE
+
 matrix:
   allow_failures:
     - smalltalk: Pharo-alpha
     - smalltalk: Squeak-trunk
+  include:
+    - smalltalk: GemStone-3.1.0.6
+      cache:
+        directories:
+          - $SMALLTALK_CI_CACHE
+    - smalltalk: GemStone-3.2.16
+      cache:
+        directories:
+          - $SMALLTALK_CI_CACHE
+    - smalltalk: GemStone-3.3.4
+      cache:
+        directories:
+          - $SMALLTALK_CI_CACHE
