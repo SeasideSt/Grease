@@ -13,5 +13,9 @@ SmalltalkCISpec {
       #load : [ 'Tests' ],
       #platforms : [ #gemstone ]
     }
-  ]
+  ],
+  #testing : {
+    #coverage : {
+      #packages : [ 'Grease-*' ]
+  }
 }
