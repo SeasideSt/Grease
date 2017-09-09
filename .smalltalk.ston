@@ -17,5 +17,6 @@ SmalltalkCISpec {
   #testing : {
     #coverage : {
       #packages : [ 'Grease-*' ]
+    }
   }
 }
