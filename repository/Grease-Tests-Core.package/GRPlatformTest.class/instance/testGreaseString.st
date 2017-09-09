@@ -2,6 +2,7 @@ tests
 testGreaseString
 	self assert: 'Timberwolf' greaseString = 'Timberwolf'.
 	self assert: #DireWolf greaseString = 'DireWolf'.
+	self deny: #DireWolf greaseString isSymbol.
 	self assert: true greaseString = 'true'.
 	self assert: 666 greaseString = '666'.
 	"make sure we're not immediate"
