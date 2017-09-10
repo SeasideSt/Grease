@@ -16,7 +16,7 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-      #packages : [ 'Grease-*' ]
+      #packages : [ 'Grease-Core', 'Grease-Pharo.*', 'Grease-Squeak.*', 'Grease-GemStone.*' ]
     }
   }
 }
