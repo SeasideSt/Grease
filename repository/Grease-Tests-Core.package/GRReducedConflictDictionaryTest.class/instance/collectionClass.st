@@ -1,0 +1,3 @@
+configuration
+collectionClass
+	^ GRPlatform current reducedConflictDictionary
