@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "GRSetTest",
 	"category" : "Grease-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
