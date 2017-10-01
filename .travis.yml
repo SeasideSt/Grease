@@ -15,7 +15,7 @@ matrix:
     - smalltalk: Pharo-alpha
     - smalltalk: Squeak-trunk
   include:
-    - smalltalk: Gemstone-2.4.8
+    - smalltalk: GemStone-2.4.8
       cache:
         directories:
           - $SMALLTALK_CI_CACHE
