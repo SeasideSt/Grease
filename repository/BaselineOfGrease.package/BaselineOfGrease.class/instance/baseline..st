@@ -17,7 +17,7 @@ baseline: spec
         group: 'default' with: #('Slime') ].
 
   spec
-    for: #'squeak5.x'
+    for: #( #'squeak5.x' #'squeak6.x' )
     do: [ 
       spec
         package: 'Grease-Core'
