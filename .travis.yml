@@ -10,6 +10,10 @@ smalltalk:
   - Pharo-3.0
   - Squeak-trunk
   - Squeak-5.1
+matrix:
+  allow_failures:
+    - smalltalk: Pharo-alpha
+    - smalltalk: Squeak-trunk
   
   include:
     - smalltalk: Squeak-5.1
