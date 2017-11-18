@@ -86,7 +86,7 @@ baseline: spec
         group: 'Slime' with: #('Grease-Pharo40-Slime');
         group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
   spec
-    for: #(#'pharo6.x')
+    for: #(#'pharo6.x' #'pharo7.x')
     do: [ 
       spec
         package: 'Grease-Core'
