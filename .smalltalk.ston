@@ -4,6 +4,7 @@ SmalltalkCISpec {
       #baseline : 'Grease',
       #directory : 'repository',
       #load : [ 'Tests' ],
+      #useLatestMetacello : true, 
       #platforms : [ #squeak, #pharo ]
     },
     SCIMetacelloLoadSpec {
@@ -11,6 +12,7 @@ SmalltalkCISpec {
       #directory : 'repository',
       #onWarningLog : true,
       #load : [ 'Tests' ],
+      #useLatestMetacello : true, 
       #platforms : [ #gemstone ]
     }
   ]
