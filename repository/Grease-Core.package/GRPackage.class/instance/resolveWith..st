@@ -19,4 +19,6 @@ resolveWith: aDictionary
 										aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Squeak-') ifAbsent: [
 											"try -Squeak5-"
 											aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Squeak5-') ifAbsent: [
-											self error: self name printString , ' depends on unknown package ' , each printString ] ] ] ] ] ] ] ] ] ]
+												"try -Squeak6-"
+												aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Squeak6-') ifAbsent: [
+												self error: self name printString , ' depends on unknown package ' , each printString ] ] ] ] ] ] ] ] ] ] ]
