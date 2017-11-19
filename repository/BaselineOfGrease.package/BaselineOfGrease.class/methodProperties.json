@@ -1,7 +1,8 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"baseline:" : "JohanBrichau 7/23/2017 19:28",
 		"initializeLatin1ToUtf8Encodings" : "JohanBrichau 10/19/2014 10:00",
-		"slimeForSqueakPharo1xPharo2x:" : "JohanBrichau 02/16/2014 03:49" } }
+		"slimeForSqueakPharo1xPharo2x:" : "JohanBrichau 02/16/2014 03:49",
+		"baseline:" : "JohanBrichau 11/18/2017 16:17"
+	},
+	"class" : { }
+}
