@@ -1,10 +1,6 @@
 language: smalltalk
 sudo: false
 
-os:
-  - linux
-  - osx
-
 smalltalk:
   - Pharo-alpha
   - Pharo-6.1
@@ -14,12 +10,16 @@ smalltalk:
   - Pharo-3.0
   - Squeak-trunk
   - Squeak-5.1
-
 matrix:
   allow_failures:
     - smalltalk: Pharo-alpha
     - smalltalk: Squeak-trunk
+    - smalltalk: Squeak-5.1
+      os: linux
+  
   include:
+    - smalltalk: Squeak-5.1
+      os: osx
     - smalltalk: GemStone-2.4.8
       cache:
         directories:
