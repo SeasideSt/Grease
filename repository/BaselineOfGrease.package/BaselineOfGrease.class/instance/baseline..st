@@ -104,6 +104,27 @@ baseline: spec
       spec
         group: 'Slime' with: #('Grease-Pharo40-Slime');
         group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
+
+  spec
+    for: #(#'pharo7.x')
+    do: [ 
+      spec
+        package: 'Grease-Core'
+          with: [ spec includes: #('Grease-Pharo70-Core') ];
+        package: 'Grease-Tests-Core'
+          with: [ spec requires: #('Grease-Pharo70-Core'); includes: #('Grease-Tests-Pharo20-Core') ];
+        package: 'Grease-Pharo70-Core'
+          with: [ spec requires: #('Grease-Core') ];
+        package: 'Grease-Tests-Pharo20-Core'
+          with: [ spec requires: #('Grease-Tests-Core') ];
+        package: 'Grease-Pharo40-Slime'
+          with: [ spec requires: #('Grease-Core') ];
+        package: 'Grease-Tests-Slime'
+          with: [ spec requires: #('Grease-Pharo40-Slime') ].
+      spec
+        group: 'Slime' with: #('Grease-Pharo40-Slime');
+        group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
+
   spec
     for: #'gemstone'
     do: [ 
