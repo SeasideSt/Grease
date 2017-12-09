@@ -188,12 +188,24 @@ baseline: spec
         package: 'Grease-GemStone240-Core'
           with: [ spec requires: #('Grease-GemStone-Core') ] ].
   spec
-    for: #'gs3.x'
+    for: #(#'gs3.0.x' #'gs3.1.x' #'gs3.2.x')
     do: [ 
       spec
         package: 'Grease-GemStone-Core'
           with: [ spec includes: #('Grease-GemStone300-Core') ];
         package: 'Grease-GemStone300-Core'
+          with: [ 
+              spec
+                requires: #('Grease-GemStone-Core');
+                postLoadDoIt: #'initializeLatin1ToUtf8Encodings' ] ].
+  spec
+    for: #(#'gs3.3.x' #'gs3.4.x')
+    do: [ 
+      spec
+        package: 'Grease-GemStone330-Core';
+        package: 'Grease-GemStone-Core'
+          with: [ spec includes: #('Grease-GemStone330-Core') ];
+        package: 'Grease-GemStone330-Core'
           with: [ 
               spec
                 requires: #('Grease-GemStone-Core');
