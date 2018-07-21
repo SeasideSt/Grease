@@ -20,10 +20,10 @@ The [Travis CI builds](https://travis-ci.org/SeasideSt/Grease) currently test Gr
 
 | Squeak          | Pharo            | GemStone             |
 | --------------- | ---------------- | -------------------- |
-| Squeak 5.1      | Pharo 6.0        | GemStone 3.3.4       |
-|                 | Pharo 5.0        | GemStone 3.2.16      |
-|                 | Pharo 4.0        | GemStone 3.1.0.6     |
-|                 | Pharo 3.0        |                      |
+| Squeak 5.1      | Pharo 7.0        | GemStone 3.3.4       |
+|                 | Pharo 6.0        | GemStone 3.2.16      |
+|                 | Pharo 5.0        | GemStone 3.1.0.6     |
+|                 |                  |                      |
 
 ## Installation
 
