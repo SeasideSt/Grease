@@ -18,8 +18,8 @@ matrix:
       os: linux
   
   include:
-    - smalltalk: Squeak-5.1
-      os: osx
+#    - smalltalk: Squeak-5.1
+#      os: osx
     - smalltalk: GemStone-2.4.8
       cache:
         directories:
