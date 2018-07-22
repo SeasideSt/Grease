@@ -13,6 +13,7 @@ smalltalk:
 matrix:
   allow_failures:
     - smalltalk: Pharo-alpha
+    - smalltalk: Pharo-3.0
     - smalltalk: Squeak-trunk
     - smalltalk: Squeak-5.1
       os: linux
