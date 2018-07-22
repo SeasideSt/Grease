@@ -11,14 +11,7 @@ SmalltalkCISpec {
       #baseline : 'Grease',
       #directory : 'repository',
       #load : [ 'Tests' ],
-      #platforms : [ #pharo7.x ]
-    },
-    SCIMetacelloLoadSpec {
-      #baseline : 'Grease',
-      #directory : 'repository',
-      #load : [ 'Tests' ],
-      #useLatestMetacello : true, 
-      #platforms : [ #pharo3.x, #pharo4.x, #pharo5.x, #pharo6.x]
+      #platforms : [ #pharo ]
     },
     SCIMetacelloLoadSpec {
       #baseline : 'Grease',
