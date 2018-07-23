@@ -2,4 +2,4 @@
 contents
 
 	readLimit := readLimit max: position.
-	^ collection copyFrom: 1 to: readLimit
+	^collection copyFrom: 1 to: readLimit
