@@ -21,14 +21,14 @@ The latest Grease version is supported on the following platforms and versions, 
 | Squeak          | Pharo            | GemStone             |
 | --------------- | ---------------- | -------------------- |
 | Squeak 5.1      | Pharo 7.0        | GemStone 3.3.4       |
-|                 | Pharo 6.0        | GemStone 3.2.16      |
+|                 | Pharo 6.1        | GemStone 3.2.16      |
 |                 | Pharo 5.0        | GemStone 3.1.0.6     |
-|                 | Pharo 4.0        | GemStone 2.4.8       |
+|                 |                  | GemStone 2.4.8       |
 
 ## Grease on older platforms:
 If you want to load Grease on older platform versions, these are the version numbers that correspond to the latest tested version of Grease on those platform versions:
 
-- Pharo 3.0: [Grease 1.3.4](https://github.com/SeasideSt/Grease/releases/tag/v1.3.4)
+- Pharo 3.0 and 4.0: [Grease 1.3.4](https://github.com/SeasideSt/Grease/releases/tag/v1.3.4)
 
 ## Installation
 
