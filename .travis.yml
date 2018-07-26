@@ -9,6 +9,10 @@ smalltalk:
   - Pharo-3.0
   - Squeak-trunk
   - Squeak-5.1
+  - GemStone-2.4.8
+  - GemStone-3.1.0.6
+  - GemStone-3.2.16
+  - GemStone-3.3.4
 matrix:
   allow_failures:
     - smalltalk: Pharo-alpha
