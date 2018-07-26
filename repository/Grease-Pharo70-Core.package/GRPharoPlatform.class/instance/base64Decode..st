@@ -1,3 +1,3 @@
 encoding
 base64Decode: aString
-	^ (Base64MimeConverter mimeDecodeToChars: aString readStream) contents
+	^ aString base64Decoded asString
