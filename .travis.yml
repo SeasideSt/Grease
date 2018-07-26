@@ -20,19 +20,19 @@ matrix:
   include:
 #    - smalltalk: Squeak-5.1
 #      os: osx
-    - smalltalk: GemStone-2.4.8
-      cache:
-        directories:
-          - $SMALLTALK_CI_CACHE
-    - smalltalk: GemStone-3.1.0.6
-      cache:
-        directories:
-          - $SMALLTALK_CI_CACHE
-    - smalltalk: GemStone-3.2.16
-      cache:
-        directories:
-          - $SMALLTALK_CI_CACHE
-    - smalltalk: GemStone-3.3.4
-      cache:
-        directories:
-          - $SMALLTALK_CI_CACHE
+    # - smalltalk: GemStone-2.4.8
+    #   cache:
+    #     directories:
+    #       - $SMALLTALK_CI_CACHE
+    # - smalltalk: GemStone-3.1.0.6
+    #   cache:
+    #     directories:
+    #       - $SMALLTALK_CI_CACHE
+    # - smalltalk: GemStone-3.2.16
+    #   cache:
+    #     directories:
+    #       - $SMALLTALK_CI_CACHE
+    # - smalltalk: GemStone-3.3.4
+    #   cache:
+    #     directories:
+    #       - $SMALLTALK_CI_CACHE
