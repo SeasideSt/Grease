@@ -1,11 +1,13 @@
 {
+	"commentStamp" : "pmm 2/1/2014 13:27",
+	"super" : "GRPrinter",
 	"category" : "Grease-Core-Text",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"NumbersToCharactersLowercase",
-		"NumbersToCharactersUppercase" ],
-	"commentStamp" : "pmm 2/1/2014 13:27",
+		"NumbersToCharactersUppercase"
+	],
 	"instvars" : [
 		"characters",
 		"base",
@@ -16,9 +18,8 @@
 		"padding",
 		"accuracy",
 		"precision",
-		"separator" ],
+		"separator"
+	],
 	"name" : "GRNumberPrinter",
-	"pools" : [
-		 ],
-	"super" : "GRPrinter",
-	"type" : "normal" }
+	"type" : "normal"
+}
