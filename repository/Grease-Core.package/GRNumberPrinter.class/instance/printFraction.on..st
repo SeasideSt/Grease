@@ -5,5 +5,5 @@ printFraction: aNumber on: aStream
 		pad: (self digitsOf: aNumber rounded base: base)
 		left: $0 to: precision.
 	separator isNil
-		ifFalse: [ result := self separate: result left: separator ].
-	aStream nextPutAll: result
+		ifTrue: [ aStream nextPutAll: result ]
+		ifFalse: [ self separate: result left: separator on: aStream ]

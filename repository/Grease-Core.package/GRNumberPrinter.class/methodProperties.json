@@ -1,27 +1,30 @@
 {
 	"instance" : {
+		"printInteger:on:" : "pmm 9/9/2018 14:50",
 		"separator:" : "lr 7/24/2008 14:35",
 		"initialize" : "lr 2/6/2010 10:58",
 		"precision:" : "lr 7/25/2008 19:16",
 		"printFloat:on:" : "pmm 9/15/2013 11:45",
 		"delimiter:" : "lr 7/24/2008 14:36",
 		"padding:" : "lr 7/24/2008 11:51",
-		"printFraction:on:" : "lr 6/4/2009 21:41",
+		"printFraction:on:" : "pmm 9/9/2018 11:31",
 		"infinite:" : "lr 3/24/2008 16:19",
+		"separate:left:on:" : "pmm 9/9/2018 11:30",
 		"separate:right:" : "lr 7/24/2008 14:34",
 		"uppercase" : "lr 2/6/2010 10:17",
 		"lowercase" : "lr 2/6/2010 10:17",
+		"lengthOf:base:" : "pmm 9/9/2018 15:08",
 		"printNaN:on:" : "lr 3/24/2008 16:39",
+		"padLeft:to:on:" : "pmm 9/9/2018 14:32",
 		"characters:" : "lr 2/6/2010 10:17",
 		"nan:" : "lr 3/24/2008 16:19",
 		"base:" : "lr 7/25/2008 19:16",
 		"digitsOf:base:" : "lr 5/13/2010 12:26",
-		"separate:left:" : "lr 7/24/2008 14:34",
 		"accuracy:" : "lr 7/25/2008 19:13",
-		"print:on:" : "lr 3/24/2008 16:27",
+		"printDigitsOf:withLength:on:" : "pmm 9/9/2018 15:10",
 		"digits:" : "lr 7/24/2008 11:50",
-		"printInfinite:on:" : "lr 3/24/2008 16:39",
-		"printInteger:on:" : "lr 7/24/2008 12:39"
+		"print:on:" : "lr 3/24/2008 16:27",
+		"printInfinite:on:" : "lr 3/24/2008 16:39"
 	},
 	"class" : {
 		"initialize" : "lr 1/23/2009 21:18"
