@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "",
-	"super" : "GRAbstractDictionaryTest",
 	"category" : "Grease-Tests-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
 	"instvars" : [
-		"collection"
-	],
+		"collection" ],
 	"name" : "GRSmallDictionaryTest",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRAbstractDictionaryTest",
+	"type" : "normal" }

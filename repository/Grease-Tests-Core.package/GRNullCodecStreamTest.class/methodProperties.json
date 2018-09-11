@@ -1,16 +1,15 @@
 {
+	"class" : {
+		 },
 	"instance" : {
-		"testNext" : "pmm 2/17/2010 20:09",
-		"testTab" : "lr 2/6/2010 10:35",
-		"testSpace" : "lr 2/6/2010 10:34",
-		"testReadString" : "dkh 11/13/2009 15:36",
-		"testName" : "pmm 5/26/2010 07:08",
-		"testPrint" : "lr 9/25/2011 10:12",
-		"testFlush" : "lr 2/6/2010 10:37",
-		"testWriteString" : "dkh 11/13/2009 15:36",
-		"testSize" : "lr 2/6/2010 10:37",
 		"codecStreamClass" : "lr 2/6/2010 10:30",
-		"testCrlf" : "lr 2/6/2010 10:34"
-	},
-	"class" : { }
-}
+		"testCrlf" : "lr 2/6/2010 10:34",
+		"testFlush" : "lr 2/6/2010 10:37",
+		"testName" : "pmm 5/26/2010 07:08",
+		"testNext" : "pmm 2/17/2010 20:09",
+		"testPrint" : "lr 9/25/2011 10:12",
+		"testReadString" : "dkh 11/13/2009 15:36",
+		"testSize" : "lr 2/6/2010 10:37",
+		"testSpace" : "lr 2/6/2010 10:34",
+		"testTab" : "lr 2/6/2010 10:35",
+		"testWriteString" : "dkh 11/13/2009 15:36" } }
