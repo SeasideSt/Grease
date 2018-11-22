@@ -28,11 +28,6 @@ The latest Grease version is supported on the following platforms and versions, 
 
 Coveralls (experimental): [![Coverage Status](https://coveralls.io/repos/github/SeasideSt/Grease/badge.svg?branch=test-coveralls)](https://coveralls.io/github/SeasideSt/Grease?branch=test-coveralls)
 
-## Grease on older platforms:
-If you want to load Grease on older platform versions, these are the version numbers that correspond to the latest tested version of Grease on those platform versions:
-
-- Pharo 3.0 and 4.0: [Grease 1.3.4](https://github.com/SeasideSt/Grease/releases/tag/v1.3.4)
-
 ## Installation
 
 #### Prerequisite on Squeak and Pharo <3.0
