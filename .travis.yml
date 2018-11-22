@@ -1,19 +1,6 @@
 language: smalltalk
 sudo: false
 
-smalltalk:
-  - Pharo64-7.0
-  - Pharo64-6.1
-  - Pharo-6.1
-  - Pharo-5.0
-  - Squeak-trunk
-  - Squeak-5.1
-  - GemStone-3.3.4
-  - GemStone-3.2.16
-  - GemStone-3.1.0.6
-  - GemStone-2.4.8
-
-
 aliases:
   - &pharo4-has-latest-metacello
     smalltalk_config: .pharo4.ston
