@@ -27,6 +27,8 @@ matrix:
       env: BUILD_NAME=Pharo-3.0
     - smalltalk: Squeak-trunk
       env: BUILD_NAME=Squeak-trunk
+    - smalltalk: Squeak-5.2
+      env: BUILD_NAME=Squeak-5.2
     - smalltalk: Squeak-5.1
       env: BUILD_NAME=Squeak-5.1
     - smalltalk: GemStone-3.3.4
