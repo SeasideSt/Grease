@@ -20,7 +20,7 @@ The latest Grease version is supported on the following platforms and versions, 
 
 | Squeak          | Pharo            | GemStone             |
 | --------------- | ---------------- | -------------------- |
-| Squeak 5.1      | Pharo 7.0        | GemStone 3.3.4       |
+| [![Build status: Squeak-5.2](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=dev&env=BUILD_NAME=Squeak-trunk&label=5.2)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Pharo-7.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=dev&env=BUILD_NAME=Pharo64-7.0&label=7.0)](http://travis-ci.org/SeasideSt/Grease)        | GemStone 3.3.4       |
 |                 | Pharo 6.1        | GemStone 3.2.16      |
 |                 | Pharo 5.0        | GemStone 3.1.0.6     |
 |                 |                  | GemStone 2.4.8       |
