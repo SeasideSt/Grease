@@ -7,8 +7,7 @@ baseline: spec
       spec blessing: #'baseline'.
       spec
         package: 'Grease-Core';
-        package: 'Grease-Tests-Core' with: [ spec requires: #('Grease-Core') ];
-        package: 'Grease-GemStone330-Core'.
+        package: 'Grease-Tests-Core' with: [ spec requires: #('Grease-Core') ].
       spec
         group: 'Core' with: #('Grease-Core');
         group: 'Core Tests' with: #('Grease-Tests-Core');
@@ -245,4 +244,4 @@ baseline: spec
     do: [ 
       spec
         package: 'Grease-Tests-GemStone-Core'
-        with: 'Grease-Tests-GemStone-Core.v32' ]
+        with: [ spec file: 'Grease-Tests-GemStone-Core.v32' ] ]
