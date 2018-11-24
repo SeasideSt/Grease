@@ -1,14 +1,15 @@
 {
-	"commentStamp" : "pmm 6/1/2008 01:03",
-	"super" : "GRPlatform",
 	"category" : "Grease-Pharo30-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classinstvars" : [
+		 ],
 	"classvars" : [
 		"UrlTable",
-		"XmlTable"
-	],
-	"instvars" : [ ],
+		"XmlTable" ],
+	"commentStamp" : "pmm 6/1/2008 01:03",
+	"instvars" : [
+		 ],
 	"name" : "GRPharoPlatform",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRPlatform",
+	"type" : "normal" }
