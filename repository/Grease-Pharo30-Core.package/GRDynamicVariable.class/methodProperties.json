@@ -1,7 +1,9 @@
 {
+	"instance" : {
+		"default" : "JohanBrichau 7/23/2017 17:56"
+	},
 	"class" : {
 		"defaultValue" : "JohanBrichau 7/23/2017 17:55",
-		"use:during:" : "MaxLeske 5/16/2017 21:54" },
-	"instance" : {
-		"default" : "JohanBrichau 7/23/2017 17:56",
-		"value:during:" : "JohanBrichau 7/23/2017 21:20" } }
+		"use:during:" : "MaxLeske 5/16/2017 21:54"
+	}
+}

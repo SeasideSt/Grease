@@ -1,11 +1,14 @@
 {
-	"commentStamp" : "",
-	"super" : "GRDynamicVariable",
 	"category" : "Grease-Tests-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
 	"name" : "GRTestDynamicVariable",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRDynamicVariable",
+	"type" : "normal" }

@@ -1,0 +1,38 @@
+{
+	"instance" : {
+		"beFinal" : "jf 2/9/2010 00:35",
+		"beBeta" : "jf 2/8/2010 23:18",
+		"beReleaseCandidate" : "jf 5/22/2010 23:38",
+		"revision" : "jf 2/8/2010 23:16",
+		"minor" : "jf 2/8/2010 23:16",
+		"major" : "jf 2/8/2010 23:16",
+		"initializeWithMajor:minor:revision:" : "jf 2/8/2010 23:08",
+		"stage" : "jf 2/9/2010 00:01",
+		"beBeta:" : "jf 2/8/2010 23:18",
+		">" : "jf 2/9/2010 00:07",
+		"isAlpha" : "jf 2/9/2010 00:34",
+		"stageNumber" : "jf 2/9/2010 00:01",
+		"greaseString" : "pmm 1/22/2012 16:32",
+		"<" : "jf 2/9/2010 00:18",
+		"<=" : "jf 2/9/2010 00:06",
+		"revision:" : "jf 2/8/2010 23:17",
+		"isReleaseCandidate" : "jf 5/22/2010 23:38",
+		"beReleaseCandidate:" : "jf 5/22/2010 23:37",
+		"stage:number:" : "jf 2/8/2010 23:17",
+		">=" : "jf 2/9/2010 00:07",
+		"hash" : "pmm 9/10/2017 11:50",
+		"major:" : "jf 2/8/2010 23:16",
+		"isBeta" : "jf 2/9/2010 00:34",
+		"minor:" : "jf 2/8/2010 23:17",
+		"beAlpha" : "jf 2/8/2010 23:18",
+		"isFinal" : "jf 2/9/2010 00:34",
+		"beAlpha:" : "jf 2/8/2010 23:18",
+		"=" : "jf 2/9/2010 00:16"
+	},
+	"class" : {
+		"major:minor:" : "jf 2/8/2010 23:14",
+		"major:minor:revision:" : "jf 2/8/2010 23:08",
+		"major:" : "jf 2/8/2010 23:14",
+		"new" : "jf 2/9/2010 01:01"
+	}
+}

@@ -1,12 +1,12 @@
 {
+	"class" : {
+		 },
 	"instance" : {
-		"testConvenience" : "pmm 9/1/2012 15:50",
-		"testComparison" : "pmm 9/1/2012 15:55",
+		"assert:equals:" : "pmm 9/10/2017 11:48",
 		"assert:sortsBefore:" : "pmm 9/1/2012 15:55",
 		"buildVersion:" : "jf 2/8/2010 23:31",
-		"assert:equals:" : "pmm 9/1/2012 15:54",
+		"testAccessors" : "pmm 9/10/2017 12:04",
+		"testComparison" : "pmm 9/1/2012 15:55",
+		"testConvenience" : "pmm 9/1/2012 15:50",
 		"testEquality" : "pmm 9/1/2012 15:54",
-		"testStringConversion" : "pmm 9/1/2012 15:50"
-	},
-	"class" : { }
-}
+		"testStringConversion" : "pmm 9/1/2012 15:50" } }

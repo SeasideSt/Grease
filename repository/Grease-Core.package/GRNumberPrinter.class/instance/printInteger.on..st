@@ -1,9 +1,9 @@
 printing
 printInteger: aNumber on: aStream
-	| result |
-	result := self digitsOf: aNumber integerPart base: base.
-	separator isNil
-		ifFalse: [ result := self separate: result right: separator ].
-	(digits isNil or: [ padding isNil ])
-		ifFalse: [ result := self pad: result left: padding to: digits ].
-	aStream nextPutAll: result
+	| length |
+	length := self lengthOf: aNumber base: base.
+	
+	(digits notNil and: [ padding notNil ])
+		ifTrue: [ self padLeft: padding to: (digits - length) on: aStream ].
+	
+	self printDigitsOf: aNumber withLength: length on: aStream

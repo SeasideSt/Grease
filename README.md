@@ -1,6 +1,6 @@
-**IMPORTANT**: Since version 1.3.0, this is the main repository of Grease. Versions older than 1.1.9 can be found in the [Smalltalkhub repository](http://www.smalltalkhub.com/#!/~Seaside/Grease11). Check out the [releases list](https://github.com/SeasideSt/Grease/releases) for all version numbers in this repository.
+**IMPORTANT**: Since version 1.3.0, this is the main repository of Grease. Versions older than 1.1.9 can only be found in the [Smalltalkhub repository](http://www.smalltalkhub.com/#!/~Seaside/Grease11). Check out the [releases list](https://github.com/SeasideSt/Grease/releases) for all version numbers in this repository.
 
-The Grease Portability Library  [![Build Status](https://travis-ci.org/SeasideSt/Grease.svg?branch=master)](https://travis-ci.org/SeasideSt/Grease)
+The Grease Portability Library
 ======
 Grease enhances the ANSI Smalltalk standard. With only a few exceptions, we assume platforms are fully ANSI-compliant. Platforms want to support Seaside and standardization makes this easier for the project’s developers and its porters.
 
@@ -20,15 +20,13 @@ The latest Grease version is supported on the following platforms and versions, 
 
 | Squeak          | Pharo            | GemStone             |
 | --------------- | ---------------- | -------------------- |
-| Squeak 5.1      | Pharo 7.0        | GemStone 3.3.4       |
-|                 | Pharo 6.1        | GemStone 3.2.16      |
-|                 | Pharo 5.0        | GemStone 3.1.0.6     |
-|                 |                  | GemStone 2.4.8       |
+| [![Build status: Squeak-5.2](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Squeak-trunk&label=5.2)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Pharo64-7.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-7.0&label=7.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.3.4](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.3.4&label=3.3.4)](http://travis-ci.org/SeasideSt/Grease) |
+| [![Build status: Squeak-5.1](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Squeak-5.1&label=5.1)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Pharo64-6.1](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-6.1&label=6.1)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.2.16](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.2.16&label=3.2.16)](http://travis-ci.org/SeasideSt/Grease) |
+|                 | [![Build status: Pharo-5.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo-5.0&label=5.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.1.0.6](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.1.0.6&label=3.1.0.6)](http://travis-ci.org/SeasideSt/Grease) |
+|                 | [![Build status: Pharo-4.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo-4.0&label=4.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-2.4.8](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-2.4.8&label=2.4.8)](http://travis-ci.org/SeasideSt/Grease) |
+|                 | [![Build status: Pharo-3.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo-3.0&label=3.0)](http://travis-ci.org/SeasideSt/Grease) |                       |
 
-## Grease on older platforms:
-If you want to load Grease on older platform versions, these are the version numbers that correspond to the latest tested version of Grease on those platform versions:
-
-- Pharo 3.0 and 4.0: [Grease 1.3.4](https://github.com/SeasideSt/Grease/releases/tag/v1.3.4)
+Coveralls (experimental): [![Coverage Status](https://coveralls.io/repos/github/SeasideSt/Grease/badge.svg?branch=test-coveralls)](https://coveralls.io/github/SeasideSt/Grease?branch=test-coveralls)
 
 ## Installation
 

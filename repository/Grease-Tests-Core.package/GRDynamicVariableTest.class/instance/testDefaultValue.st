@@ -5,5 +5,4 @@ testDefaultValue
 	GRTestDynamicVariable
 		use: 'my value'
 		during: [  ].
-	self assert: GRTestDynamicVariable value = 'default test value' description:'The default value is no longer correct'.	
-	
+	self assert: GRTestDynamicVariable value = 'default test value' description:'The default value is no longer correct'

@@ -15,23 +15,39 @@ baseline: spec
         group: 'Slime Tests' with: #('Core Tests');
         group: 'Tests' with: #('Core Tests' 'Slime Tests');
         group: 'default' with: #('Slime') ].
-
   spec
     for: #( #'squeak5.x' )
     do: [ 
       spec
+        project: 'Refactoring-Core'
+        with: [ 
+          spec
+            className: 'ConfigurationOfRefactoringBrowser';
+            versionString: #'stable';
+            loads: #('Core');
+            repository: 'http://www.squeaksource.com/MetacelloRepository' ].
+      spec
         package: 'Grease-Core'
           with: [ spec includes: #('Grease-Squeak5-Core') ];
         package: 'Grease-Tests-Core'
-          with: [ spec requires: #('Grease-Squeak5-Core'); includes: #('Grease-Tests-Squeak-Core' 'Grease-Tests-Squeak5-Core') ];
+          with: [ 
+              spec
+                requires: #('Grease-Squeak5-Core');
+                includes:
+                    #('Grease-Tests-Squeak-Core' 'Grease-Tests-Squeak5-Core') ];
         package: 'Grease-Squeak5-Core'
           with: [ spec requires: #('Grease-Core') ];
         package: 'Grease-Tests-Squeak-Core'
           with: [ spec requires: #('Grease-Tests-Core') ];
         package: 'Grease-Tests-Squeak5-Core'
-          with: [ spec requires: #('Grease-Tests-Squeak-Core') ].
-      self  slimeForSqueakPharo1xPharo2x: spec ].
-
+          with: [ spec requires: #('Grease-Tests-Squeak-Core') ];
+        package: 'Grease-Slime'
+          with: [ spec requires: #('Refactoring-Core' 'Grease-Core') ];
+        package: 'Grease-Tests-Slime'
+          with: [ spec requires: #('Grease-Slime') ].
+      spec
+        group: 'Slime' with: #('Grease-Slime');
+        group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
   spec
     for: #( #'squeak6.x' )
     do: [ 
@@ -55,7 +71,10 @@ baseline: spec
         package: 'Grease-Core'
           with: [ spec includes: #('Grease-Pharo30-Core') ];
         package: 'Grease-Tests-Core'
-          with: [ spec requires: #('Grease-Pharo30-Core'); includes: #('Grease-Tests-Pharo20-Core') ];
+          with: [ 
+              spec
+                requires: #('Grease-Pharo30-Core');
+                includes: #('Grease-Tests-Pharo20-Core') ];
         package: 'Grease-Pharo30-Core'
           with: [ spec requires: #('Grease-Core') ];
         package: 'Grease-Tests-Pharo20-Core'
@@ -73,7 +92,10 @@ baseline: spec
         package: 'Grease-Core'
           with: [ spec includes: #('Grease-Pharo30-Core') ];
         package: 'Grease-Tests-Core'
-          with: [ spec requires: #('Grease-Pharo30-Core'); includes: #('Grease-Tests-Pharo20-Core') ];
+          with: [ 
+              spec
+                requires: #('Grease-Pharo30-Core');
+                includes: #('Grease-Tests-Pharo20-Core') ];
         package: 'Grease-Pharo30-Core'
           with: [ spec requires: #('Grease-Core') ];
         package: 'Grease-Tests-Pharo20-Core'
@@ -86,13 +108,16 @@ baseline: spec
         group: 'Slime' with: #('Grease-Pharo40-Slime');
         group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
   spec
-    for: #(#'pharo6.x')
+    for: #'pharo6.x'
     do: [ 
       spec
         package: 'Grease-Core'
           with: [ spec includes: #('Grease-Pharo60-Core') ];
         package: 'Grease-Tests-Core'
-          with: [ spec requires: #('Grease-Pharo60-Core'); includes: #('Grease-Tests-Pharo20-Core') ];
+          with: [ 
+              spec
+                requires: #('Grease-Pharo60-Core');
+                includes: #('Grease-Tests-Pharo20-Core') ];
         package: 'Grease-Pharo60-Core'
           with: [ spec requires: #('Grease-Core') ];
         package: 'Grease-Tests-Pharo20-Core'
@@ -134,14 +159,16 @@ baseline: spec
               spec
                 className: 'ConfigurationOfGsCore';
                 versionString: #'stable';
-                repository: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ];
+                repository:
+                    'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ];
         project: 'UTF8'
           with: [ 
               spec
                 className: 'ConfigurationOfGsMisc';
                 versionString: #'stable';
                 loads: #('Utf8Encoding');
-                repository: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ];
+                repository:
+                    'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ];
         project: 'System-Digital-Signatures'
           copyFrom: 'UTF8'
           with: [ spec loads: #('System-Digital-Signatures') ];
@@ -155,7 +182,10 @@ baseline: spec
                 requires: #('GsCore');
                 includes: #('Grease-GemStone-Core') ];
         package: 'Grease-Tests-Core'
-          with: [ spec requires: #('Grease-GemStone-Core'); includes: #('Grease-Tests-GemStone-Core') ];
+          with: [ 
+              spec
+                requires: #('Grease-GemStone-Core');
+                includes: #('Grease-Tests-GemStone-Core') ];
         package: 'Grease-GemStone-Core'
           with: [ 
               spec
@@ -202,7 +232,6 @@ baseline: spec
     for: #(#'gs3.3.x' #'gs3.4.x')
     do: [ 
       spec
-        package: 'Grease-GemStone330-Core';
         package: 'Grease-GemStone-Core'
           with: [ spec includes: #('Grease-GemStone330-Core') ];
         package: 'Grease-GemStone330-Core'

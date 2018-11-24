@@ -6,4 +6,3 @@ testConversions
 	self assert: duration asMilliseconds = 356521000.
 	self assert: duration negated asSeconds = -356521.
 	self assert: duration negated asMilliseconds = -356521000
-	
