@@ -1,18 +1,17 @@
 {
-	"category" : "Grease-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "pmm 9/14/2013 15:53",
+	"super" : "GRObject",
+	"category" : "Grease-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"name",
 		"description",
 		"dependencies",
 		"license",
-		"url" ],
+		"url"
+	],
 	"name" : "GRPackage",
-	"pools" : [
-		 ],
-	"super" : "GRObject",
-	"type" : "normal" }
+	"type" : "normal"
+}

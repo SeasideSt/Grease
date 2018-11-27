@@ -1,0 +1,14 @@
+{
+	"category" : "Grease-Tests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GRTestNotificationBasedDynamicVariable",
+	"pools" : [
+		 ],
+	"super" : "GRNotificationBasedDynamicVariable",
+	"type" : "normal" }

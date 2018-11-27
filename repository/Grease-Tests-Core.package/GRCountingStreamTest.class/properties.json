@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "",
-	"super" : "TestCase",
 	"category" : "Grease-Tests-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
 	"instvars" : [
-		"countingStream"
-	],
+		"countingStream" ],
 	"name" : "GRCountingStreamTest",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

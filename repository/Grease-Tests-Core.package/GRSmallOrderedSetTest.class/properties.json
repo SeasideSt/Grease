@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "",
-	"super" : "TestCase",
 	"category" : "Grease-Tests-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
 	"instvars" : [
-		"collection"
-	],
+		"collection" ],
 	"name" : "GRSmallOrderedSetTest",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRSetTest",
+	"type" : "normal" }

@@ -1,0 +1,12 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #useLatestMetacello : true,
+      #baseline : 'Grease',
+      #directory : 'repository',
+      #load : [ 'Tests' ],
+      #useLatestMetacello : true,
+      #platforms : [ #pharo ]
+    }
+  ]
+}

@@ -5,4 +5,4 @@ value: anObject during: aBlock
 	oldValue := p psValueAt: index.
 	^ [ 
 		p psValueAt: index put: anObject.
-		aBlock value ] ensure: [ p psValueAt: index put: oldValue ]
+		aBlock value ] ensure: [ p psValueAt: index put: oldValue ] 

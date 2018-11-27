@@ -20,4 +20,3 @@ testReadStreamPosition
 	self assert: stream next = $a.
 	stream position: 3.
 	self assert: stream atEnd
-	

@@ -1,6 +1,6 @@
-**IMPORTANT**: Since version 1.3.0, this is the main repository of Grease. Versions older than 1.1.9 can be found in the [Smalltalkhub repository](http://www.smalltalkhub.com/#!/~Seaside/Grease11). Check out the [releases list](https://github.com/SeasideSt/Grease/releases) for all version numbers in this repository.
+**IMPORTANT**: Since version 1.3.0, this is the main repository of Grease. Versions older than 1.1.9 can only be found in the [Smalltalkhub repository](http://www.smalltalkhub.com/#!/~Seaside/Grease11). Check out the [releases list](https://github.com/SeasideSt/Grease/releases) for all version numbers in this repository.
 
-The Grease Portability Library  [![Build Status](https://travis-ci.org/SeasideSt/Grease.svg?branch=master)](https://travis-ci.org/SeasideSt/Grease)
+The Grease Portability Library
 ======
 Grease enhances the ANSI Smalltalk standard. With only a few exceptions, we assume platforms are fully ANSI-compliant. Platforms want to support Seaside and standardization makes this easier for the project’s developers and its porters.
 
@@ -14,16 +14,19 @@ Grease does not try to solve all problems. We are not testing Sockets or HTTP cl
 
 Grease is widely adopted. Implementations exist already for all platforms that support Seaside 3.x. As well as Seaside, new versions of Magritte, Pier, and Monticello are already being implemented on top of Grease.
 
-## Travis builds
+## Platform compatibility and Travis builds
 
-The [Travis CI builds](https://travis-ci.org/SeasideSt/Grease) currently test Grease for the following platforms and versions:
+The latest Grease version is supported on the following platforms and versions, which are tested using [Travis CI builds](https://travis-ci.org/SeasideSt/Grease):
 
 | Squeak          | Pharo            | GemStone             |
 | --------------- | ---------------- | -------------------- |
-| Squeak 5.1      | Pharo 6.0        | GemStone 3.3.4       |
-|                 | Pharo 5.0        | GemStone 3.2.16      |
-|                 | Pharo 4.0        | GemStone 3.1.0.6     |
-|                 | Pharo 3.0        |                      |
+| [![Build status: Squeak-5.2](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Squeak-trunk&label=5.2)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Pharo64-7.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-7.0&label=7.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.4.2](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.4.2&label=3.4.2)](http://travis-ci.org/SeasideSt/Grease) |
+| [![Build status: Squeak-5.1](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Squeak-5.1&label=5.1)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Pharo64-6.1](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-6.1&label=6.1)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.3.4](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.3.4&label=3.3.4)](http://travis-ci.org/SeasideSt/Grease) |
+|                 | [![Build status: Pharo-5.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo-5.0&label=5.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.2.16](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.2.16&label=3.2.16)](http://travis-ci.org/SeasideSt/Grease) |
+|                 | [![Build status: Pharo-4.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo-4.0&label=4.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.1.0.6](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.1.0.6&label=3.1.0.6)](http://travis-ci.org/SeasideSt/Grease) |
+|                 | [![Build status: Pharo-3.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo-3.0&label=3.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-2.4.8](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-2.4.8&label=2.4.8)](http://travis-ci.org/SeasideSt/Grease) |
+
+Coveralls (experimental): [![Coverage Status](https://coveralls.io/repos/github/SeasideSt/Grease/badge.svg?branch=test-coveralls)](https://coveralls.io/github/SeasideSt/Grease?branch=test-coveralls)
 
 ## Installation
 
@@ -44,6 +47,7 @@ Metacello new
 -or-
 
 Load a specific version:
+(See [Releases](https://github.com/SeasideSt/Grease/releases) for a list of versions)
 
 ```Smalltalk
 Metacello new
@@ -53,7 +57,7 @@ Metacello new
 ```
 -or-
 
-Legacy: load from Smalltalkhub:
+Legacy: load older versions from Smalltalkhub:
 ```Smalltalk
 Metacello new
     configuration: 'Grease';

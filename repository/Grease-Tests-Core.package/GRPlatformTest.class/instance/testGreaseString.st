@@ -2,6 +2,7 @@ tests
 testGreaseString
 	self assert: 'Timberwolf' greaseString = 'Timberwolf'.
 	self assert: #DireWolf greaseString = 'DireWolf'.
+	self deny: #DireWolf greaseString isSymbol.
 	self assert: true greaseString = 'true'.
 	self assert: 666 greaseString = '666'.
 	"make sure we're not immediate"
@@ -26,4 +27,3 @@ testGreaseString
 	"Printing scaled decimals (https://github.com/SeasideSt/Grease/issues/1)"
 	self assert: 1.21s3 greaseString = '1.210'.
 	self assert: -1.21s3 greaseString = '-1.210'
-	

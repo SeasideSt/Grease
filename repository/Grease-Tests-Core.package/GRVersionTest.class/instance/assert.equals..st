@@ -11,4 +11,5 @@ assert: aVersionArray equals: bVersionArray
 	self assert: b >= a.
 	self deny: a > b.
 	self assert: a >= b.
-	self assert: a = b
+	self assert: a = b.
+	self assert: a hash = b hash

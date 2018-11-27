@@ -1,14 +1,13 @@
 {
-	"category" : "Grease-Core-Text",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"parts" ],
-	"name" : "GRSequentialPrinter",
-	"pools" : [
-		 ],
 	"super" : "GRPrinter",
-	"type" : "normal" }
+	"category" : "Grease-Core-Text",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parts"
+	],
+	"name" : "GRSequentialPrinter",
+	"type" : "normal"
+}

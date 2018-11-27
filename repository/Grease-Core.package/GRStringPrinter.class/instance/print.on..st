@@ -6,7 +6,7 @@ print: anObject on: aStream
 		ifFalse: [ string := string perform: trim ].
 	length isNil ifFalse: [
 		length < string size 
-			ifTrue: [ string := string copyFrom: 1to: length ].
+			ifTrue: [ string := string copyFrom: 1 to: length ].
 		(pad isNil or: [ character isNil ])
 			ifFalse: [ string := self perform: pad with: string with: character with: length ] ].
 	aStream nextPutAll: string
