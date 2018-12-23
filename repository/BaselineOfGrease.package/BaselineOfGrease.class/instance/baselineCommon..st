@@ -2,7 +2,7 @@ baseline
 baselineCommon: spec
 	spec
 		for: #common
-		do: [ spec blessing: #baseline.
+		do: [
 			spec
 				package: 'Grease-Core';
 				package: 'Grease-Tests-Core' with: [ spec requires: #('Grease-Core') ].
