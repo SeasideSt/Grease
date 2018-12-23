@@ -1,4 +1,4 @@
-*grease-tests-pharo20-core
+*Grease-Tests-Pharo-Core
 testScaledDecimalGreaseString
 	self assert: 123.4s1 greaseString = '123.4'.
 	self assert: 123.4s2 greaseString = '123.40'.

@@ -1,3 +1,3 @@
-*grease-tests-pharo20-core
+*Grease-Tests-Pharo-Core
 expectedFailures
 	^ #(testCodecUtf8ShortestForm)

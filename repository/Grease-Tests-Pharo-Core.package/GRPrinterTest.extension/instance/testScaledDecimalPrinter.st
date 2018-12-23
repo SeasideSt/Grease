@@ -1,4 +1,4 @@
-*grease-tests-pharo20-core
+*Grease-Tests-Pharo-Core
 testScaledDecimalPrinter
 	| converter |
 	converter := GRNumberPrinter new precision: 2.
