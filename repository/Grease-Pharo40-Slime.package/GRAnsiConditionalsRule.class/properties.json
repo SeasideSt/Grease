@@ -1,14 +1,11 @@
 {
-	"category" : "Grease-Pharo40-Slime",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "GRAnsiConditionalsRule",
-	"pools" : [
-		 ],
 	"super" : "GRSlimeTransformationRule",
-	"type" : "normal" }
+	"category" : "Grease-Pharo40-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRAnsiConditionalsRule",
+	"type" : "normal"
+}

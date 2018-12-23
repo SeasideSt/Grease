@@ -1,14 +1,11 @@
 {
-	"category" : "Grease-Pharo40-Slime",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "GRUnnecessaryLastPeriodRule",
-	"pools" : [
-		 ],
 	"super" : "GRSlimeBlockLintRule",
-	"type" : "normal" }
+	"category" : "Grease-Pharo40-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRUnnecessaryLastPeriodRule",
+	"type" : "normal"
+}

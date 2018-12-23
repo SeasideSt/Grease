@@ -1,14 +1,11 @@
 {
-	"category" : "Grease-Pharo40-Slime",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "GRUsesCurlyBraceArraysRule",
-	"pools" : [
-		 ],
 	"super" : "GRSlimeParseTreeLintRule",
-	"type" : "normal" }
+	"category" : "Grease-Pharo40-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRUsesCurlyBraceArraysRule",
+	"type" : "normal"
+}
