@@ -36,7 +36,7 @@ Make sure you have the [MetacelloPreview version](https://github.com/dalehenrich
 
 ### Pharo < 4.0
 
-The compatibility for Pharo <= 4.0 is not maintained for new releases. If you need grease in Pharo <= 4, we recommand to either update your pharo version or reference the latest release compatible with Pharo <= 4, which is currently v1.4.1.
+The compatibility for Pharo < 4.0 is not maintained for new releases. If you need grease in Pharo < 4, we recommand to either update your pharo version or reference the latest release compatible with Pharo < 4, which is currently v1.4.1.
 
 For Pharo versions < 3.0, make sure you have the [MetacelloPreview version](https://github.com/dalehenrich/metacello-work), otherwise the load will not work.
 
