@@ -4,19 +4,18 @@ testRemoveKey2
 	collection
 		at: 'x' put: 1;
 		at: 'y' put: 2;
-		at: 'z' put: 3;
-		yourself.
+		at: 'z' put: 3.
 
 	self
-		assert: (collection removeKey: 'z') = 3;
-		assert: collection size = 2.
+		assert: (collection removeKey: 'z') equals: (self allowsDuplicateKeys ifTrue: [ #(3) ] ifFalse: [ 3 ]);
+		assert: collection size equals: 2.
 
 	collection := self newCollection
 		at: 'x' put: 1;
 		at: 'y' put: 2;
 		at: 'z' put: 3;
-		yourself.
-
+		yourself.	
+			
 	self
-		assert: (collection removeKey: 'y') = 2;
-		assert: collection size = 2
+		assert: (collection removeKey: 'y') equals: (self allowsDuplicateKeys ifTrue: [ #(2) ] ifFalse: [ 2 ]);
+		assert: collection size equals: 2
