@@ -1,14 +1,11 @@
 {
-	"category" : "Grease-Tests-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "GRReducedConflictDictionaryTest",
-	"pools" : [
-		 ],
 	"super" : "GRDictionaryTest",
-	"type" : "normal" }
+	"category" : "Grease-Tests-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRReducedConflictDictionaryTest",
+	"type" : "normal"
+}
