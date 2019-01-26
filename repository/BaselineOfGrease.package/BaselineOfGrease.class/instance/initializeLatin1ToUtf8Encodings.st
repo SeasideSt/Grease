@@ -1,4 +1,4 @@
 doits
 initializeLatin1ToUtf8Encodings
-
-	GRUtf8CodecStream initialize
+	"Gemstone only"
+	(Smalltalk at: #GRUtf8CodecStream) initialize
