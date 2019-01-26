@@ -1,4 +1,4 @@
-*grease-tests-pharo20-core
+*Grease-Tests-Pharo-Core
 greaseTestsPharo20Core
 	^ self new
 		name: 'Grease-Tests-Pharo20-Core';
