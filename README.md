@@ -34,35 +34,7 @@ Coveralls (experimental): [![Coverage Status](https://coveralls.io/repos/github/
 
 Make sure you have the [MetacelloPreview version](https://github.com/dalehenrich/metacello-work), otherwise the load will not work.
 
-### Pharo < 4.0
-
-The compatibility for Pharo < 4.0 is not maintained for new releases. If you need grease in Pharo < 4, we recommand to either update your pharo version or reference the latest release compatible with Pharo < 4, which is currently v1.4.1.
-
-For Pharo versions < 3.0, make sure you have the [MetacelloPreview version](https://github.com/dalehenrich/metacello-work), otherwise the load will not work.
-
-Load the latest compatible release:
-
-```Smalltalk
-Metacello new
-    baseline: 'Grease';
-    githubUser: 'SeasideSt' project: 'Grease' commitish: 'v1.4.1' path: 'repository';
-    load
-```
-
--or-
-
-Legacy: load older versions from Smalltalkhub:
-```Smalltalk
-Metacello new
-    configuration: 'Grease';
-    repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
-    version: '1.0.0';
-    load
-```
-
-In case you need a specific feature for Pharo 3, it is still possible to create a new release by branching from v1.4.1.
-
-### Squeak and Pharo >=4.0
+### Squeak and Pharo (4.0 or newer)
 
 Load the latest code from master (i.e. stable):
 
@@ -106,3 +78,31 @@ Gofer new
   load.
 (Smalltalk at: #GsUpgrader) upgradeGrease.
 ```
+
+### Pharo (3.0 or older)
+
+The compatibility for Pharo < 4.0 is not maintained for new releases. If you need grease in Pharo < 4, we recommend to either update your pharo version or reference the latest release compatible with Pharo < 4, which is currently v1.4.1.
+
+For Pharo versions < 3.0, make sure you have the [MetacelloPreview version](https://github.com/dalehenrich/metacello-work), otherwise the load will not work.
+
+Load the latest compatible release:
+
+```Smalltalk
+Metacello new
+    baseline: 'Grease';
+    githubUser: 'SeasideSt' project: 'Grease' commitish: 'v1.4.1' path: 'repository';
+    load
+```
+
+-or-
+
+Legacy: load older versions from Smalltalkhub:
+```Smalltalk
+Metacello new
+    configuration: 'Grease';
+    repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
+    version: '1.0.0';
+    load
+```
+
+In case you need a specific feature for Pharo 3, it is still possible to create a new release by branching from v1.4.1.
