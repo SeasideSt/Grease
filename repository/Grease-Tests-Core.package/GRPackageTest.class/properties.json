@@ -1,14 +1,13 @@
 {
-	"category" : "Grease-Tests-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"package" ],
-	"name" : "GRPackageTest",
-	"pools" : [
-		 ],
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "Grease-Tests-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"package"
+	],
+	"name" : "GRPackageTest",
+	"type" : "normal"
+}
