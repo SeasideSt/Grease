@@ -1,9 +1,9 @@
 *Grease-Tests-Pharo-Core
-greaseTestsPharo20Core
+greaseTestsPharoCore
 	^ self new
-		name: 'Grease-Tests-Pharo20-Core';
+		name: 'Grease-Tests-Pharo-Core';
 		description: 'Unit tests for the package Grease-Pharo-Core.';
-		addDependency: 'Grease-Pharo20-Core';
+		addDependency: 'Grease-Pharo-Core';
 		addDependency: 'Grease-Tests-Core';
 		url: #greaseUrl;
 		yourself
