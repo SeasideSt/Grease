@@ -11,6 +11,8 @@ matrix:
     - smalltalk: Squeak-5.1
  
   include:
+    - smalltalk: Pharo64-8.0
+      env: BUILD_NAME=Pharo64-8.0
     - smalltalk: Pharo64-7.0
       env: BUILD_NAME=Pharo64-7.0
     - smalltalk: Pharo64-6.1
@@ -28,6 +30,8 @@ matrix:
       env: BUILD_NAME=Squeak-5.2
     - smalltalk: Squeak-5.1
       env: BUILD_NAME=Squeak-5.1
+    - smalltalk: GemStone-3.5.0
+      env: BUILD_NAME=GemStone-3.5.0
     - smalltalk: GemStone-3.4.3
       env: BUILD_NAME=GemStone-3.4.3
     - smalltalk: GemStone-3.3.9
