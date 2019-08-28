@@ -7,5 +7,5 @@ testToDoClosures
 	
 	| collection |
 	collection := OrderedCollection new.
-	1 to: 5 do: [ :each | collection add: [ each ] fixCallbackTemps ].
+	1 to: 5 do: [ :each | collection add: [ each ] ].
 	self assert: (collection collect: [ :each | each value ]) asArray = #(1 2 3 4 5)
