@@ -4,11 +4,11 @@ testBlockValuableProtocol
 	self assert: [ :x | x ] argumentCount = 1.
 	self assert: [ :a :b | a + b ] argumentCount = 2.
 	self 
-		shouldnt: [ [ nil ] fixCallbackTemps ]
+		shouldnt: [ [ nil ] ]
 		raise: Error.
 	self 
-		shouldnt: [ [ :x | x ] fixCallbackTemps ]
+		shouldnt: [ [ :x | x ] ]
 		raise: Error.
 	self 
-		shouldnt: [ [ :a :b | a + b ] fixCallbackTemps ]
+		shouldnt: [ [ :a :b | a + b ] ]
 		raise: Error
