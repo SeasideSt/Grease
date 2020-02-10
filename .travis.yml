@@ -10,9 +10,6 @@ matrix:
     - smalltalk: Squeak-trunk
     - smalltalk: Squeak-5.1
 
-notifications:
-  slack: gemtalksystems:4YWbzy6sJN9cE0FhxvUPP8nS
- 
   include:
     - smalltalk: Pharo64-8.0
       env: BUILD_NAME=Pharo64-8.0
@@ -45,3 +42,7 @@ notifications:
       env: BUILD_NAME=GemStone-3.1.0.6
     - smalltalk: GemStone-2.4.8
       env: BUILD_NAME=GemStone-2.4.8
+
+notifications:
+  slack: gemtalksystems:4YWbzy6sJN9cE0FhxvUPP8nS
+ 
