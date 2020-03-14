@@ -29,7 +29,7 @@ baselinePharo: spec
 				package: 'Grease-Pharo60-Core' with: [ spec requires: #('Grease-Core') ] ].
 
 	spec
-		for: #(#'pharo7.x' #'pharo8.x')
+		for: #(#'pharo7.x' #'pharo8.x' #'pharo9.x')
 		do: [ spec
 				package: 'Grease-Core' with: [ spec includes: #('Grease-Pharo70-Core') ];
 				package: 'Grease-Tests-Core'
