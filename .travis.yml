@@ -9,9 +9,6 @@ matrix:
   allow_failures:
     - smalltalk: Pharo64-9.0
     - smalltalk: Squeak32-trunk
-    - smalltalk: Squeak32-5.1
-    - smalltalk: Squeak32-5.2
-    - smalltalk: Squeak32-5.3
  
   include:
     - smalltalk: Pharo64-9.0

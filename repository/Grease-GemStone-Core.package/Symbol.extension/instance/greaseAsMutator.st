@@ -1,3 +1,3 @@
-*Grease-Pharo70-Core
+*grease-gemstone-Core
 greaseAsMutator
 	^ self asMutator
