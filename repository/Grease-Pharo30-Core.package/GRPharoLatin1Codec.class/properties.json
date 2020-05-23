@@ -1,14 +1,13 @@
 {
-	"category" : "Grease-Pharo30-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"name" ],
-	"name" : "GRPharoLatin1Codec",
-	"pools" : [
-		 ],
 	"super" : "GRNullCodec",
-	"type" : "normal" }
+	"category" : "Grease-Pharo30-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name"
+	],
+	"name" : "GRPharoLatin1Codec",
+	"type" : "normal"
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "Grease-Pharo30-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "MaxLeske 5/16/2017 22:05",
-	"instvars" : [
-		 ],
-	"name" : "GRDynamicVariable",
-	"pools" : [
-		 ],
 	"super" : "DynamicVariable",
-	"type" : "normal" }
+	"category" : "Grease-Pharo30-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRDynamicVariable",
+	"type" : "normal"
+}

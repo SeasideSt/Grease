@@ -33,7 +33,7 @@ Coveralls (experimental): [![Coverage Status](https://coveralls.io/repos/github/
 
 #### Prerequisite on Squeak
 
-Make sure you have the [MetacelloPreview version](https://github.com/dalehenrich/metacello-work), otherwise the load will not work.
+Make sure you have the [MetacelloPreview version](https://github.com/Metacello/metacello), otherwise the load will not work.
 
 ### Squeak and Pharo (4.0 or newer)
 
