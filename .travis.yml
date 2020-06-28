@@ -34,10 +34,10 @@ matrix:
       env: BUILD_NAME=Squeak-5.2
     - smalltalk: Squeak32-5.1
       env: BUILD_NAME=Squeak-5.1
-    - smalltalk: GemStone-3.5.0
-      env: BUILD_NAME=GemStone-3.5.0
-    - smalltalk: GemStone-3.4.3
-      env: BUILD_NAME=GemStone-3.4.3
+    - smalltalk: GemStone-3.5.2
+      env: BUILD_NAME=GemStone-3.5.2
+    - smalltalk: GemStone-3.4.5
+      env: BUILD_NAME=GemStone-3.4.5
     - smalltalk: GemStone-3.3.9
       env: BUILD_NAME=GemStone-3.3.9
     - smalltalk: GemStone-3.2.17
