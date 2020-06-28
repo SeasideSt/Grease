@@ -9,7 +9,6 @@ matrix:
   allow_failures:
     - smalltalk: Pharo64-9.0
     - smalltalk: Squeak32-trunk
- 
   include:
     - smalltalk: Pharo64-9.0
       env: BUILD_NAME=Pharo64-9.0
@@ -46,3 +45,7 @@ matrix:
       env: BUILD_NAME=GemStone-3.1.0.6
     - smalltalk: GemStone-2.4.8
       env: BUILD_NAME=GemStone-2.4.8
+
+notifications:
+  slack: gemtalksystems:4YWbzy6sJN9cE0FhxvUPP8nS
+ 
