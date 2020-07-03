@@ -45,7 +45,3 @@ matrix:
       env: BUILD_NAME=GemStone-3.1.0.6
     - smalltalk: GemStone-2.4.8
       env: BUILD_NAME=GemStone-2.4.8
-
-notifications:
-  slack: gemtalksystems:4YWbzy6sJN9cE0FhxvUPP8nS
- 
