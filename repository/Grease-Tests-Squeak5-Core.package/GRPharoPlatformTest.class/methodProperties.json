@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testCompileIntoClassified" : " 6/3/2020 21:51:17",
+		"testFullName" : " 6/3/2020 21:51:17",
+		"testGreaseIntegerOnCharacter" : " 6/3/2020 21:51:17",
+		"testMessageSendValueWithPossibleArguments" : " 6/3/2020 21:51:17",
+		"testWriteToFileInFolderBinary" : " 6/3/2020 21:51:17",
+		"testWriteToFileInFolderText" : " 6/3/2020 21:51:17",
+		"writeToFile:" : " 6/3/2020 21:51:17" } }

@@ -1,5 +1,5 @@
-file library
-fileStreamOn: aString do: aBlock binary: aBoolean
+as yet unclassified
+readFileStreamOn: aString do: aBlock binary: aBoolean
 	^ aBoolean
 		ifTrue: [
 			FileStream fileNamed: aString do: [ :stream |

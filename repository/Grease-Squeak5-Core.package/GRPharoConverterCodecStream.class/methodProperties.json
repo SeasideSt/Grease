@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"on:converter:" : " 7/3/2020 16:21:45" },
+	"instance" : {
+		"greaseNext:putAll:startingAt:" : " 7/3/2020 16:21:45",
+		"initializeOn:converter:" : " 7/3/2020 16:21:45",
+		"next" : " 7/3/2020 16:21:45",
+		"next:" : " 7/3/2020 16:21:45",
+		"nextPut:" : " 7/3/2020 16:21:45",
+		"nextPutAll:" : " 7/3/2020 16:21:45" } }
