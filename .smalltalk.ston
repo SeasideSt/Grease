@@ -18,7 +18,6 @@ SmalltalkCISpec {
       #directory : 'repository',
       #onWarningLog : true,
       #load : [ 'Tests' ],
-      #useLatestMetacello : true, 
       #platforms : [ #gemstone ]
     }
   ]
