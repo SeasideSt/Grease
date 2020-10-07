@@ -1,4 +1,4 @@
-*grease-gemstone330-core
+*grease-gemstone360-core
 handlesAlmostOutOfStackException: anException
 
 	^AlmostOutOfStack handles: anException

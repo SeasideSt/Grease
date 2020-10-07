@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Grease-GemStone330-Core'!
+SystemOrganization addCategory: #'Grease-GemStone360-Core'!
