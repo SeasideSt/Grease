@@ -90,7 +90,7 @@ baselineGemStone: spec
                 requires: #('Grease-GemStone-Core');
                 postLoadDoIt: #'initializeLatin1ToUtf8Encodings' ] ].
   spec
-    for: #( #'gs3.5.4.x' #'gs3.5.5.x' #'gs3.6.x')
+    for: #( #'gs3.6.x')
     do: [ 
       spec
         package: 'Grease-GemStone-Core'
