@@ -20,4 +20,4 @@ printOn: aStream
 			aStream
 				nextPutAll: 'size ';
 				print: self size ].
-	aStream nextPut: $)	
+	aStream nextPut: $)

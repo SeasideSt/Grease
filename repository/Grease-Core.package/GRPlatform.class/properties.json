@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "jf 2/6/2009 16:05",
-	"super" : "GRObject",
 	"category" : "Grease-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classinstvars" : [
+		 ],
 	"classvars" : [
-		"Current"
-	],
-	"instvars" : [ ],
+		"Current" ],
+	"commentStamp" : "jf 2/6/2009 16:05",
+	"instvars" : [
+		 ],
 	"name" : "GRPlatform",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRObject",
+	"type" : "normal" }

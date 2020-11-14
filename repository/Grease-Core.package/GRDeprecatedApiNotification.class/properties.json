@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "pmm 9/14/2013 15:50",
-	"super" : "GRNotification",
 	"category" : "Grease-Core-Exceptions",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "pmm 9/14/2013 15:50",
 	"instvars" : [
-		"details"
-	],
+		"details" ],
 	"name" : "GRDeprecatedApiNotification",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRNotification",
+	"type" : "normal" }

@@ -1,14 +1,15 @@
 {
-	"commentStamp" : "lr 12/27/2008 09:43",
-	"super" : "GRObject",
 	"category" : "Grease-Core-Text",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classinstvars" : [
+		 ],
 	"classvars" : [
 		"InflectionRules",
-		"Uninflected"
-	],
-	"instvars" : [ ],
+		"Uninflected" ],
+	"commentStamp" : "lr 12/27/2008 09:43",
+	"instvars" : [
+		 ],
 	"name" : "GRInflector",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRObject",
+	"type" : "normal" }
