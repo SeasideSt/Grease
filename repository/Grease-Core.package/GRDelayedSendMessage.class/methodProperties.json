@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"new" : " 10/11/2020 07:23:50",
+		"selector:" : " 10/11/2020 07:23:50" },
+	"instance" : {
+		"argumentCount" : " 10/11/2020 07:23:50",
+		"basicPerformFor:withArguments:" : " 10/11/2020 07:23:50",
+		"initializeWithSelector:" : " 10/11/2020 07:23:50",
+		"invalidArgumentCount" : " 10/11/2020 07:23:50",
+		"mergeArguments:" : " 10/11/2020 07:23:50",
+		"printOn:" : " 10/11/2020 07:23:50",
+		"valueFor:withArguments:" : " 10/11/2020 07:23:50",
+		"valueFor:withPossibleArguments:" : " 10/11/2020 07:23:50" } }

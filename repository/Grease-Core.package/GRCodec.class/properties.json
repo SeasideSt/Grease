@@ -1,11 +1,14 @@
 {
-	"commentStamp" : "lr 2/7/2009 09:55",
-	"super" : "GRObject",
 	"category" : "Grease-Core-Text",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "lr 2/7/2009 09:55",
+	"instvars" : [
+		 ],
 	"name" : "GRCodec",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRObject",
+	"type" : "normal" }

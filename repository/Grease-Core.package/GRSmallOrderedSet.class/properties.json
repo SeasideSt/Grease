@@ -1,14 +1,15 @@
 {
-	"commentStamp" : "pmm 8/25/2016 14:03",
-	"super" : "GRObject",
 	"category" : "Grease-Core-Collections",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "pmm 8/25/2016 14:03",
 	"instvars" : [
 		"size",
-		"table"
-	],
+		"table" ],
 	"name" : "GRSmallOrderedSet",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRObject",
+	"type" : "normal" }

@@ -1,11 +1,14 @@
 {
-	"commentStamp" : "pmm 6/25/2012 20:21",
-	"super" : "GRCodecStream",
 	"category" : "Grease-Core-Text",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "pmm 2/20/2009 21:59",
+	"instvars" : [
+		 ],
 	"name" : "GRNullCodecStream",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRCodecStream",
+	"type" : "normal" }

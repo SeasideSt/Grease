@@ -11,5 +11,3 @@ comparing
 	stageLabel isNil ifTrue: [ ^ false ].
 	otherVersion stage isNil ifTrue: [ ^ true ].
 	^ stageLabel < otherVersion stage
-	
-	
