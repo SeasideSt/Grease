@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"isAbstract" : " 10/11/2020 07:46:13" },
+	"instance" : {
+		"allowsDuplicateValues" : " 10/11/2020 07:46:13",
+		"arbitraryAssociations" : " 10/11/2020 07:46:13",
+		"arbitraryCollection" : " 10/11/2020 07:46:13",
+		"createArbitraryAssociations" : " 10/11/2020 07:46:13",
+		"isExtensible" : " 10/11/2020 07:46:13",
+		"isInitializable" : " 10/11/2020 07:46:13",
+		"isKey:equivalentTo:" : " 10/11/2020 07:46:13",
+		"testAssociationsDo" : " 10/11/2020 07:46:13",
+		"valuesOf:" : " 10/11/2020 07:46:13" } }
