@@ -8,14 +8,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        smalltalk: [ Pharo64-8.0, Pharo64-7.0, Pharo-6.1, Pharo-5.0, GemStone64-3.5.4, GemStone64-3.4.5, GemStone64-3.3.9, GemStone64-3.2.17, GemStone64-3.1.0.6 ]
+        smalltalk: [ Pharo64-8.0, Pharo64-7.0, Pharo-6.1, Pharo-5.0, GemStone64-3.5.4, GemStone64-3.4.5, GemStone64-3.3.9, GemStone64-3.2.17, GemStone64-3.1.0.6, Squeak64-5.3, Squeak64-5.2, Squeak64-5.1 ]
         experimental: [ false ]
         include:
           - smalltalk: Pharo64-9.0
             experimental: true
-          - smalltalk: Squeak-5.2
-            experimental: true
-          - smalltalk: Squeak-5.1
+          - smalltalk: Squeak64-trunk
             experimental: true
     continue-on-error: ${{ matrix.experimental }}
     name: ${{ matrix.smalltalk }}
