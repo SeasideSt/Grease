@@ -3,7 +3,7 @@ testCodecUtf8BorderLineString
 	#('UTF-8' 'utf-8') do: [ :codecName |
 		| codec writeStream |
 		codec := GRCodec forEncoding: codecName.
-		writeStream := codec encoderFor: GRPlatform current readWriteByteStream.
+		writeStream := codec encoderFor: (GRPlatform current writeCharacterStreamOn: codec encodedStringClass new).
 		writeStream nextPut: (Character codePoint: 0).
 		writeStream nextPut: (Character codePoint: 255).
 		writeStream nextPut: (Character codePoint: 256).
