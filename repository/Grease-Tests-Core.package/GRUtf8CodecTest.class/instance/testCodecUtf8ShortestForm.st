@@ -5,7 +5,7 @@ testCodecUtf8ShortestForm
 	#('UTF-8' 'utf-8') do: [ :codecName |
 		| codec abc |
 		codec := GRCodec forEncoding: codecName.
-		abc := self asString: #(193 129 193 130 193 131 ).
+		abc := self asByteArray: #(193 129 193 130 193 131 ).
 		self
 			should: [ self deny: (codec decode: abc) = 'ABC' ]
 			raise: Error ]

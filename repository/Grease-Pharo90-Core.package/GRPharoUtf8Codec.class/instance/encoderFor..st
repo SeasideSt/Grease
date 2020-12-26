@@ -1,5 +1,5 @@
 conversion
 encoderFor: aStream 
-	^ GRPharoUtf8CodecStream 
+	^ GRPharoConverterCodecStream 
 		on: aStream
-		converter: UTF8TextConverter new
+		converter: ZnUTF8Encoder new
