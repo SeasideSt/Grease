@@ -1,7 +1,10 @@
 private
 assert: aString next: anInteger startingAt: startIndex gives: anEncodedString
-	| actual |
-	actual := ByteArray streamContents: [ :stream |
+	| actual encoder |
+	encoder := GRCodec forEncoding: 'utf-8'.
+	actual := encoder encodedStringClass streamContents: [ :stream |
 		((GRCodec forEncoding: 'utf-8') encoderFor: stream)
 			greaseNext: anInteger putAll: aString startingAt: startIndex ].
-	self assert: actual = anEncodedString
+	encoder encodedStringClass == ByteArray
+		ifTrue:[ self assert: actual = anEncodedString asByteArray ]
+		ifFalse:[ self assert: actual = anEncodedString ]

@@ -1,15 +1,14 @@
 {
-	"category" : "Grease-Core-Collections",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "pmm 8/22/2016 11:49",
+	"super" : "GRObject",
+	"category" : "Grease-Core-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"size",
-		"table" ],
+		"table"
+	],
 	"name" : "GRSmallDictionary2",
-	"pools" : [
-		 ],
-	"super" : "GRObject",
-	"type" : "normal" }
+	"type" : "normal"
+}
