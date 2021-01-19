@@ -9,7 +9,7 @@
 		"XmlTable"
 	],
 	"instvars" : [
-		"utf8CodecClass"
+		"utf8DeprecatedCodecFlag"
 	],
 	"name" : "GRPharoPlatform",
 	"type" : "normal"
