@@ -35,7 +35,7 @@ Coveralls (experimental): [![Coverage Status](https://coveralls.io/repos/github/
 
 Make sure you have the [MetacelloPreview version](https://github.com/Metacello/metacello), otherwise the load will not work.
 
-### Squeak and Pharo (4.0 or newer)
+### Squeak and Pharo (6.0 or newer)
 
 Load the latest code from master (i.e. stable):
 
@@ -80,9 +80,11 @@ Gofer new
 (Smalltalk at: #GsUpgrader) upgradeGrease.
 ```
 
-### Pharo (3.0 or older)
+### Pharo (5.0 or older)
 
-The compatibility for Pharo < 4.0 is not maintained for new releases. If you need grease in Pharo < 4, we recommend to either update your pharo version or reference the latest release compatible with Pharo < 4, which is currently v1.4.1.
+The compatibility for Pharo < 6.0 is not maintained for new releases. If you need grease in Pharo < 6, we recommend to either update your pharo version or reference the latest release compatible with your version of Pharo:
+- Pharo <4: v1.4.1
+- Pharo 5 & 6: v1.6.1
 
 For Pharo versions < 3.0, make sure you have the [MetacelloPreview version](https://github.com/dalehenrich/metacello-work), otherwise the load will not work.
 
@@ -106,4 +108,4 @@ Metacello new
     load
 ```
 
-In case you need a specific feature for Pharo 3, it is still possible to create a new release by branching from v1.4.1.
+In case you need a specific feature for an older version, it is still possible to create a new release by branching starting from the tagged commit of the compatible version.
