@@ -2,7 +2,7 @@ baselines
 baselinePharo: spec
 
 	spec
-		for: #(#'pharo4.x' #'pharo5.x')
+		for: #(#'pharo5.x')
 		do: [ spec
 				package: 'Grease-Core' with: [ spec includes: #('Grease-Pharo30-Core') ];
 				package: 'Grease-Tests-Pharo-Core' with: [ spec requires: #('Grease-Tests-Core') ];
@@ -35,7 +35,7 @@ baselinePharo: spec
 				package: 'Grease-Pharo70-Core' with: [ spec requires: #('Grease-Core') ] ].
 
 	spec
-		for: #(#'pharo4.x' #'pharo5.x' #'pharo6.x' #'pharo7.x' #'pharo8.x')
+		for: #(#'pharo6.x' #'pharo7.x' #'pharo8.x')
 		do: [ 
 			spec
 				package: 'Grease-Pharo40-Slime' with: [ spec requires: #('Grease-Core') ];
