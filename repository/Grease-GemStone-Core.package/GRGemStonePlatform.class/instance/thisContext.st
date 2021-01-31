@@ -1,3 +1,3 @@
 *grease-gemstone-core
 thisContext
-  ^ (GsContext fromLevel: 1) sender sender
+  ^ GsContext fromLevel: 3
