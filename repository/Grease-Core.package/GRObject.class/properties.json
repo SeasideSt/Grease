@@ -1,14 +1,11 @@
 {
-	"category" : "Grease-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "pmm 9/14/2013 15:52",
-	"instvars" : [
-		 ],
-	"name" : "GRObject",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "Grease-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRObject",
+	"type" : "normal"
+}
