@@ -26,7 +26,7 @@ The latest Grease version is supported on the following platforms and versions, 
 |                 | [![Build status: Pharo-6.1](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo-6.1&label=6.1)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.3.9](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.3.9&label=3.3.9)](http://travis-ci.org/SeasideSt/Grease) |
 |                 |              | [![Build status: Gemstone-3.2.17](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.2.17&label=3.2.17)](http://travis-ci.org/SeasideSt/Grease) |
 |                 |              | [![Build status: Gemstone-3.1.0.6](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.1.0.6&label=3.1.0.6)](http://travis-ci.org/SeasideSt/Grease) |
-|                 |              | [![Build status: Gemstone-2.4.8](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-2.4.8&label=2.4.8)](http://travis-ci.org/SeasideSt/Grease) |
+|                 |              |               |
 
 Coveralls (experimental): [![Coverage Status](https://coveralls.io/repos/github/SeasideSt/Grease/badge.svg?branch=test-coveralls)](https://coveralls.io/github/SeasideSt/Grease?branch=test-coveralls)
 
