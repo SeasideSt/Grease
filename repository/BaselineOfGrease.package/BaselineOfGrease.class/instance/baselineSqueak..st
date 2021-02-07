@@ -1,4 +1,4 @@
-baseline
+baselines
 baselineSqueak: spec
 	spec
 		for: #(#'squeak5.x')

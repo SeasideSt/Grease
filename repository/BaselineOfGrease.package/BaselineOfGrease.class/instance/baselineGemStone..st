@@ -1,4 +1,4 @@
-baseline
+baselines
 baselineGemStone: spec
   spec
     for: #'gemstone'
@@ -77,7 +77,7 @@ baselineGemStone: spec
                 requires: #('Grease-GemStone-Core');
                 postLoadDoIt: #'initializeLatin1ToUtf8Encodings' ] ].
   spec
-    for: #(#'gs3.3.x' #'gs3.4.x' #'gs3.5.x' #'gs3.6.x')
+    for: #(#'gs3.3.x' #'gs3.4.x' #'gs3.5.x' #'gs3.6.x' #'gs3.7.x' #'gs3.8.x' #'gs3.9.x')
     do: [ 
       spec
         package: 'Grease-GemStone-Core'
@@ -97,7 +97,7 @@ baselineGemStone: spec
         	 with: [ spec includes: 'Grease-Tests-GemStone-Core' ] ].
 
   spec
-    for: #( #'gs3.5.4.x' #'gs3.5.5.x')
+    for: #( #'gs3.5.4.x' #'gs3.5.5.x' )
     do: [ 
       spec
         package: 'Grease-GemStone-Core'
@@ -107,7 +107,7 @@ baselineGemStone: spec
               spec
                 requires: #('Grease-GemStone-Core') ] ].
   spec
-    for: #( #'gs3.6.x')
+    for: #( #'gs3.6.x' #'gs3.7.x' #'gs3.8.x' #'gs3.9.x')
     do: [ 
       spec
         package: 'Grease-GemStone-Core'
@@ -117,7 +117,7 @@ baselineGemStone: spec
               spec
                 requires: #('Grease-GemStone-Core') ] ].
   spec
-    for: #(#'gs3.2.x' #'gs3.3.x' #'gs3.4.x' #'gs3.5.x' #'gs3.6.x')
+    for: #(#'gs3.2.x' #'gs3.3.x' #'gs3.4.x' #'gs3.5.x' #'gs3.6.x' #'gs3.7.x' #'gs3.8.x' #'gs3.9.x')
     do: [ 
       spec
         package: 'Grease-Tests-GemStone32-Core'

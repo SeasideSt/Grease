@@ -1,4 +1,4 @@
-baseline
+baselines
 baselineCommon: spec
 	spec
 		for: #common
