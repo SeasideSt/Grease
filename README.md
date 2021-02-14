@@ -20,12 +20,13 @@ The latest Grease version is supported on the following platforms and versions, 
 
 | Squeak          | Pharo            | GemStone             |
 | --------------- | ---------------- | -------------------- |
-| [![Build status: Squeak-5.2](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Squeak-trunk&label=5.2)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Pharo64-8.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-8.0&label=8.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.5.2](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.5.2&label=3.5.2)](http://travis-ci.org/SeasideSt/Grease) |
-| [![Build status: Squeak-5.1](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Squeak-5.1&label=5.1)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Pharo64-7.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-7.0&label=7.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.4.5](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.4.5&label=3.4.5)](http://travis-ci.org/SeasideSt/Grease) |
+| [![Build status: Squeak-5.2](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Squeak-trunk&label=5.2)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Pharo64-9.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-9.0&label=9.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.6.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.6.0&label=3.6.0)](http://travis-ci.org/SeasideSt/Grease) |
+| [![Build status: Squeak-5.1](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Squeak-5.1&label=5.1)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Pharo64-8.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-8.0&label=8.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.5.5](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.5.5&label=3.5.5)](http://travis-ci.org/SeasideSt/Grease) |
+|                 | [![Build status: Pharo64-7.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-7.0&label=7.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.4.5](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.4.5&label=3.4.5)](http://travis-ci.org/SeasideSt/Grease) |
 |                 | [![Build status: Pharo-6.1](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo-6.1&label=6.1)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.3.9](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.3.9&label=3.3.9)](http://travis-ci.org/SeasideSt/Grease) |
-|                 | [![Build status: Pharo-5.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo-5.0&label=5.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.2.17](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.2.17&label=3.2.17)](http://travis-ci.org/SeasideSt/Grease) |
-|                 | [![Build status: Pharo-4.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo-4.0&label=4.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.1.0.6](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.1.0.6&label=3.1.0.6)](http://travis-ci.org/SeasideSt/Grease) |
-|                 |                  | [![Build status: Gemstone-2.4.8](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-2.4.8&label=2.4.8)](http://travis-ci.org/SeasideSt/Grease) |
+|                 |              | [![Build status: Gemstone-3.2.17](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.2.17&label=3.2.17)](http://travis-ci.org/SeasideSt/Grease) |
+|                 |              | [![Build status: Gemstone-3.1.0.6](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.1.0.6&label=3.1.0.6)](http://travis-ci.org/SeasideSt/Grease) |
+|                 |              |               |
 
 Coveralls (experimental): [![Coverage Status](https://coveralls.io/repos/github/SeasideSt/Grease/badge.svg?branch=test-coveralls)](https://coveralls.io/github/SeasideSt/Grease?branch=test-coveralls)
 
@@ -35,7 +36,7 @@ Coveralls (experimental): [![Coverage Status](https://coveralls.io/repos/github/
 
 Make sure you have the [MetacelloPreview version](https://github.com/Metacello/metacello), otherwise the load will not work.
 
-### Squeak and Pharo (4.0 or newer)
+### Squeak and Pharo (6.0 or newer)
 
 Load the latest code from master (i.e. stable):
 
@@ -80,9 +81,11 @@ Gofer new
 (Smalltalk at: #GsUpgrader) upgradeGrease.
 ```
 
-### Pharo (3.0 or older)
+### Pharo (5.0 or older)
 
-The compatibility for Pharo < 4.0 is not maintained for new releases. If you need grease in Pharo < 4, we recommend to either update your pharo version or reference the latest release compatible with Pharo < 4, which is currently v1.4.1.
+The compatibility for Pharo < 6.0 is not maintained for new releases. If you need grease in Pharo < 6, we recommend to either update your pharo version or reference the latest release compatible with your version of Pharo:
+- Pharo <4: v1.4.1
+- Pharo 5 & 6: v1.6.1
 
 For Pharo versions < 3.0, make sure you have the [MetacelloPreview version](https://github.com/dalehenrich/metacello-work), otherwise the load will not work.
 
@@ -106,4 +109,4 @@ Metacello new
     load
 ```
 
-In case you need a specific feature for Pharo 3, it is still possible to create a new release by branching from v1.4.1.
+In case you need a specific feature for an older version, it is still possible to create a new release by branching starting from the tagged commit of the compatible version.

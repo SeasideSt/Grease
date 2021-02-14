@@ -1,3 +1,3 @@
 file library
 fileExists: aString
-	self subclassResponsibility 
+	self subclassResponsibility
