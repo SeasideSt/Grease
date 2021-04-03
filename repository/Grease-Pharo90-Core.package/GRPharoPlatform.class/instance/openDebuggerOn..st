@@ -11,8 +11,8 @@ openDebuggerOn: anError
 			UnhandledError signalForException: anError ]
 		ifFalse: [
 			WorldState addDeferredUIMessage: [
-				process
-					debug: anError signalerContext
-					title: anError description
-					full: true ].
+					UIManager default
+						requestDebuggerOpeningForProcess: process
+						named: anError description
+						inContext: anError signalerContext ].
 			process suspend ]
