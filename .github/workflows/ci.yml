@@ -20,12 +20,9 @@ jobs:
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalk-image: ${{ matrix.smalltalk }}
-      # - name: Fix missing OS prerequisites for GemStone builds
-      #   run: |
-      #     git clone https://github.com/GsDevKit/GsDevKit_home.git
-      #     ./GsDevKit_home/bin/utils/installOsPrereqs
-      #   continue-on-error: true
-      #   if: startsWith(matrix.smalltalk,'GemStone')
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        if: matrix.smalltalk == 'GemStone64-3.4.5'
       - name: Run tests
         run: smalltalkci -s ${{ matrix.smalltalk }}
         shell: bash
