@@ -20,6 +20,8 @@ jobs:
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalk-image: ${{ matrix.smalltalk }}
+      - name: Sleep...
+        run: sleep 20
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: matrix.smalltalk == 'GemStone64-3.4.5'
