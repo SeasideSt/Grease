@@ -28,7 +28,7 @@ The latest Grease version is supported on the following platforms and versions, 
 |                 |              | [![Build status: Gemstone-3.1.0.6](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.1.0.6&label=3.1.0.6)](http://travis-ci.org/SeasideSt/Grease) |
 |                 |              |               |
 
-Coveralls (experimental): [![Coverage Status](https://coveralls.io/repos/github/SeasideSt/Grease/badge.svg?branch=test-coveralls)](https://coveralls.io/github/SeasideSt/Grease?branch=test-coveralls)
+Builds via github actions: [![smalltalkCI](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml)
 
 ## Installation
 
