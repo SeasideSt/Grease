@@ -16,19 +16,7 @@ Grease is widely adopted. Implementations exist already for all platforms that s
 
 ## Platform compatibility and Travis builds
 
-The latest Grease version is supported on the following platforms and versions, which are tested using [Travis CI builds](https://travis-ci.org/SeasideSt/Grease):
-
-| Squeak          | Pharo            | GemStone             |
-| --------------- | ---------------- | -------------------- |
-| [![Build status: Squeak-5.2](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Squeak-trunk&label=5.2)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Pharo64-9.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-9.0&label=9.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.6.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.6.0&label=3.6.0)](http://travis-ci.org/SeasideSt/Grease) |
-| [![Build status: Squeak-5.1](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Squeak-5.1&label=5.1)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Pharo64-8.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-8.0&label=8.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.5.5](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.5.5&label=3.5.5)](http://travis-ci.org/SeasideSt/Grease) |
-|                 | [![Build status: Pharo64-7.0](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo64-7.0&label=7.0)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.4.5](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.4.5&label=3.4.5)](http://travis-ci.org/SeasideSt/Grease) |
-|                 | [![Build status: Pharo-6.1](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=Pharo-6.1&label=6.1)](http://travis-ci.org/SeasideSt/Grease) | [![Build status: Gemstone-3.3.9](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.3.9&label=3.3.9)](http://travis-ci.org/SeasideSt/Grease) |
-|                 |              | [![Build status: Gemstone-3.2.17](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.2.17&label=3.2.17)](http://travis-ci.org/SeasideSt/Grease) |
-|                 |              | [![Build status: Gemstone-3.1.0.6](http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&env=BUILD_NAME=GemStone-3.1.0.6&label=3.1.0.6)](http://travis-ci.org/SeasideSt/Grease) |
-|                 |              |               |
-
-Builds via github actions: [![smalltalkCI](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml)
+The latest Grease version is supported on the following platforms and versions, which are tested using builds via github actions: [![smalltalkCI](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml)
 
 ## Installation
 
