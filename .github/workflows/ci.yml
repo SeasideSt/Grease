@@ -40,7 +40,7 @@ jobs:
           ref: ${{ github.event.workflow_dispatch.ref }}
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
-          smalltalk-version: ${{ matrix.smalltalk }}
+          smalltalk-image: ${{ matrix.smalltalk }}
       - name: Run tests
         id: test_run
         if: steps.last_run_status.outputs.last_run_status != 'success'

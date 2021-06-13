@@ -14,9 +14,9 @@ Grease does not try to solve all problems. We are not testing Sockets or HTTP cl
 
 Grease is widely adopted. Implementations exist already for all platforms that support Seaside 3.x. As well as Seaside, new versions of Magritte, Pier, and Monticello are already being implemented on top of Grease.
 
-## Platform compatibility and Travis builds
+## Platform compatibility
 
-The latest Grease version is supported on the following platforms and versions, which are tested using builds via github actions: [![smalltalkCI](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml)
+The latest Grease version is supported on the Pharo and GemStone/S  platforms and versions tested in the SmalltalkCI workflow in Github Actions: [![smalltalkCI](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml)
 
 ## Installation
 
