@@ -97,7 +97,7 @@ baselineGemStone: spec
         	 with: [ spec includes: 'Grease-Tests-GemStone-Core' ] ].
 
   spec
-    for: #( #'gs3.5.4.x'  #'gs3.5.5.x' #'gs3.5.6.x' #'gs3.5.7.x' )
+    for: #( #'gs3.5.4.x' #'gs3.5.5.x' #'gs3.5.6.x' #'gs3.5.7.x' )
     do: [ 
       spec
         package: 'Grease-GemStone-Core'

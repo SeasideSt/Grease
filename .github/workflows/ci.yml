@@ -20,20 +20,40 @@ jobs:
     continue-on-error: ${{ matrix.experimental }}
     name: ${{ matrix.smalltalk }}
     steps:
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%dT%H:%M:%S')"
+      - name: Log date
+        run: echo "${{ steps.date.outputs.date }}"
+      - name: Set default run status
+        run: echo "::set-output name=last_run_status::default" > last_run_status
+      - name: Restore last run status
+        id: last_run
+        uses: actions/cache@v2
+        with:
+          path: |
+            last_run_status
+          key: ${{ github.run_id }}-${{ matrix.smalltalk }}-${{ steps.date.outputs.date }}
+          restore-keys: |
+            ${{ github.run_id }}-${{ matrix.smalltalk }}-
+      - name: Set last run status
+        id: last_run_status
+        run: cat last_run_status
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.workflow_dispatch.ref }}
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalk-image: ${{ matrix.smalltalk }}
-      - name: Fix missing OS prerequisites for GemStone builds
-        run: |
-          git clone https://github.com/GsDevKit/GsDevKit_home.git
-          ./GsDevKit_home/bin/utils/installOsPrereqs
-        continue-on-error: true
-        if: startsWith(matrix.smalltalk,'GemStone')
       - name: Run tests
+        id: test_run
+        if: steps.last_run_status.outputs.last_run_status != 'success'
         run: smalltalkci -s ${{ matrix.smalltalk }}
         shell: bash
-        timeout-minutes: 10
+        timeout-minutes: 20
+      - name: Save run status
+        if: steps.last_run_status.outputs.last_run_status != 'success'
+        run: echo "::set-output name=last_run_status::${{ steps.test_run.outcome }}" > last_run_status
   slack-workflow-status:
     if: always()
     name: Post Workflow Status To Slack
