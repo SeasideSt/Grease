@@ -1,0 +1,37 @@
+language: smalltalk
+sudo: false
+
+matrix:
+  allow_failures:
+    - smalltalk: Squeak32-trunk
+  include:
+    - smalltalk: Pharo64-9.0
+      env: BUILD_NAME=Pharo64-9.0
+    - smalltalk: Pharo64-8.0
+      env: BUILD_NAME=Pharo64-8.0
+    - smalltalk: Pharo64-7.0
+      env: BUILD_NAME=Pharo64-7.0
+    - smalltalk: Pharo64-6.1
+      env: BUILD_NAME=Pharo64-6.1
+    - smalltalk: Pharo-6.1
+      env: BUILD_NAME=Pharo-6.1
+    - smalltalk: Squeak32-trunk
+      env: BUILD_NAME=Squeak-trunk
+    - smalltalk: Squeak32-5.3
+      env: BUILD_NAME=Squeak-5.3
+    - smalltalk: Squeak32-5.2
+      env: BUILD_NAME=Squeak-5.2
+    - smalltalk: Squeak32-5.1
+      env: BUILD_NAME=Squeak-5.1
+    - smalltalk: GemStone-3.6.0
+      env: BUILD_NAME=GemStone-3.6.0
+    - smalltalk: GemStone-3.5.5
+      env: BUILD_NAME=GemStone-3.5.5
+    - smalltalk: GemStone-3.4.5
+      env: BUILD_NAME=GemStone-3.4.5
+    - smalltalk: GemStone-3.3.9
+      env: BUILD_NAME=GemStone-3.3.9
+    - smalltalk: GemStone-3.2.17
+      env: BUILD_NAME=GemStone-3.2.17
+    - smalltalk: GemStone-3.1.0.6
+      env: BUILD_NAME=GemStone-3.1.0.6

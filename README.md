@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/GsDevKit/Grease/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/GsDevKit/Grease/actions/workflows/ci.yml)
+
 **IMPORTANT**: Since version 1.3.0, this is the main repository of Grease. Versions older than 1.1.9 can only be found in the [Smalltalkhub repository](http://www.smalltalkhub.com/#!/~Seaside/Grease11). Check out the [releases list](https://github.com/SeasideSt/Grease/releases) for all version numbers in this repository.
 
 The Grease Portability Library
