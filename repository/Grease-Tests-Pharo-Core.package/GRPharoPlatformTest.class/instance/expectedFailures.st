@@ -5,6 +5,6 @@ expectedFailures
 		| versionString |
 		versionString := systemVersion current version.
 		(versionString beginsWith: 'Pharo') ifTrue: [
-			systemVersion current major <= 7
+			systemVersion current major < 7
 				ifTrue: [ ^ #(testReadWriteToFileInFolderTextUTF8) ] ] ].
 	^ #()
