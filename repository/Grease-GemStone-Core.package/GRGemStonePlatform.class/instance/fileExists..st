@@ -1,3 +1,3 @@
 file-library
 fileExists: aString
-	^ (FileDirectory forFileName: aString) exists
+	^ GsFile existsOnServer: aString
