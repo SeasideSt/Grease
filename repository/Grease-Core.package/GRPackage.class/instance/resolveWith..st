@@ -21,4 +21,6 @@ resolveWith: aDictionary
 											aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Squeak5-') ifAbsent: [
 												"try -Squeak6-"
 												aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Squeak6-') ifAbsent: [
-												self error: self name printString , ' depends on unknown package ' , each printString ] ] ] ] ] ] ] ] ] ] ]
+													"specific for Grease-Slime"
+													aDictionary at: (each copyReplaceAll: 'Grease-Pharo-Slime' with: 'Grease-Slime') ifAbsent: [
+														self error: self name printString , ' depends on unknown package ' , each printString ] ] ] ] ] ] ] ] ] ] ] ]

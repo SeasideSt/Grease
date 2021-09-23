@@ -1,15 +1,14 @@
 {
-	"category" : "Grease-Tests-Slime",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Grease-Tests-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"model",
-		"environment" ],
+		"environment"
+	],
 	"name" : "GRSlimeTest",
-	"pools" : [
-		 ],
-	"super" : "TestCase",
-	"type" : "normal" }
+	"type" : "normal"
+}

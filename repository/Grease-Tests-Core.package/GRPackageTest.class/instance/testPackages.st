@@ -6,4 +6,5 @@ testPackages
 	packages do: [ :each | 
 		self assert: each name notEmpty.
 		self assert: each license notNil.
-		self assert: each url notNil ]
+		self deny: (each dependencies includes: nil).
+		self assert: each url notNil ].
