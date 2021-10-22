@@ -117,6 +117,16 @@ baselineGemStone: spec
               spec
                 requires: #('Grease-GemStone-Core') ] ].
   spec
+    for: #( #'gs3.7.x' #'gs3.8.x' #'gs3.9.x')
+    do: [ 
+      spec
+        package: 'Grease-GemStone-Core'
+          with: [ spec includes: #('Grease-GemStone-Kernelv370') ];
+        package: 'Grease-GemStone-Kernelv370'
+          with: [ 
+              spec
+                requires: #('Grease-GemStone-Core') ] ].
+  spec
     for: #(#'gs3.2.x' #'gs3.3.x' #'gs3.4.x' #'gs3.5.x' #'gs3.6.x' #'gs3.7.x' #'gs3.8.x' #'gs3.9.x')
     do: [ 
       spec
