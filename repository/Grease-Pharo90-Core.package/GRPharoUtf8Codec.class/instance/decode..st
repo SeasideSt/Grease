@@ -1,3 +1,4 @@
 convenience
 decode: aByteArray
-	^ aByteArray utf8Decoded
+	"^ super decode: aByteArray asByteArray"
+	^ aByteArray asByteArray utf8Decoded
