@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "pmm 6/1/2008 01:03",
+	"super" : "GRPlatform",
+	"category" : "Grease-Pharo10-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"UrlTable",
+		"XmlTable"
+	],
+	"instvars" : [
+		"utf8DeprecatedCodecFlag"
+	],
+	"name" : "GRPharoPlatform",
+	"type" : "normal"
+}
