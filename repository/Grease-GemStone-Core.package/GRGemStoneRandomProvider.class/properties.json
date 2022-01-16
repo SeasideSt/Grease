@@ -1,8 +1,7 @@
 {
 	"category" : "Grease-GemStone-Core",
 	"classinstvars" : [
-		"mutex",
-		"generator" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
