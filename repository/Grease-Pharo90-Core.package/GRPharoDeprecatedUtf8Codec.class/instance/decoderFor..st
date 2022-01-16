@@ -1,5 +1,5 @@
 convenience
 decoderFor: aStream 
-	^ GRPharoUtf8CodecStream 
+	^ GRPharoDeprecatedUtf8CodecStream 
 		on: aStream
 		converter: UTF8TextConverter new
