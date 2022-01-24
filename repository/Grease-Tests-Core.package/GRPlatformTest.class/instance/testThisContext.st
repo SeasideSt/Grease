@@ -10,9 +10,9 @@ testThisContext
 		ifTrue: [ self assert: blockContext receiver = block ]
 		ifFalse: [ 
 			self assert: blockContext receiver = self.
-			self assert: (blockContext namedTempAt: (blockContext tempNames indexOf: #blockContext)) == blockContext ].
-	self assert: (blockContext namedTempAt: (blockContext tempNames indexOf: #methodContext)) == methodContext ].
+			self assert: (blockContext tempNamed: 'blockContext') == blockContext ].
+	self assert: (blockContext tempNamed: 'methodContext') == methodContext ].
 	block value.
 	self assert: self returnSender = methodContext.
 	self assert: methodContext receiver = self.
-	self assert: (self platform thisContext namedTempAt: (self platform thisContext tempNames indexOf: #block)) == block
+	self assert: (self platform thisContext tempNamed: 'block') == block
