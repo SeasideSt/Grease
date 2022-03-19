@@ -1,3 +1,3 @@
 accessing
 nextPut: aCharacter
-	encoder nextPut: aCharacter asCharacter toStream: stream
+	encoder nextPut: aCharacter asCharacter toStream: stream 
