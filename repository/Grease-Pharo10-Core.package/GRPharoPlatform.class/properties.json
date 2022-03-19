@@ -8,9 +8,7 @@
 		"UrlTable",
 		"XmlTable"
 	],
-	"instvars" : [
-		"utf8DeprecatedCodecFlag"
-	],
+	"instvars" : [ ],
 	"name" : "GRPharoPlatform",
 	"type" : "normal"
 }
