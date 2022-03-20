@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GRCodec",
+	"category" : "Grease-Pharo100-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRPharoUtf16Codec",
+	"type" : "normal"
+}
