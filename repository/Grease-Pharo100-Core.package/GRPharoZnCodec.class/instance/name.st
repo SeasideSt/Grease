@@ -1,3 +1,3 @@
 accessing
 name
-	^ 'utf-16'
+	^ name

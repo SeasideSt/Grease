@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "GRCodec",
+	"super" : "GRCodecStream",
 	"category" : "Grease-Pharo100-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "GRPharoUtf16Codec",
+	"instvars" : [
+		"encoder"
+	],
+	"name" : "GRPharoZnCodecStream",
 	"type" : "normal"
 }
