@@ -1,4 +1,4 @@
-file library
+files
 fileStreamOn: aString do: aBlock binary: aBoolean
 	self 
 		greaseDeprecatedApi: 'GRPlatform>>#fileStreamOn:do:binary:'

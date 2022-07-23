@@ -1,4 +1,4 @@
-file library
+files
 localNameOf: aFilename
 	"Answer the local name of a file identified by an absolute file path.
 	

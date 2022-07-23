@@ -1,4 +1,4 @@
-file library
+files
 writeFileStreamOn: aString do: aBlock binary: aBoolean
 	^ aBoolean
 		ifTrue: [ aString asFileReference binaryWriteStreamDo: aBlock ]
