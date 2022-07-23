@@ -1,3 +1,3 @@
 files
-fileExists: aString
+deleteFile: aPathString
 	self subclassResponsibility
