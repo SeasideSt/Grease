@@ -1,4 +1,4 @@
-tests-filestreams
+tests-files
 testFileExists
 	| theFileName |
 	self 
