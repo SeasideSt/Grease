@@ -1,3 +1,3 @@
 streaming
 nextPutAll: aString
-	aString asString do:[ :each | self nextPut: each ]
+	encoder next: aString size putAll: aString startingAt: 1 toStream: stream 
