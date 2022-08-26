@@ -1,3 +1,3 @@
 encoding
 base64Encode: aByteArray
-	^ (Base64MimeConverter base64Encode: aByteArray readStream) contents
+	^ (Base64MimeConverter mimeEncode: aByteArray readStream) contents
