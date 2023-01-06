@@ -1,3 +1,3 @@
 parts-date
-monthName: anArray 
+monthName: anArray
 	^ GRPluggablePrinter on: [ :date | anArray at: date monthIndex ]

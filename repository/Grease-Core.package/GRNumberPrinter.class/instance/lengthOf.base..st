@@ -7,7 +7,7 @@ lengthOf: aNumber base: aBaseInteger
 	integer := aNumber truncated abs.
 	length := 1.
 	current := aBaseInteger.
-	[ current <= integer ] whileTrue: [ 
+	[ current <= integer ] whileTrue: [
 		length := length + 1.
 		current := current * aBaseInteger ].
 	^ length

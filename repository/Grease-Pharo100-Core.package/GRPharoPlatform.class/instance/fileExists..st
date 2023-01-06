@@ -1,3 +1,3 @@
 files
 fileExists: aString
-	^ aString asFileReference exists 
+	^ aString asFileReference exists

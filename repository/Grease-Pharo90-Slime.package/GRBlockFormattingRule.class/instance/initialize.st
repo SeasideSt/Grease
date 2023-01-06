@@ -4,7 +4,7 @@ initialize
 	self matcher
 		matches: '[ :`@args | | `@temps | ``@.stmts ]'
 		do: [ :node :answer |
-			answer isNil 
+			answer isNil
 				ifFalse: [ answer ]
 				ifTrue: [
 					| source |
@@ -16,7 +16,7 @@ initialize
 						(before isSeparator and: [ after isSeparator ])
 							ifFalse: [ node ]
 							ifTrue: [
-								node bar notNil ifTrue: [ 
+								node bar notNil ifTrue: [
 									before := source at: node bar - 1 ifAbsent: [ $ ].
 									after := source at: node bar + 1 ifAbsent: [ $ ].
 									(before isSeparator and: [ after isSeparator ])

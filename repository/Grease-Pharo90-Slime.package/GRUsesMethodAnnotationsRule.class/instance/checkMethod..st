@@ -2,7 +2,7 @@ running
 checkMethod: aContext
 	(self shouldExclude: aContext) ifFalse: [
 		aContext pragmas do: [ :each |
-			result 
+			result
 				addClass: aContext methodClass
 				selector: aContext selector.
 			result addSearchString: each selector ] ]

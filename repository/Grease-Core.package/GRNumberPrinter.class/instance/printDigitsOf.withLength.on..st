@@ -9,7 +9,7 @@ printDigitsOf: aNumber withLength: aLengthInteger on: aStream
 		| divisor current |
 		divisor := base raisedTo: aLengthInteger - index.
 		current := rest // divisor.
-		separator isNil ifFalse: [ 
+		separator isNil ifFalse: [
 			 (index ~= 1 and: [ (aLengthInteger - index) \\ 3 = 2 ])
 				ifTrue: [ aStream nextPut: separator ] ].
 		aStream nextPut: (characters at: current + 1).

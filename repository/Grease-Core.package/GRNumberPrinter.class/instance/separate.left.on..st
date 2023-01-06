@@ -1,7 +1,7 @@
 utilities
 separate: aString left: aCharacter on: aStream
 	"Separate from the left side every 3 characters with aCharacter."
-		
+
 	| size |
 	size := aString size.
 	1 to: size do: [ :index |

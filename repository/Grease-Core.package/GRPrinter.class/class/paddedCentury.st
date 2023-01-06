@@ -1,5 +1,5 @@
 parts-date
 paddedCentury
-	^ GRMappedPrinter 
+	^ GRMappedPrinter
 		block: [ :date | date year \\ 100 ]
 		next: (self numberWithAtLeastDigits: 2)

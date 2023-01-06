@@ -3,7 +3,7 @@ checkClass: aContext
 	| selectors |
 	selectors := self methodNames
 		inject: Set new
-		into: [ :set :each | 
+		into: [ :set :each |
 			set
 				addAll: (aContext whichSelectorsReferTo: each);
 				yourself ].

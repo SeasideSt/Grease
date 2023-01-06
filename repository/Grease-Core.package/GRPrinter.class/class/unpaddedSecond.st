@@ -1,5 +1,5 @@
 parts-time
 unpaddedSecond
-	^ GRMappedPrinter 
+	^ GRMappedPrinter
 		block: [ :time | time second ]
 		next: GRNumberPrinter new

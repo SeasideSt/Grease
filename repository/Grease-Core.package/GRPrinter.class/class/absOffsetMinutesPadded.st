@@ -1,5 +1,5 @@
 parts-date
 absOffsetMinutesPadded
-	^ GRMappedPrinter 
+	^ GRMappedPrinter
 		block: [ :date | date offset minutes abs ]
 		next: (self numberWithAtLeastDigits: 2)

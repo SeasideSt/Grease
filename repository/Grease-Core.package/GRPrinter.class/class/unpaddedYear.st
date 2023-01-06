@@ -1,5 +1,5 @@
 parts-date
 unpaddedYear
-	^ GRMappedPrinter 
+	^ GRMappedPrinter
 		block: [ :date | date year ]
 		next: GRNumberPrinter new

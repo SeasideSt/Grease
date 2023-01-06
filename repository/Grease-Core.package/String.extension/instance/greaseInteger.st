@@ -16,7 +16,7 @@ greaseInteger
 							ifTrue: [ 0 ]
 							ifFalse: [ 10 * number ]) + (char greaseInteger - $0 greaseInteger) ]
 					ifFalse: [
-						^ number isNil ifFalse: [ 
+						^ number isNil ifFalse: [
 							 negated not
 								ifFalse: [ number negated ]
 								ifTrue: [ number ] ] ] ] ].

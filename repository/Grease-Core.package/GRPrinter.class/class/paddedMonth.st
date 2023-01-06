@@ -1,5 +1,5 @@
 parts-date
 paddedMonth
-	^ GRMappedPrinter 
+	^ GRMappedPrinter
 		block: [ :date | date monthIndex ]
 		next: (self numberWithAtLeastDigits: 2)
