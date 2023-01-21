@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "PackageManifest",
+	"category" : "BaselineOfGrease-Manifest",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ManifestBaselineOfGrease",
+	"type" : "normal"
+}
