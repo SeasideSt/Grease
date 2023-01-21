@@ -1,3 +1,3 @@
 operators
-, aPrinter 
+, aPrinter
 	^ GRSequentialPrinter new , self , aPrinter

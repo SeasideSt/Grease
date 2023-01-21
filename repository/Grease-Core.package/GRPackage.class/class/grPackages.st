@@ -5,7 +5,7 @@ grPackages
 	| packages package |
 	packages := Dictionary new.
 	self class selectors do: [ :each |
-		(each numArgs = 0 and: [ each ~= #grPackages ]) ifTrue: [ 
+		(each numArgs = 0 and: [ each ~= #grPackages ]) ifTrue: [
 			package := self perform: each.
 			packages at: package name put: package ] ].
 	packages do: [ :each | each resolveWith: packages ].

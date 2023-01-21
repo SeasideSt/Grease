@@ -1,6 +1,6 @@
 parts-date
 offsetSign
-	^ GRMappedPrinter 
+	^ GRMappedPrinter
 		block: [ :date | date offset ]
 		next: (GRSignPrinter new
 				positivePrinter: $+;

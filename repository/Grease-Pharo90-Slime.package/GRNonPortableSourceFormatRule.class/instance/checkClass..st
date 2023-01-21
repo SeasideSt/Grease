@@ -1,7 +1,7 @@
 running
-checkClass: aContext 
+checkClass: aContext
 	| comment |
-	aContext isMeta 
+	aContext isMeta
 		ifTrue: [ ^ self ].
 	comment := aContext organization classComment asString.
 	comment isWideString ifTrue: [

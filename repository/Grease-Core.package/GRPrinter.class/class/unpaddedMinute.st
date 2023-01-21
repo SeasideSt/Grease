@@ -1,5 +1,5 @@
 parts-time
 unpaddedMinute
-	^ GRMappedPrinter 
+	^ GRMappedPrinter
 		block: [ :time | time minute ]
 		next: GRNumberPrinter new

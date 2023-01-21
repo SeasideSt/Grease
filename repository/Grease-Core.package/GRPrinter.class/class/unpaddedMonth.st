@@ -1,5 +1,5 @@
 parts-date
 unpaddedMonth
-	^ GRMappedPrinter 
+	^ GRMappedPrinter
 		block: [ :date | date monthIndex ]
 		next: GRNumberPrinter new

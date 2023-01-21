@@ -1,7 +1,7 @@
 utilities
 separate: aString right: aCharacter
 	"Separate from the right side every 3 characters with aCharacter."
-		
+
 	| size stream |
 	size := aString size.
 	stream := WriteStream on: (String new: 2 * size).

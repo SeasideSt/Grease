@@ -1,5 +1,5 @@
 running
-checkMethod: aContext 
+checkMethod: aContext
 	| periods position |
 	aContext parseTree nodesDo: [ :node |
 		(node isSequence and: [ node periods notEmpty ]) ifTrue: [

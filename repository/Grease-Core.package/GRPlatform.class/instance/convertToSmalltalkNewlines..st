@@ -1,8 +1,8 @@
 file library
 convertToSmalltalkNewlines: aString
 	"Convert any line endings (CR, CRLF, LF) to the default platform newline."
-	
-	aString isNil 
+
+	aString isNil
 		ifTrue: [ ^ nil ].
 	^ String streamContents: [ :writeStream |
 		| readStream |

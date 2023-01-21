@@ -1,5 +1,5 @@
 running
-checkMethod: aContext 
+checkMethod: aContext
 	aContext parseTree nodesDo: [ :node |
 		node isSequence ifTrue: [
 			(node statements notEmpty and: [ node periods notEmpty ]) ifTrue: [

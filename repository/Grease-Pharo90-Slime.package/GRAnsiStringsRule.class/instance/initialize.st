@@ -14,7 +14,7 @@ initialize
 		replace: '``@string findTokens: ``@arg' withValueFrom: [ :node |
 			| argument |
 			argument := node arguments first.
-			argument isLiteralNode ifTrue: [ 
+			argument isLiteralNode ifTrue: [
 				argument value isArray
 					ifTrue: [ argument replaceWith: (RBLiteralNode value: (String withAll: argument value)) ].
 				argument value isCharacter

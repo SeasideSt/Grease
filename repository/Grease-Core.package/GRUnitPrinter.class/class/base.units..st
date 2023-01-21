@@ -1,6 +1,6 @@
 instance creation
 base: anInteger units: anArray
-	^ self new 
+	^ self new
 		base: anInteger;
 		units: anArray;
 		yourself

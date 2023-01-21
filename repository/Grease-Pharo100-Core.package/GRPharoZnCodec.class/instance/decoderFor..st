@@ -1,3 +1,3 @@
 conversion
-decoderFor: aStream 
+decoderFor: aStream
 	^ self encoderFor: aStream

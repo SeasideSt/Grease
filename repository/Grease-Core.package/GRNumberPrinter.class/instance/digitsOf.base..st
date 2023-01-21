@@ -8,7 +8,7 @@ digitsOf: aNumber base: aBaseInteger
 	stream := WriteStream on: (String new: 10).
 	[ integer > 0 ] whileTrue: [
 		next := integer quo: aBaseInteger.
-		stream nextPut: (characters 
+		stream nextPut: (characters
 			at: 1 + integer - (next * aBaseInteger)).
 		integer := next ].
 	^ stream contents reverse

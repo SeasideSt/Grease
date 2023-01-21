@@ -1,7 +1,7 @@
 printing
 printOn: aStream
 	super printOn: aStream.
-	
+
 	aStream nextPut: $(.
 	self size <= 100
 		ifTrue: [
@@ -14,7 +14,7 @@ printOn: aStream
 					ifFalse: [ aStream space ].
 				aStream
 					print: key;
-					nextPutAll: '->';				
+					nextPutAll: '->';
 					print: value ] ]
 		ifFalse: [
 			aStream

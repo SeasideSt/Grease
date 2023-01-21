@@ -1,10 +1,10 @@
 dependencies
 resolveWith: aDictionary
-	dependencies := dependencies 
+	dependencies := dependencies
 		collect: [ :each |
 			aDictionary at: each ifAbsent: [
 				"if Foo-Pharo-Bar fails try Foo-Pharo20-Bar and Foo-Pharo30-Bar"
-				(each indexOfSubCollection: '-Pharo-' startingAt: 1) ~= 0 ifTrue: [ 
+				(each indexOfSubCollection: '-Pharo-' startingAt: 1) ~= 0 ifTrue: [
 					"try -Pharo40-"
 					aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Pharo40-') ifAbsent: [
 						"try -Pharo50-"
@@ -16,7 +16,7 @@ resolveWith: aDictionary
 									"try -Pharo90-"
 									aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Pharo90-') ifAbsent: [
 										"try -Pharo100-"
-										aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Pharo100-') ifAbsent: [								
+										aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Pharo100-') ifAbsent: [
 											"try -Squeak-"
 											aDictionary at: (each copyReplaceAll: '-Pharo-' with: '-Squeak-') ifAbsent: [
 												"try -Squeak5-"
