@@ -24,6 +24,8 @@ jobs:
           smalltalk-image: ${{ matrix.smalltalk }}
       - name: Run tests
         run: smalltalkci -s ${{ matrix.smalltalk }}
+        with:
+          smalltalkCI-source: 'jbrichau/smalltalkCI'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash

@@ -27,7 +27,7 @@ SmalltalkCISpec {
 				#classes : [ #SentButNotImplementedTest , #UndefinedSymbolsTest ]
 			},
       #coverage : {
-        #categories: [ 'Grease*' ],
+        #packages: [ 'Grease*' ],
         #format: #coveralls
       }
 	}
