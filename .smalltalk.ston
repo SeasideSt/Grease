@@ -28,7 +28,7 @@ SmalltalkCISpec {
 			},
       #coverage : {
         #packages: [ 'Grease*' ],
-        #format: #coveralls
+        #format: #lcov
       }
 	}
 }
