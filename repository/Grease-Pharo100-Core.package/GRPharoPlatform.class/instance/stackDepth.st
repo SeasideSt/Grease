@@ -1,5 +1,6 @@
 exceptions
 stackDepth
+	<ignoreForCoverage>
 	| depth current |
 	depth := 0.
 	current := thisContext.
