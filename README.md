@@ -16,7 +16,7 @@ Grease is widely adopted. Implementations exist already for all platforms that s
 
 ## Platform compatibility
 
-The latest Grease version is supported on the Pharo and GemStone/S  platforms and versions tested in the SmalltalkCI workflow in Github Actions: [![smalltalkCI](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml)
+The latest Grease version is supported on the Pharo and GemStone/S  platforms and versions tested in the SmalltalkCI workflow in Github Actions: [![smalltalkCI](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/SeasideSt/Grease/actions/workflows/ci.yml) [![codecov](https://codecov.io/gh/SeasideSt/Grease/branch/master/graph/badge.svg?token=75NIYAHAGI)](https://codecov.io/gh/SeasideSt/Grease)
 
 ## Installation
 
