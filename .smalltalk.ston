@@ -20,5 +20,15 @@ SmalltalkCISpec {
       #load : [ 'Tests' ],
       #platforms : [ #gemstone ]
     }
-  ]
+  ],
+  #testing : {
+      #defaultTimeout : 30,
+			#include : {
+				#classes : [ #SentButNotImplementedTest , #UndefinedSymbolsTest ]
+			},
+      #coverage : {
+        #packages: [ 'Grease*' ],
+        #format: #lcov
+      }
+	}
 }
