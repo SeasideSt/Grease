@@ -3,6 +3,6 @@ initialize
 	super initialize.
 	self rewriteRule
 		replace: '`@collection beginsWith: `@subCollection'
-			with: '`@collection beginsWithSubCollection: `@subCollection';
+			with: '`@collection greaseBeginsWith: `@subCollection';
 		replace: '`@collection endsWith: `@subCollection'
-			with: '`@collection endsWithSubCollection: `@subCollection'
+			with: '`@collection greaseEndsWith: `@subCollection'
