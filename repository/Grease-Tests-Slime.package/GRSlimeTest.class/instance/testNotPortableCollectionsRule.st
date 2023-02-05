@@ -9,5 +9,5 @@ testNotPortableCollectionsRule
 	self 
 		runTransformation: GRNotPortableCollectionsRule
 		changes: #(
-			'beginsWith1 ''abc'' beginsWithSubCollection: ''a'''
-			'endsWith1 ''abc'' endsWithSubCollection: ''a''')
+			'beginsWith1 ''abc'' greaseBeginsWith: ''a'''
+			'endsWith1 ''abc'' greaseEndsWith: ''a''')
