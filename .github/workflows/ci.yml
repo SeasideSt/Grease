@@ -20,7 +20,6 @@ jobs:
       - uses: dalehenrich/setup-smalltalkCI@solo
         with:
           smalltalk-image: ${{ matrix.smalltalk }}
-          smalltalkCI-source: 'jbrichau/smalltalkCI'
       - name: Run tests
         run: smalltalkci -s ${{ matrix.smalltalk }}
         env:
