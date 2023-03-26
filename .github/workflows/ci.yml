@@ -4,22 +4,20 @@ on: [push, pull_request]
 
 jobs:
   test:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     strategy:
       fail-fast: false
       matrix:
-        smalltalk: [ Pharo64-10, Pharo64-9.0, Pharo64-8.0, Pharo64-7.0, GemStone64-3.6.3, GemStone64-3.5.7, GemStone64-3.4.5, GemStone64-3.3.9, GemStone64-3.2.17, GemStone64-3.1.0.6, Squeak64-5.3 ]
+        smalltalk: [ Pharo64-11, Pharo64-10, Pharo64-9.0, Pharo64-8.0, Pharo64-7.0, GemStone64-3.6.5, GemStone64-3.5.7, Squeak64-5.3 ]
         experimental: [ false ]
         include:
-          - smalltalk: Pharo64-11
-            experimental: true
           - smalltalk: Squeak64-6.0
             experimental: true
     continue-on-error: ${{ matrix.experimental }}
     name: ${{ matrix.smalltalk }}
     steps:
       - uses: actions/checkout@v3
-      - uses: hpi-swa/setup-smalltalkCI@v1
+      - uses: dalehenrich/setup-smalltalkCI@solo
         with:
           smalltalk-image: ${{ matrix.smalltalk }}
           smalltalkCI-source: 'jbrichau/smalltalkCI'
