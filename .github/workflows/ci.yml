@@ -10,9 +10,9 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
-        os: [ ubuntu-20.04, macos-latest ]
         smalltalk: [ Pharo64-10, Pharo64-9.0, Pharo64-8.0, Pharo64-7.0, GemStone64-3.6.5, GemStone64-3.5.8, Squeak64-5.3, Squeak64-5.2, Squeak64-5.1 ]
         experimental: [ false ]
         include:
@@ -20,7 +20,6 @@ jobs:
             experimental: true
           - smalltalk: Squeak64-trunk
             experimental: true
-    runs-on: ${{ matrix.os }}
     continue-on-error: ${{ matrix.experimental }}
     name: ${{ matrix.smalltalk }}
     steps:
