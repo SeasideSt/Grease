@@ -21,7 +21,7 @@ jobs:
           - smalltalk: Squeak64-trunk
             experimental: true
     continue-on-error: ${{ matrix.experimental }}
-    runs-on: ${{ matrix.smalltalk }}
+    runs-on: ${{ matrix.os }}
     name: ${{ matrix.smalltalk }}
     steps:
       - name: Get current date
