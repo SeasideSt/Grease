@@ -97,7 +97,7 @@ baselineGemStone: spec
         	 with: [ spec includes: 'Grease-Tests-GemStone-Core' ] ].
 
   spec
-    for: #( #'gs3.5.4.x' #'gs3.5.5.x' #'gs3.5.6.x' #'gs3.5.7.x' )
+    for: #( #'gs3.5.4.x' #'gs3.5.5.x' #'gs3.5.6.x' #'gs3.5.7.x' #'gs3.5.8.x' #'gs3.5.9.x' )
     do: [ 
       spec
         package: 'Grease-GemStone-Core'
@@ -113,6 +113,16 @@ baselineGemStone: spec
         package: 'Grease-GemStone-Core'
           with: [ spec includes: #('Grease-GemStone-Kernelv360') ];
         package: 'Grease-GemStone-Kernelv360'
+          with: [ 
+              spec
+                requires: #('Grease-GemStone-Core') ] ].
+  spec
+    for: #( #'gs3.7.x' #'gs3.8.x' #'gs3.9.x')
+    do: [ 
+      spec
+        package: 'Grease-GemStone-Core'
+          with: [ spec includes: #('Grease-GemStone-Kernelv370') ];
+        package: 'Grease-GemStone-Kernelv370'
           with: [ 
               spec
                 requires: #('Grease-GemStone-Core') ] ].
