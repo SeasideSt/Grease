@@ -1,72 +1,34 @@
 name: smalltalkCI
 
-on: 
-  push:
-  pull_request:
-    branches:
-      master
-  schedule:
-    - cron: "15 2 7 * *" #run job on the 7th day of every month on the 15th minute of the 2nd hour
+on: [push, pull_request]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-20.04
     strategy:
+      fail-fast: false
       matrix:
-        smalltalk: [ Pharo64-10, Pharo64-9.0, Pharo64-8.0, Pharo64-7.0, GemStone64-3.6.5, GemStone64-3.5.8, Squeak64-5.3, Squeak64-5.2, Squeak64-5.1 ]
+        smalltalk: [ Pharo64-11, Pharo64-10, Pharo64-9.0, Pharo64-8.0, Pharo64-7.0, GemStone64-3.7.0, GemStone64-3.6.5, GemStone64-3.5.7, Squeak64-5.3 ]
         experimental: [ false ]
         include:
-          - smalltalk: Pharo64-11
+          - smalltalk: Pharo64-12
             experimental: true
-          - smalltalk: Squeak64-trunk
+          - smalltalk: Squeak64-6.0
             experimental: true
     continue-on-error: ${{ matrix.experimental }}
     name: ${{ matrix.smalltalk }}
     steps:
-      - name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%dT%H:%M:%S')"
-      - name: Log date
-        run: echo "${{ steps.date.outputs.date }}"
-      - name: Set default run status
-        run: echo "::set-output name=last_run_status::default" > last_run_status
-      - name: Restore last run status
-        id: last_run
-        uses: actions/cache@v2
-        with:
-          path: |
-            last_run_status
-          key: ${{ github.run_id }}-${{ matrix.smalltalk }}-${{ steps.date.outputs.date }}
-          restore-keys: |
-            ${{ github.run_id }}-${{ matrix.smalltalk }}-
-      - name: Set last run status
-        id: last_run_status
-        run: cat last_run_status
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.workflow_dispatch.ref }}
+      - uses: actions/checkout@v3
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalk-image: ${{ matrix.smalltalk }}
       - name: Run tests
-        id: test_run
-        if: steps.last_run_status.outputs.last_run_status != 'success'
         run: smalltalkci -s ${{ matrix.smalltalk }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
         timeout-minutes: 20
-      - name: Save run status
-        if: steps.last_run_status.outputs.last_run_status != 'success'
-        run: echo "::set-output name=last_run_status::${{ steps.test_run.outcome }}" > last_run_status
-  slack-workflow-status:
-    if: always()
-    name: Post Workflow Status To Slack
-    needs:
-      - build
-    runs-on: ubuntu-20.04
-    steps:
-       - name: Slack Workflow Notification
-         uses: Gamesight/slack-workflow-status@master
-         with:
-          repo_token: ${{secrets.GITHUB_TOKEN}}
-          slack_webhook_url: ${{secrets.SLACK_DALEHENRICH}}
-          name: 'action run' 
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          name: ${{ matrix.smalltalk }}

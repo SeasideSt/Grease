@@ -5,7 +5,7 @@ valueFor: receiver withPossibleArguments: anArray
 
 	| allArguments |
 	allArguments := self mergeArguments: anArray.
-	
+
 	^ allArguments size < selector numArgs
 		ifTrue: [ self invalidArgumentCount ]
 		ifFalse: [ self basicPerformFor: receiver withArguments: (allArguments first: selector numArgs) ]

@@ -1,5 +1,5 @@
 parts-time
 paddedMinute
-	^ GRMappedPrinter 
+	^ GRMappedPrinter
 		block: [ :time | time minute ]
 		next: (self numberWithAtLeastDigits: 2)

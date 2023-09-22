@@ -1,5 +1,5 @@
 parts-date
 unpaddedDay
-	^ GRMappedPrinter 
+	^ GRMappedPrinter
 		block: [ :date | date dayOfMonth ]
 		next: GRNumberPrinter new

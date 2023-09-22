@@ -2,7 +2,7 @@ initialization
 initialize
 	super initialize.
 	matcher := RBParseTreeSearcher new.
-	matcher 
+	matcher
 		matchesAnyOf: #(
 			'``@receiver greaseDeprecatedApi: ``@arg1'
 			'``@receiver greaseDeprecatedApi: ``@arg1 details: ``@arg2' )

@@ -1,3 +1,3 @@
 files
 deleteFile: aPathString
-	aPathString asFileReference delete 
+	aPathString asFileReference delete

@@ -1,6 +1,6 @@
 baselines
 baselinePharo: spec
-			
+
 	spec
 		for: #'pharo6.x'
 		do: [ spec
@@ -25,7 +25,7 @@ baselinePharo: spec
 
 	spec
 		for: #(#'pharo6.x' #'pharo7.x' #'pharo8.x')
-		do: [ 
+		do: [
 			spec
 				package: 'Grease-Pharo40-Slime' with: [ spec requires: #('Grease-Core') ];
 				package: 'Grease-Tests-Slime' with: [ spec requires: #('Grease-Pharo40-Slime') ].
@@ -35,7 +35,7 @@ baselinePharo: spec
 
 	spec
 		for: #(#'pharo9.x')
-		do: [ 
+		do: [
 			spec
 				package: 'Grease-Core' with: [ spec includes: #('Grease-Pharo90-Core') ];
 				package: 'Grease-Tests-Pharo-Core' with: [ spec requires: #('Grease-Tests-Core') ];
@@ -50,10 +50,10 @@ baselinePharo: spec
 			spec
 				group: 'Slime' with: #('Grease-Pharo90-Slime');
 				group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
-				
+
 	spec
-		for: #(#'pharo10.x')
-		do: [ 
+		for: #(#'pharo10.x' #'pharo11.x' #'pharo12.x')
+		do: [
 			spec
 				package: 'Grease-Core' with: [ spec includes: #('Grease-Pharo100-Core') ];
 				package: 'Grease-Tests-Pharo-Core' with: [ spec requires: #('Grease-Tests-Core') ];
@@ -67,4 +67,4 @@ baselinePharo: spec
 
 			spec
 				group: 'Slime' with: #('Grease-Pharo90-Slime');
-				group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
+				group: 'Slime Tests' with: #('Grease-Tests-Slime') ]
