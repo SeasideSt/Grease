@@ -1,14 +1,11 @@
 {
-	"category" : "Grease-Squeak5-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "pmm 2/20/2009 12:51",
-	"instvars" : [
-		 ],
-	"name" : "GRPharoUtf8Codec",
-	"pools" : [
-		 ],
 	"super" : "GRCodec",
-	"type" : "normal" }
+	"category" : "Grease-Squeak5-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRPharoUtf8Codec",
+	"type" : "normal"
+}

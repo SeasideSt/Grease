@@ -1,15 +1,14 @@
 {
+	"commentStamp" : "",
+	"super" : "GRObject",
 	"category" : "Grease-Squeak5-Core",
 	"classinstvars" : [
 		"mutex",
-		"generator" ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
-	"instvars" : [
-		 ],
+		"generator"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
 	"name" : "GRPharoRandomProvider",
-	"pools" : [
-		 ],
-	"super" : "GRObject",
-	"type" : "normal" }
+	"type" : "normal"
+}
