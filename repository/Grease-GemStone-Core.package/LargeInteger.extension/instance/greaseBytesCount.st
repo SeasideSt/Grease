@@ -1,4 +1,4 @@
 *grease-gemstone-core
-greaseByteCount
+greaseBytesCount
 
 	^ self digitLength
