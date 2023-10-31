@@ -1,8 +1,8 @@
 running
-checkMethod: aContext
-	(self shouldExclude: aContext) ifFalse: [
-		aContext pragmas do: [ :each |
-			result
-				addClass: aContext methodClass
-				selector: aContext selector.
-			result addSearchString: each selector ] ]
+checkMethod: aMethod
+	(self shouldExclude: aMethod) ifFalse: [
+		aMethod pragmas do: [ :each |
+			result 
+				addClass: aMethod methodClass
+				selector: aMethod selector.
+			result addSearchString: each keyword ] ]

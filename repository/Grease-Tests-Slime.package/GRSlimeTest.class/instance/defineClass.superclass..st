@@ -2,11 +2,11 @@ accessing-code
 defineClass: aClassSymbol superclass: aSuperSymbol
 
 	| class |
-	model defineClass: aSuperSymbol , ' subclass: #' , aClassSymbol , '
-		instanceVariableNames: '''' 
-		classVariableNames: ''''
-		poolDictionaries: ''''
-		category: ''' , self category , ''''.
+	GRPlatform current
+		defineClass: aClassSymbol
+		superclassName: aSuperSymbol
+		category: self category
+		forRBModel: model.
 	class := model classNamed: aClassSymbol.
 	environment
 		addClass: class;

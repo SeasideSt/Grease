@@ -4,8 +4,8 @@ initialize
 	self matcher
 		matches: '^ ``@expr'
 		do: [ :node :answer |
-			answer isNil
+			answer isNil 
 				ifFalse: [ answer ]
-				ifTrue: [
+				ifTrue: [ 
 					node start + 2 ~= node value start
 						ifTrue: [ node ] ] ]

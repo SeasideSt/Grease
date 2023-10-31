@@ -1,7 +1,7 @@
 running
-checkMethod: aContext
-	aContext methodClass isMeta
+checkMethod: aMethod 
+	aMethod methodClass isMeta
 		ifTrue: [ ^ self ].
-	(aContext methodClass allSuperclasses includes:(Smalltalk at: #TestCase))
+	(aMethod methodClass inheritsFrom: #TestCase)
 		ifFalse: [ ^ self ].
-	^ super checkMethod: aContext
+	^ super checkMethod: aMethod 

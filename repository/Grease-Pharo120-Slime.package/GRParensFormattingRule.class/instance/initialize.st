@@ -4,7 +4,7 @@ initialize
 	self matcher
 		matches: '`{ :node | node isValue and: [ node hasParentheses ] }'
 		do: [ :node :answer |
-			answer isNil
+			answer isNil 
 				ifFalse: [ answer ]
 				ifTrue: [
 					| found start stop |

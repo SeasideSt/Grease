@@ -1,6 +1,6 @@
 running
-checkClass: aContext
-	aContext allSuperclassesDo: [ :each |
+checkClass: aClass
+	aClass allSuperclassesDo: [ :each |
 		(self classNames includes: each name) ifTrue: [
-			result addClass: aContext.
+			result addClass: aClass.
 			result addSearchString: each name ] ]
