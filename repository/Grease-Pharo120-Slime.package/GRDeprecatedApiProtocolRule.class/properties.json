@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GRSlimeBlockLintRule",
+	"category" : "Grease-Pharo120-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"matcher"
+	],
+	"name" : "GRDeprecatedApiProtocolRule",
+	"type" : "normal"
+}

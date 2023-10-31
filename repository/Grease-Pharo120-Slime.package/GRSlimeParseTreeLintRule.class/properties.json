@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RBParseTreeLintRule",
+	"category" : "Grease-Pharo120-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRSlimeParseTreeLintRule",
+	"type" : "normal"
+}

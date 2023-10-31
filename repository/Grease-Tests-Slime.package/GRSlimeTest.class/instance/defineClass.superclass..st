@@ -1,5 +1,6 @@
 accessing-code
 defineClass: aClassSymbol superclass: aSuperSymbol
+
 	| class |
 	model defineClass: aSuperSymbol , ' subclass: #' , aClassSymbol , '
 		instanceVariableNames: '''' 
@@ -7,7 +8,7 @@ defineClass: aClassSymbol superclass: aSuperSymbol
 		poolDictionaries: ''''
 		category: ''' , self category , ''''.
 	class := model classNamed: aClassSymbol.
-	environment 
+	environment
 		addClass: class;
-		addClass: class theMetaClass.
+		addClass: (GRPlatform current classSideOf: class).
 	^ class
