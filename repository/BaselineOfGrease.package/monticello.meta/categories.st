@@ -1,2 +1,1 @@
-SystemOrganization addCategory: #'BaselineOfGrease-Manifest'!
-SystemOrganization addCategory: #'BaselineOfGrease-Manifest-BaselineOfGrease'!
+self packageOrganizer ensurePackage: #BaselineOfGrease withTags: #('Manifest' 'Manifest-BaselineOfGrease')!
