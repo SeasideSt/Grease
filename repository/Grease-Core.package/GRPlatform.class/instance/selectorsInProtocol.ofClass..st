@@ -1,3 +1,3 @@
 tests
-selectorsOfProtocol: aString inClass: aClass
+selectorsInProtocol: aString ofClass: aClass
 	^ aClass organization listAtCategoryNamed: aString
