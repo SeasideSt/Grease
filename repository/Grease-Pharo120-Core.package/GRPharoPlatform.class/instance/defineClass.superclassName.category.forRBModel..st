@@ -4,4 +4,4 @@ defineClass: aClassSymbol superclassName: aSuperSymbol category: aString forRBMo
 		builder
 			name: aClassSymbol;
 			superclassName: aSuperSymbol;
-			category: self category ]
+			category: aString ]
