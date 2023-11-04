@@ -1,4 +1,4 @@
-tests
+tests-encoding
 testBase64Decode
 	| input |
 	input := #(
