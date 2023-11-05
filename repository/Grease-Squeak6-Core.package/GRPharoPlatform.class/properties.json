@@ -1,15 +1,14 @@
 {
+	"commentStamp" : "pmm 2/1/2014 13:28",
+	"super" : "GRPlatform",
 	"category" : "Grease-Squeak6-Core",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"UrlTable",
-		"XmlTable" ],
-	"commentStamp" : "pmm 2/1/2014 13:28",
-	"instvars" : [
-		 ],
+		"XmlTable"
+	],
+	"instvars" : [ ],
 	"name" : "GRPharoPlatform",
-	"pools" : [
-		 ],
-	"super" : "GRPlatform",
-	"type" : "normal" }
+	"type" : "normal"
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "Grease-Squeak5-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "GRPharoLatin1CodecStream",
-	"pools" : [
-		 ],
 	"super" : "GRNullCodecStream",
-	"type" : "normal" }
+	"category" : "Grease-Squeak5-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRPharoLatin1CodecStream",
+	"type" : "normal"
+}
