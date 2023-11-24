@@ -1,7 +1,10 @@
 running
 tearDown
+
 	super tearDown.
-	(Smalltalk organization listAtCategoryNamed: self category) do:[ :e | 
-		SmalltalkImage current removeClassNamed: e ].
+	factory cleanUp.
+	"package := (Smalltalk organization packageNamed: self category).
+	package classes do:[ :e | 
+		SmalltalkImage current removeClassNamed: e name ].
 	Smalltalk organization
-		removeCategory: self category
+		removePackage: package"
