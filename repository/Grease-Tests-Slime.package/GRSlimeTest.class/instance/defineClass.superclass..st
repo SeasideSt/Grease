@@ -9,7 +9,7 @@ defineClass: aClassSymbol superclass: aSuperSymbol
 					superclass: (Smalltalk at: aSuperSymbol);
 					package: self category ] ]
 		ifFalse:[
-			aSuperSymbol , ' subclass: #' , aClassSymbol , '
+			model defineClass: aSuperSymbol , ' subclass: #' , aClassSymbol , '
 				instanceVariableNames: '''' 
 				classVariableNames: ''''
 				poolDictionaries: ''''
