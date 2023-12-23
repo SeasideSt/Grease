@@ -1,3 +1,3 @@
-file-library
+files
 contentsOfFile: aString binary: aBoolean
 	^ self fileStreamOn: aString do: [ :stream | stream contents ] binary: aBoolean
