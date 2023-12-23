@@ -1,4 +1,4 @@
-file-library
+files
 writeFileStreamOn: fileName do: aBlock binary: isBinary
   | stream |
   stream := BinaryOrTextFile open: fileName mode: 'w+b' onClient: false.
