@@ -6,14 +6,14 @@ testUsesCurlyBraceArrays
 	class := self
 		defineClass: #GRSlimeMockObject
 		superclass: #GRObject.
-	class
+	self
 		compile: 'invalid
 			^ { self foo. self bar }'
-		classified: #(accessing).
-	class
+		in: class.
+	self
 		compile: 'valid
 			^ Array new'
-		classified: #(accessing).
+		in: class.
 	self 
 		runRule: GRUsesCurlyBraceArraysRule
 		selectors: #(invalid)

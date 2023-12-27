@@ -6,14 +6,14 @@ testUsesLiteralByteArrays
 	class := self
 		defineClass: #GRSlimeMockObject
 		superclass: #GRObject.
-	class
+	self
 		compile: 'invalid
 			^ #[ 1 2 3 ]'
-		classified: #(accessing).
-	class
+		in: class.
+	self
 		compile: 'valid
 			^ ByteArray with: 1 with: 2 with: 3'
-		classified: #(accessing).
+		in: class.
 	self 
 		runRule: GRUsesLiteralByteArraysRule
 		selectors: #(invalid)

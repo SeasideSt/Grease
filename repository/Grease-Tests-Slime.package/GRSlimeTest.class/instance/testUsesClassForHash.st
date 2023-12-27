@@ -4,14 +4,14 @@ testUsesClassForHash
 	class := self
 		defineClass: #GRSlimeMockObject
 		superclass: #GRObject.
-	class
+	self
 		compile: 'foo
 			^ super hash bitXor: self class hash'
-		classified: #(accessing).
-	class
+		in: class.
+	self
 		compile: 'hash
 			^ super hash bitXor: self class hash'
-		classified: #(accessing).
+		in: class.
 	self 
 		runRule: GRUsesClassForHashRule
 		selectors: #(hash)

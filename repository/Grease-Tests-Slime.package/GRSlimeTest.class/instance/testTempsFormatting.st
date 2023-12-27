@@ -4,18 +4,18 @@ testTempsFormatting
 	class := self
 		defineClass: #GRSlimeMockObject
 		superclass: #GRObject.
-	class
+	self
 		compile: 'invalid1
 			| a|'
-		classified: #(accessing).
-	class
+		in: class.
+	self
 		compile: 'invalid2
 			|a |'
-		classified: #(accessing).
-	class
+		in: class.
+	self
 		compile: 'invalid3
 			| a  b |'
-		classified: #(accessing).
+		in: class.
 	self 
 		runRule: GRTempsFormattingRule
 		selectors: #(invalid1 invalid2 invalid3)
