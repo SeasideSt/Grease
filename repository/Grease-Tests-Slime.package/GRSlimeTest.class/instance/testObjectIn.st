@@ -1,9 +1,7 @@
 tests-transform
 testObjectIn
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self compile: 'objectIn1 1 in: [ :val | val factorial ]' in: class.
 	self compile: 'objectIn2 2 in: [ :val | | temps | val factorial ]' in: class.
 	self compile: 'objectIn3 2 in: [ ''not this'' ]' in: class.

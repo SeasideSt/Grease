@@ -1,21 +1,19 @@
 tests-parsetree
 testTempsFormatting
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
-	class
+	class := self defineSubClassOf: #GRObject.
+	self
 		compile: 'invalid1
 			| a|'
-		classified: #(accessing).
-	class
+		in: class.
+	self
 		compile: 'invalid2
 			|a |'
-		classified: #(accessing).
-	class
+		in: class.
+	self
 		compile: 'invalid3
 			| a  b |'
-		classified: #(accessing).
+		in: class.
 	self 
 		runRule: GRTempsFormattingRule
 		selectors: #(invalid1 invalid2 invalid3)
