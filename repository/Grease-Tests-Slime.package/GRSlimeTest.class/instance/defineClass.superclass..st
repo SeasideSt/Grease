@@ -1,20 +1,11 @@
 accessing-code
 defineClass: aClassSymbol superclass: aSuperSymbol
-	| class |
 
-	SystemVersion current major >= 12
-		ifTrue:[
-			class := factory silentlyMake: [ :aBuilder | 
-				aBuilder
-					superclass: (Smalltalk at: aSuperSymbol);
-					package: self category ] ]
-		ifFalse:[
-			model defineClass: aSuperSymbol , ' subclass: #' , aClassSymbol , '
-				instanceVariableNames: '''' 
-				classVariableNames: ''''
-				poolDictionaries: ''''
-				category: ''' , self category , ''''.
-			class := model classNamed: aClassSymbol ].
+	| class |
+	class := factory silentlyMake: [ :aBuilder |
+		         aBuilder
+			         superclass: (Smalltalk at: aSuperSymbol);
+			         package: self category ].
 	environment
 		addClass: class;
 		addClass: class theMetaClass.
