@@ -4,9 +4,8 @@ defineClass: aClassSymbol superclass: aSuperSymbol
 
 	SystemVersion current major >= 12
 		ifTrue:[
-			class := factory make: [ :aBuilder | 
+			class := factory silentlyMake: [ :aBuilder | 
 				aBuilder
-					"name: aClassSymbol;"
 					superclass: (Smalltalk at: aSuperSymbol);
 					package: self category ] ]
 		ifFalse:[
