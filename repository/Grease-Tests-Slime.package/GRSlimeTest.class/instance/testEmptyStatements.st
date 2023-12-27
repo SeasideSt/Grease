@@ -1,9 +1,7 @@
 tests-block
 testEmptyStatements
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self compile: 'emptyStatement1. self and' in: class.
 	self compile: 'emptyStatement2 self and..' in: class.
 	self compile: 'emptyStatement3 self and."foo".' in: class.

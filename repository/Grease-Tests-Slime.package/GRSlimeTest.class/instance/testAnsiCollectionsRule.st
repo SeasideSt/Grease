@@ -1,9 +1,7 @@
 tests-transform
 testAnsiCollectionsRule
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self compile: 'withIndexDo #() withIndexDo: [ :each :index | each + index ]' in: class.
 	self compile: 'doWithIndex #() doWithIndex: [ :each :index | each + index ]' in: class.
 	self compile: 'collectThenDo #() collect: [ :a | a ] thenDo: [ :b | b ]' in: class.

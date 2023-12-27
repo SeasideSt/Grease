@@ -1,9 +1,7 @@
 tests-parsetree
 testUsesClassForHash
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self
 		compile: 'foo
 			^ super hash bitXor: self class hash'

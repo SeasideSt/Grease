@@ -3,9 +3,7 @@ testUsesLiteralByteArrays
 	| class |
 	(self canParse: 'foo #[ 1 2 3 ]')
 		ifFalse: [ ^ self ].
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self
 		compile: 'invalid
 			^ #[ 1 2 3 ]'

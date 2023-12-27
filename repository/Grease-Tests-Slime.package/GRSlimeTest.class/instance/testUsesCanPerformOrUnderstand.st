@@ -1,9 +1,7 @@
 tests-parsetree
 testUsesCanPerformOrUnderstand
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self
 		compile: 'invalid1
 			Object class canUnderstand: #new'

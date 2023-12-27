@@ -1,9 +1,7 @@
 tests-block
 testNonPortableMessageRule
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 
 	self compile: 'invalid1 ^ Array new anyOne' in: class.
 	self compile: 'valid1 ^ Array new first' in: class.
