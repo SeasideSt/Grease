@@ -1,15 +1,14 @@
 {
-	"category" : "Grease-Squeak6-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GRCodec",
+	"category" : "Grease-Squeak6-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"name",
-		"urlCodec" ],
+		"urlCodec"
+	],
 	"name" : "GRPharoGenericCodec",
-	"pools" : [
-		 ],
-	"super" : "GRCodec",
-	"type" : "normal" }
+	"type" : "normal"
+}

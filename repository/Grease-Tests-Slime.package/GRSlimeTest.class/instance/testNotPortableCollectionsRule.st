@@ -1,9 +1,7 @@
 tests-transform
 testNotPortableCollectionsRule
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self compile: 'beginsWith1 ''abc'' beginsWith: ''a''' in: class.
 	self compile: 'endsWith1 ''abc'' endsWith: ''a''' in: class.
 	self 

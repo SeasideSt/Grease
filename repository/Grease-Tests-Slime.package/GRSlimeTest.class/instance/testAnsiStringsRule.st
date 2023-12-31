@@ -1,9 +1,7 @@
 tests-transform
 testAnsiStringsRule
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self compile: 'stringCr String cr, (String with: Character cr)' in: class.
 	self compile: 'stringTab String tab, (String with: Character tab)' in: class.
 	self compile: 'stringLf String lf, (String with: Character lf)' in: class.

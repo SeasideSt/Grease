@@ -3,17 +3,15 @@ testUsesCurlyBraceArrays
 	| class |
 	(self canParse: 'foo { self foo. self bar }')
 		ifFalse: [ ^ self ].
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
-	class
+	class := self defineSubClassOf: #GRObject.
+	self
 		compile: 'invalid
 			^ { self foo. self bar }'
-		classified: #(accessing).
-	class
+		in: class.
+	self
 		compile: 'valid
 			^ Array new'
-		classified: #(accessing).
+		in: class.
 	self 
 		runRule: GRUsesCurlyBraceArraysRule
 		selectors: #(invalid)

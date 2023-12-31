@@ -1,9 +1,7 @@
 tests-transform
 testAnsiConvertorRule
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self compile: 'convertInteger ''1'' asInteger' in: class.
 	self compile: 'convertString 2 asString' in: class.
 	self 

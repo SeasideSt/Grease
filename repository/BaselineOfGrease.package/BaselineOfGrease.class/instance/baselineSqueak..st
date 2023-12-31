@@ -22,14 +22,7 @@ baselineSqueak: spec
 				package: 'Grease-Tests-Squeak-Core'
 					with: [ spec requires: #('Grease-Tests-Core') ];
 				package: 'Grease-Tests-Squeak5-Core'
-					with: [ spec requires: #('Grease-Tests-Squeak-Core') ];
-				package: 'Grease-Slime'
-					with: [ spec requires: #('Refactoring-Core' 'Grease-Core') ];
-				package: 'Grease-Tests-Slime'
-					with: [ spec requires: #('Grease-Slime') ].
-			spec
-				group: 'Slime' with: #('Grease-Slime');
-				group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
+					with: [ spec requires: #('Grease-Tests-Squeak-Core') ] ].
 	spec
 		for: #(#'squeak6.x')
 		do: [
@@ -52,11 +45,4 @@ baselineSqueak: spec
 				package: 'Grease-Tests-Squeak-Core'
 					with: [ spec requires: #('Grease-Tests-Core') ];
 				package: 'Grease-Tests-Squeak6-Core'
-					with: [ spec requires: #('Grease-Tests-Squeak-Core') ];
-				package: 'Grease-Slime' 
-					with: [ spec requires: #('Refactoring-Core' 'Grease-Core') ];
-				package: 'Grease-Tests-Slime'
-					with: [ spec requires: #('Grease-Slime') ].
-			spec
-				group: 'Slime' with: #('Grease-Slime');
-				group: 'Slime Tests' with: #('Grease-Tests-Slime') ]
+					with: [ spec requires: #('Grease-Tests-Squeak-Core') ] ]

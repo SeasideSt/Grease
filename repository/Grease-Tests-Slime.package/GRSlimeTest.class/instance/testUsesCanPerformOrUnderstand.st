@@ -1,21 +1,19 @@
 tests-parsetree
 testUsesCanPerformOrUnderstand
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
-	class
+	class := self defineSubClassOf: #GRObject.
+	self
 		compile: 'invalid1
 			Object class canUnderstand: #new'
-		classified: #(accessing).
-	class
+		in: class.
+	self
 		compile: 'invalid2
 			Object class canPerform: #new'
-		classified: #(accessing).
-	class
+		in: class.
+	self
 		compile: 'valid
 			Object respondsTo: #new'
-		classified: #(accessing).
+		in: class.
 	self 
 		runRule: GRUsesCanPerformOrUnderstandRule
 		selectors: #(invalid1 invalid2)
