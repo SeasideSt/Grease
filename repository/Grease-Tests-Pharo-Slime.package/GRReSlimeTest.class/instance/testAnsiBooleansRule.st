@@ -1,6 +1,6 @@
 tests-transform
 testAnsiBooleansRule
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self compile: 'and 1 and: [ 2 ] and: [ 3 ] and: [ 4 ]' in: class.

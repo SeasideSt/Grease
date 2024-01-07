@@ -4,5 +4,5 @@ rules
 	^ (OrderedCollection new
 		addAll: GRReSlimeBlockLintRule allSubclasses;
 		addAll: GRReSlimeParseTreeLintRule allSubclasses;
-"		addAll: GRSlimeTransformationRule allSubclasses;"
+		addAll: GRReSlimeTransformationRule allSubclasses;
 		yourself) reject: #isAbstract

@@ -8,4 +8,4 @@ testReferencesNotPortableClass
 	self compile: 'valid ^ GRObject new' in: class.
 	self 
 		assertRule: GRReferencesNotPortableClassRule
-		matches: { class>>#invalid }.
+		matches: { class>>#invalid }
