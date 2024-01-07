@@ -1,5 +1,5 @@
 tests-block
-testUsesNotPortableClass
+testReferencesNotPortableClass
 
 	| class |
 	class := self defineSubClassOf: #GRObject.

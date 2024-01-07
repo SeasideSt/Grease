@@ -1,8 +1,10 @@
-accessing
+accessing-code
 rules
-	^ OrderedCollection new
+
+	^ (OrderedCollection new
 		addAll: GRReSlimeBlockLintRule allSubclasses;
 		addAll: GRReSlimeParseTreeLintRule allSubclasses;
 "		addAll: GRSlimeTransformationRule allSubclasses;"
 		add: ReMultiplePeriodsTerminatingStatementRule;
-		yourself
+		add: ReUnnecessaryLastPeriodRule;
+		yourself) reject: #isAbstract
