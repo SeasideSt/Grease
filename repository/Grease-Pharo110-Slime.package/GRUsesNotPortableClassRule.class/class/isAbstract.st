@@ -1,4 +1,4 @@
 testing
 isAbstract 
 
-	^ self == GRUsesNotPortableClassRule
+	^ self name = #GRUsesNotPortableClassRule

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 9/12/2009 10:37",
-	"super" : "GRReSlimeTransformationRule",
+	"super" : "GRSlimeTransformationRule",
 	"category" : "Grease-Pharo110-Slime",
 	"classinstvars" : [ ],
 	"pools" : [ ],

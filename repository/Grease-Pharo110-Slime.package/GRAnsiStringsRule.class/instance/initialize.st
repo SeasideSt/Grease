@@ -11,8 +11,8 @@ initialize
 		replace: '`@string includesSubString: `@subString'
 			with: '(`@string indexOfSubCollection: `@subString startingAt: 0) ~= 0';
 		replace: '`@string includesSubstring: `@subString'
-			with: '(`@string indexOfSubCollection: `@subString startingAt: 0) ~= 0'
-		"replace: '``@string findTokens: ``@arg' withValueFrom: [ :node |
+			with: '(`@string indexOfSubCollection: `@subString startingAt: 0) ~= 0';
+		replace: '``@string findTokens: ``@arg' byEvaluating: [ :node |
 			| argument |
 			argument := node arguments first.
 			argument isLiteralNode ifTrue: [
@@ -22,4 +22,4 @@ initialize
 					ifTrue: [ argument replaceWith: (RBLiteralNode value: (String with: argument value)) ] ].
 			node
 				selector: #subStrings:;
-				yourself ]"
+				yourself ]

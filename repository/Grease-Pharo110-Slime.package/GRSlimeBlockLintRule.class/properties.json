@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "ReNodeRewriteRule",
+	"super" : "ReAbstractRule",
 	"category" : "Grease-Pharo110-Slime",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GRReSlimeTransformationRule",
+	"name" : "GRSlimeBlockLintRule",
 	"type" : "normal"
 }

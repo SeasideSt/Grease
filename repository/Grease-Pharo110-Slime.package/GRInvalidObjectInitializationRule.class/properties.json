@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "GRReSlimeBlockLintRule",
+	"super" : "GRSlimeBlockLintRule",
 	"category" : "Grease-Pharo110-Slime",
 	"classinstvars" : [ ],
 	"pools" : [ ],

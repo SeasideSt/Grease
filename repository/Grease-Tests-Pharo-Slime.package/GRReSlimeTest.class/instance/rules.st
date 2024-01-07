@@ -2,7 +2,7 @@ running
 rules
 
 	^ (OrderedCollection new
-		addAll: GRReSlimeBlockLintRule allSubclasses;
-		addAll: GRReSlimeParseTreeLintRule allSubclasses;
-		addAll: GRReSlimeTransformationRule allSubclasses;
+		addAll: GRSlimeBlockLintRule allSubclasses;
+		addAll: GRSlimeParseTreeLintRule allSubclasses;
+		addAll: GRSlimeTransformationRule allSubclasses;
 		yourself) reject: #isAbstract
