@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GRReSlimeParseTreeLintRule",
+	"category" : "Grease-Pharo110-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRUsesClassForHashRule",
+	"type" : "normal"
+}

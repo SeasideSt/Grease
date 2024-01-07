@@ -1,6 +1,6 @@
 tests-parsetree
 testUsesCanPerformOrUnderstand
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self
@@ -16,5 +16,5 @@ testUsesCanPerformOrUnderstand
 			Object respondsTo: #new'
 		in: class.
 	self 
-		runRule: GRUsesCanPerformOrUnderstandRule
-		selectors: #(invalid1 invalid2)
+		assertRule: GRUsesCanPerformOrUnderstandRule
+		matches: { class>>#invalid1 . class>>#invalid2 }

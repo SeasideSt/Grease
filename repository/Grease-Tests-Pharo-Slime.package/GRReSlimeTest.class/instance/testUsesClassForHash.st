@@ -1,6 +1,6 @@
 tests-parsetree
 testUsesClassForHash
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self
@@ -12,5 +12,5 @@ testUsesClassForHash
 			^ super hash bitXor: self class hash'
 		in: class.
 	self 
-		runRule: GRUsesClassForHashRule
-		selectors: #(hash)
+		assertRule: GRUsesClassForHashRule
+		matches: { class>>#hash }

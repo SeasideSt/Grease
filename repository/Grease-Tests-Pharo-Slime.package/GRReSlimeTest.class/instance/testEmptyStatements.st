@@ -12,4 +12,4 @@ testEmptyStatements
 	self 
 		assertRule: ReMultiplePeriodsTerminatingStatementRule
 		matches: { class>>#emptyStatement1 . class>>#emptyStatement2 . class>>#emptyStatement3 . class>>#emptyStatement4 }
-		ignoring: (Array with: GRUnnecessaryLastPeriodRule)
+		ignoring: (Array with: ReUnnecessaryLastPeriodRule)
