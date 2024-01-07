@@ -1,6 +1,6 @@
 tests-transform
 testAnsiCharacterRule
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self compile: 'character Character value: 123' in: class.
