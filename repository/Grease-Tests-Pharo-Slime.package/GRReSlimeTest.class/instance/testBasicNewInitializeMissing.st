@@ -6,4 +6,4 @@ testBasicNewInitializeMissing
 	self compile:  'initialize' in: class.
 	self
 		assertRule: GRBasicNewInitializeMissingRule
-		expectedMatches: { class }
+		matches: { class }

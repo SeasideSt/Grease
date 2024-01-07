@@ -1,6 +1,6 @@
 tests-block
 testNonPortableMessageRule
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 
@@ -11,5 +11,5 @@ testNonPortableMessageRule
 	self compile: 'valid2 ^ Array new do: [ :each | each hash ]' in: class.
 
 	self 
-		runRule: GRNonPortableMessageRule
-		selectors: #(invalid1 invalid2)
+		assertRule: GRNonPortableMessageRule
+		matches: { class>>#invalid1 . class>>#invalid2 }

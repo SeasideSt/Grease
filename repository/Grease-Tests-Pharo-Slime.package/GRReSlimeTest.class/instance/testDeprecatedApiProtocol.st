@@ -8,4 +8,4 @@ testDeprecatedApiProtocol
 	self compile: 'deprecated3 self greaseDeprecatedApi: ''GRSlimeMock>>#deprecated3'' details: ''Something.''' in: class.
 	self 
 		assertRule: GRDeprecatedApiProtocolRule
-		expectedMatches: { class>>#deprecated2 . class>>#deprecated3 }
+		matches: { class>>#deprecated2 . class>>#deprecated3 }

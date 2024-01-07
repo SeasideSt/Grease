@@ -1,5 +1,5 @@
 running-checks
-run: aRuleClass ignoring: aCollectionOfEntities do: aBlock
+run: aRuleClass ignoring: ignoredRuleClasses do: aBlock
 
 	| rules rule runner |
 	rules := self rules
@@ -22,7 +22,7 @@ run: aRuleClass ignoring: aCollectionOfEntities do: aBlock
 	rules do: [ :each | | result |
 		result := runner criticsOf: each. 
 		self 
-			assert: (rule = each or: [ result isEmpty "and: [ each changes isEmpty ]) or: [ aCollectionOfEntities includes: each class ]" ])
-			description: each name , ' should not report errors' ].
+			assert: (rule = each or: [ result isEmpty or: [ ignoredRuleClasses includes: each class ] ])
+			description: ('{1} should not report errors' format: { each name })  ].
 	aBlock value: (runner criticsOf: rule).
 	^ rule
