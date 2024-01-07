@@ -1,6 +1,6 @@
 tests-transform
 testAnsiCollectionsRule
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self compile: 'withIndexDo #() withIndexDo: [ :each :index | each + index ]' in: class.

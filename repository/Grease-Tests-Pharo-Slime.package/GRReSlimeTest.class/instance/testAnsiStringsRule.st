@@ -1,6 +1,6 @@
 tests-transform
 testAnsiStringsRule
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self compile: 'stringCr String cr, (String with: Character cr)' in: class.

@@ -1,6 +1,6 @@
 tests-transform
 testAnsiStreamsRule
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self compile: 'writeStream ^ '''' writeStream' in: class.

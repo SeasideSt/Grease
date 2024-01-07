@@ -1,6 +1,6 @@
 tests-transform
 testAnsiExceptionsRule
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self compile: 'exception1 [ self or ] on: Error do: [ self or ]' in: class.

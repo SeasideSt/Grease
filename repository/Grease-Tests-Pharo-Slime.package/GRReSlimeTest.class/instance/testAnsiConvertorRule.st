@@ -1,6 +1,6 @@
 tests-transform
 testAnsiConvertorRule
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self compile: 'convertInteger ''1'' asInteger' in: class.

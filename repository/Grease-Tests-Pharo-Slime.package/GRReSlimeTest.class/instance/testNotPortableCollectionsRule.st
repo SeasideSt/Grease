@@ -1,6 +1,6 @@
 tests-transform
 testNotPortableCollectionsRule
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self compile: 'beginsWith1 ''abc'' beginsWith: ''a''' in: class.

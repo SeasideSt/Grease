@@ -1,6 +1,6 @@
 tests-transform
 testObjectIn
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self compile: 'objectIn1 1 in: [ :val | val factorial ]' in: class.

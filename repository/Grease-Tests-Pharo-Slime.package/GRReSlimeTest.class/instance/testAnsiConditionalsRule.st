@@ -1,6 +1,6 @@
 tests-transform
 testAnsiConditionalsRule
-	<expectedFailure>
+
 	| class |
 	class := self defineSubClassOf: #GRObject.
 	self compile: 'ifNotNil 1 ifNotNil: [ | a | self or. self and ]' in: class.
