@@ -1,9 +1,7 @@
 tests-block
 testUsesNotPortableClass
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self compile: 'invalid ^ Semaphore new' in: class.
 	self compile: 'valid ^ GRObject new' in: class.
 	self 

@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Grease-Tests-Slime'!
+self packageOrganizer ensurePackage: #'Grease-Tests-Slime' withTags: #()!

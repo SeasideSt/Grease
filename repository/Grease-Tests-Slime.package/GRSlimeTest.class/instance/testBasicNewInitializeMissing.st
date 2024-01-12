@@ -1,9 +1,7 @@
 tests-block
 testBasicNewInitializeMissing
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #Object.
+	class := self defineSubClassOf: #Object.
 	self compile:  'initialize' in: class.
 	self
 		runRule: GRBasicNewInitializeMissingRule

@@ -1,9 +1,7 @@
 tests-block
 testInvalidObjectInitialization
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self compile:  'initializeFoo: aNumber' in: class.
 	self 
 		runRule: GRInvalidObjectInitializationRule
