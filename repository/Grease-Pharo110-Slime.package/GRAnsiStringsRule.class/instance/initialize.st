@@ -13,13 +13,14 @@ initialize
 		replace: '`@string includesSubstring: `@subString'
 			with: '(`@string indexOfSubCollection: `@subString startingAt: 0) ~= 0';
 		replace: '``@string findTokens: ``@arg' byEvaluating: [ :node |
-			| argument |
-			argument := node arguments first.
+			| argument newNode |
+			newNode := node copy.
+			argument := newNode arguments first.
 			argument isLiteralNode ifTrue: [
 				argument value isArray
 					ifTrue: [ argument replaceWith: (RBLiteralNode value: (String withAll: argument value)) ].
 				argument value isCharacter
 					ifTrue: [ argument replaceWith: (RBLiteralNode value: (String with: argument value)) ] ].
-			node
+			newNode
 				selector: #subStrings:;
 				yourself ]
