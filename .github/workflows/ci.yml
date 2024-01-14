@@ -22,7 +22,7 @@ jobs:
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalkCI-source: 'jbrichau/smalltalkCI'
-          smalltalkCI-branch: 'master'
+          smalltalkCI-branch: 'fix-issue-623'
           smalltalk-image: ${{ matrix.smalltalk }}
       - name: Run tests
         run: smalltalkci -s ${{ matrix.smalltalk }}
