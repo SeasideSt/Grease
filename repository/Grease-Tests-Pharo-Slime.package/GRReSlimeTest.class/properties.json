@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Grease-Tests-Pharo-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"model",
+		"environment",
+		"factory"
+	],
+	"name" : "GRReSlimeTest",
+	"type" : "normal"
+}
