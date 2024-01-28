@@ -6,7 +6,7 @@ initialize
 		replace: 'Character value: ``@expr'
 		with: 'Character codePoint: ``@expr'.
 	self
-		replace: '`#source to: `#target'
+		replace: '`#source `{:node | node value isCharacter }` to: `#target'
 		byEvaluating: [ :node |
 			(node receiver value isCharacter and: [
 				 node arguments first value isCharacter ])
