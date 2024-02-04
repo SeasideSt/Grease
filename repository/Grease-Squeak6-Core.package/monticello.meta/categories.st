@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Grease-Squeak6-Core'!
+self packageOrganizer ensurePackage: #'Grease-Squeak6-Core' withTags: #()!
