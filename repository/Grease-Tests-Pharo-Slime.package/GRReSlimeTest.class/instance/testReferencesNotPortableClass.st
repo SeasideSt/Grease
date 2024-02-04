@@ -2,8 +2,7 @@ tests-block
 testReferencesNotPortableClass
 
 	| class |
-	class := self defineSubClassOf: #GRObject.
-	class category: 'SomeCategory'.
+	class := self defineSubClassOf: #GRObject inPackage: 'SomeCategory'.
 	self compile: 'invalid ^ Semaphore new' in: class.
 	self compile: 'valid ^ GRObject new' in: class.
 	self 
