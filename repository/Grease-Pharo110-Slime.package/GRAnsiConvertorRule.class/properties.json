@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GRSlimeTransformationRule",
+	"category" : "Grease-Pharo110-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRAnsiConvertorRule",
+	"type" : "normal"
+}

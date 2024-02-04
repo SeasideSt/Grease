@@ -1,0 +1,4 @@
+private
+methodNames
+
+	^ #( anyOne withIndexCollect: )

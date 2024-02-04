@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Grease-Pharo100-Core'!
+self packageOrganizer ensurePackage: #'Grease-Pharo100-Core' withTags: #()!
