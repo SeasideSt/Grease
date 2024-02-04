@@ -1,13 +1,16 @@
 tests-files
 testNewTemporaryFileNamed
 
-	| temporaryFile |
+	| temporaryFile fileName |
+	fileName := 'GRPlatformTestTemporaryFile'.
 	[
-		temporaryFile := GRPlatform current newTemporaryFileNamed: 'test_temporary'.
+		temporaryFile := GRPlatform current newTemporaryFileNamed: fileName.
 		GRPlatform current
 			writeFileStreamOn: temporaryFile
 			do: [ :str | str nextPutAll: 'test temporary' ]
 			binary: false.
-		self assert: (GRPlatform current fileExists: temporaryFile)
+		self assert: (GRPlatform current fileExists: temporaryFile).
+		self should: [ GRPlatform current newTemporaryFileNamed: fileName ] raise: GRError.
 	] ensure: [ GRPlatform current deleteFile: temporaryFile ].
-	self deny: (GRPlatform current fileExists: temporaryFile)
+	self deny: (GRPlatform current fileExists: temporaryFile).
+	
