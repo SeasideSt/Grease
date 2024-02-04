@@ -1,4 +1,7 @@
 files
 newTemporaryFileNamed: aName
 
-	^ (GsFile openWriteOnServer: '/tmp/', aName) pathName
+	| fileName |
+	fileName := '/tmp/', aName.
+	(self fileExists: fileName) ifTrue: [ GRError new signal: 'A (temporary) file with name ', aName, ' already exists.' ].
+	^ (GsFile openWriteOnServer: fileName) pathName

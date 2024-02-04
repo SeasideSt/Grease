@@ -1,4 +1,7 @@
 files
 newTemporaryFileNamed: aName
 
-	^ (FileDirectory default / aName) pathName
+	| file |
+	file := FileDirectory default / aName.
+	file exists ifTrue: [ GRError new signal: 'A (temporary) file with name ', aName, ' already exists.' ].
+	^ file pathName

@@ -1,4 +1,7 @@
 files
 newTemporaryFileNamed: aName
 
-	^ (FileLocator temp / aName) pathString
+	| newFile |
+	newFile := FileLocator temp / aName.
+	newFile exists ifTrue: [ GRError new signal: 'A (temporary) file with name ', aName, ' already exists.' ].
+	^ newFile pathString
