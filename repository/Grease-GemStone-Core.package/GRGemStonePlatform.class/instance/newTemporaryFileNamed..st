@@ -1,4 +1,4 @@
-*grease-gemstone300-core
+files
 newTemporaryFileNamed: aName
 
 	^ (GsFile openWriteOnServer: '/tmp/', aName) pathName

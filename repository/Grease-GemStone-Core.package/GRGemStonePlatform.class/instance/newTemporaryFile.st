@@ -1,4 +1,4 @@
-*grease-gemstone300-core
+files
 newTemporaryFile
 
 	^ self newTemporaryFileNamed: UUID new greaseString
