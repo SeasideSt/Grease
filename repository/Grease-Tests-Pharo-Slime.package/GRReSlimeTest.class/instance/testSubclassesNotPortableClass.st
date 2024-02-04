@@ -2,8 +2,7 @@ tests-block
 testSubclassesNotPortableClass
 
 	| class |
-	class := self defineSubClassOf: #Mutex.
-	class package: 'SomeCategory' tag: ''.
+	class := self defineSubClassOf: #Mutex inPackage: 'SomeCategory'.
 	self 
 		assertRule: GRSubclassesNotPortableClassRule
 		matches: { class }
