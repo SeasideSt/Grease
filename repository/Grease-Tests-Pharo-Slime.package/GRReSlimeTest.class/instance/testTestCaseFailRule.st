@@ -6,5 +6,4 @@ testTestCaseFailRule
 	self compile: 'testMethod self fail' in: class.
 	self 
 		runTransformation: GRTestAssertionsRule
-		changes: #(
-			'testMethod self assert: false' )
+		changes: #( 'testMethod self assert: false' )
