@@ -1,6 +1,6 @@
 {
-	"commentStamp" : "",
-	"super" : "ReAbstractRule",
+	"commentStamp" : "JohanBrichau 3/11/2024 21:54",
+	"super" : "RBBlockLintRule",
 	"category" : "Grease-Pharo110-Slime",
 	"classinstvars" : [ ],
 	"pools" : [ ],
