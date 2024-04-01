@@ -1,17 +1,15 @@
 tests-parsetree
 testReturnFormatting
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
-	class
+	class := self defineSubClassOf: #GRObject.
+	self
 		compile: 'invalid1
 			^1'
-		classified: #(accessing).
-	class
+		in: class.
+	self
 		compile: 'invalid2
 			^  2'
-		classified: #(accessing).
+		in: class.
 	self 
 		runRule: GRReturnFormattingRule
 		selectors: #(invalid1 invalid2)

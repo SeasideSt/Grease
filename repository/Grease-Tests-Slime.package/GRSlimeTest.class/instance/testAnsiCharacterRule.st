@@ -1,9 +1,7 @@
 tests-transform
 testAnsiCharacterRule
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self compile: 'character Character value: 123' in: class.
 	self compile: 'characterRange $a to: $c' in: class.
 	self 

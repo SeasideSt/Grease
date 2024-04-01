@@ -62,9 +62,9 @@ baselinePharo: spec
 						requires: #('Grease-Pharo100-Core');
 						includes: #('Grease-Tests-Pharo-Core') ];
 				package: 'Grease-Pharo100-Core' with: [ spec requires: #('Grease-Core') ];
-				package: 'Grease-Pharo90-Slime' with: [ spec requires: #('Grease-Core') ];
-				package: 'Grease-Tests-Slime' with: [ spec requires: #('Grease-Pharo90-Slime') ].
+				package: 'Grease-Pharo110-Slime' with: [ spec requires: #('Grease-Core') ];
+				package: 'Grease-Tests-Pharo-Slime' with: [ spec requires: #('Grease-Pharo110-Slime') ].
 
 			spec
-				group: 'Slime' with: #('Grease-Pharo90-Slime');
-				group: 'Slime Tests' with: #('Grease-Tests-Slime') ]
+				group: 'Slime' with: #('Grease-Pharo110-Slime');
+				group: 'Slime Tests' with: #('Grease-Tests-Pharo-Slime') ]

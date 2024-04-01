@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"model",
-		"environment"
+		"environment",
+		"factory"
 	],
 	"name" : "GRSlimeTest",
 	"type" : "normal"

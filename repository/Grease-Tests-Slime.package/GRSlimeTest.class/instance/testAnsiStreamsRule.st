@@ -1,9 +1,7 @@
 tests-transform
 testAnsiStreamsRule
 	| class |
-	class := self
-		defineClass: #GRSlimeMockObject
-		superclass: #GRObject.
+	class := self defineSubClassOf: #GRObject.
 	self compile: 'writeStream ^ '''' writeStream' in: class.
 	self compile: 'writeCr | stream | stream := WriteStream on: ''''. stream cr. stream nextPut: Character cr' in: class.
 	self compile: 'writeLf | stream | stream := WriteStream on: ''''. stream lf. stream nextPut: Character lf' in: class.
