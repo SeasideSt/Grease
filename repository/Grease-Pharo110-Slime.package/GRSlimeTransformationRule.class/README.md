@@ -1,0 +1,1 @@
+For compatibility for versions of Seaside older than 3.5.6

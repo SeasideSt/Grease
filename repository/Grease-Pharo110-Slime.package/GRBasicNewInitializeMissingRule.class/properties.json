@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GRReSlimeBlockLintRule",
+	"category" : "Grease-Pharo110-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"matcher"
+	],
+	"name" : "GRBasicNewInitializeMissingRule",
+	"type" : "normal"
+}
