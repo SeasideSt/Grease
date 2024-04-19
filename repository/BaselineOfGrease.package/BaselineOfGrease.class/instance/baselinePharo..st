@@ -69,4 +69,5 @@ baselinePharo: spec
 			spec
 				group: 'Slime' with: #('Grease-Pharo110-Slime-Core');
 				group: 'Slime Portability' with: #('Slime' 'Grease-Pharo110-Slime-Portability');
-				group: 'Slime Tests' with: #('Grease-Pharo110-Slime-Portability' 'Grease-Tests-Pharo-Slime') ]
+				group: 'Slime Tests' with: #('Grease-Pharo110-Slime-Portability' 'Grease-Tests-Pharo-Slime');
+				group: 'Development' with: #('Slime Portability') ]
