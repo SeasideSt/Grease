@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JohanBrichau 3/11/2024 21:54",
+	"super" : "RBTransformationRule",
+	"category" : "Grease-Pharo110-Slime-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRSlimeTransformationRule",
+	"type" : "normal"
+}
