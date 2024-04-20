@@ -8,17 +8,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        smalltalk: [ Pharo64-11, Pharo64-10, Pharo64-9.0, Pharo64-8.0, Pharo64-7.0, GemStone64-3.7.0, GemStone64-3.6.6, GemStone64-3.5.7, Squeak64-5.3 ]
+        smalltalk: [ Pharo64-12, Pharo64-11, Pharo64-10, Pharo64-9.0, Pharo64-8.0, Pharo64-7.0, GemStone64-3.7.0, GemStone64-3.6.6, GemStone64-3.5.7, Squeak64-5.3 ]
         experimental: [ false ]
         include:
-          - smalltalk: Pharo64-12
-            experimental: true
           - smalltalk: Squeak64-6.0
             experimental: true
     continue-on-error: ${{ matrix.experimental }}
     name: ${{ matrix.smalltalk }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalk-image: ${{ matrix.smalltalk }}
@@ -29,6 +27,6 @@ jobs:
         shell: bash
         timeout-minutes: 20
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           name: ${{ matrix.smalltalk }}
