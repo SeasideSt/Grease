@@ -1,4 +1,5 @@
 class initialization
 initialize
-	super initialize.
+	self initializeXmlTable.
+	self initializeUrlTable.
 	self select

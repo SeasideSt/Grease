@@ -1,3 +1,3 @@
 version info
 label
-	^ 'Pharo'
+	^ 'Squeak'

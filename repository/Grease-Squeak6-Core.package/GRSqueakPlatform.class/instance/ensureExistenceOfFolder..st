@@ -1,3 +1,4 @@
 file library
 ensureExistenceOfFolder: aString
-	^FileDirectory default assureExistenceOfPath: aString
+	"creates a folder named aString in the image directory"
+	FileDirectory default assureExistenceOfPath: aString

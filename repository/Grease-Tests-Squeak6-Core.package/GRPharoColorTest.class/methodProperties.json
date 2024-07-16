@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"expectedFailures" : " 7/15/2024 14:23:54",
+		"testAllColors" : " 7/15/2024 14:23:54",
+		"testColorAsHtmlColor" : " 7/15/2024 14:23:54",
+		"testFromSixDigit" : " 7/15/2024 14:23:54",
+		"testFromStringName" : " 7/15/2024 14:23:54",
+		"testFromStringSixDigit" : " 7/15/2024 14:23:54",
+		"testFromStringThreeDigit" : " 7/15/2024 14:23:54" } }
