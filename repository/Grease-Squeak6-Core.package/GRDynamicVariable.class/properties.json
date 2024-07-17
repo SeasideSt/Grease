@@ -1,11 +1,14 @@
 {
-	"commentStamp" : "",
-	"super" : "DynamicVariable",
 	"category" : "Grease-Squeak6-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
 	"name" : "GRDynamicVariable",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "DynamicVariable",
+	"type" : "normal" }

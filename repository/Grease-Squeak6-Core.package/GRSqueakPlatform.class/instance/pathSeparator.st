@@ -1,3 +1,3 @@
-file library
+files
 pathSeparator
-	^ FileDirectory pathNameDelimiter asString
+	^ String with: FileDirectory pathNameDelimiter

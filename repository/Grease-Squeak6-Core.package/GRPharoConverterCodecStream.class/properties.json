@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "pmm 9/14/2013 15:53",
-	"super" : "GRCodecStream",
 	"category" : "Grease-Squeak6-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "pmm 9/14/2013 15:53",
 	"instvars" : [
-		"converter"
-	],
+		"converter" ],
 	"name" : "GRPharoConverterCodecStream",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRCodecStream",
+	"type" : "normal" }
