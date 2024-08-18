@@ -11,5 +11,5 @@ testCompileIntoClassified
 		classified: protocol.
 	
 	[ self assert: (self class selectors includes: selector).
-	selectors := self class organization listAtCategoryNamed: protocol.
+	selectors := self class selectorsInProtocol: protocol.
 	self assert: selectors = (Array with: selector) ] ensure: [ self class removeSelector: selector ]

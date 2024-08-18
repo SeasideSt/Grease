@@ -52,7 +52,7 @@ baselinePharo: spec
 				group: 'Slime Tests' with: #('Grease-Tests-Slime') ].
 
 	spec
-		for: #(#'pharo10.x' #'pharo11.x' #'pharo12.x')
+		for: #(#'pharo10.x' #'pharo11.x' #'pharo12.x' #'pharo13.x')
 		do: [
 			spec
 				package: 'Grease-Core' with: [ spec includes: #('Grease-Pharo100-Core') ];
@@ -62,9 +62,12 @@ baselinePharo: spec
 						requires: #('Grease-Pharo100-Core');
 						includes: #('Grease-Tests-Pharo-Core') ];
 				package: 'Grease-Pharo100-Core' with: [ spec requires: #('Grease-Core') ];
-				package: 'Grease-Pharo110-Slime' with: [ spec requires: #('Grease-Core') ];
-				package: 'Grease-Tests-Pharo-Slime' with: [ spec requires: #('Grease-Pharo110-Slime') ].
+				package: 'Grease-Pharo110-Slime-Core' with: [ spec requires: #('Grease-Core') ];
+				package: 'Grease-Pharo110-Slime-Portability' with: [ spec requires: #('Grease-Pharo110-Slime-Core') ];
+				package: 'Grease-Tests-Pharo-Slime' with: [ spec requires: #('Grease-Pharo110-Slime-Portability') ].
 
 			spec
-				group: 'Slime' with: #('Grease-Pharo110-Slime');
-				group: 'Slime Tests' with: #('Grease-Tests-Pharo-Slime') ]
+				group: 'Slime' with: #('Grease-Pharo110-Slime-Core');
+				group: 'Slime Portability' with: #('Slime' 'Grease-Pharo110-Slime-Portability');
+				group: 'Slime Tests' with: #('Grease-Pharo110-Slime-Portability' 'Grease-Tests-Pharo-Slime');
+				group: 'Development' with: #('Slime Portability') ]

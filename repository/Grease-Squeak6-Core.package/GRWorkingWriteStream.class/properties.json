@@ -1,11 +1,14 @@
 {
-	"commentStamp" : "pmm 8/25/2011 18:30",
-	"super" : "WriteStream",
 	"category" : "Grease-Squeak6-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "pmm 8/25/2011 18:30",
+	"instvars" : [
+		 ],
 	"name" : "GRWorkingWriteStream",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "WriteStream",
+	"type" : "normal" }

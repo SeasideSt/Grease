@@ -1,12 +1,12 @@
 *grease-tests-squeak6-core
 writeToFile: aStringOrByteArray withFileNameDo: aBlock
 	| fileName directory |
-	fileName :=  'GRPharoPlatformTest'.
-	directory := FileSystem disk workingDirectory.
+	fileName :=  'GRSqueakPlatformTest'.
+	directory :=  FileDirectory default.
 	[ GRPlatform current
 		write: aStringOrByteArray
 		toFile: fileName
 		inFolder: directory fullName.
 	aBlock value: directory fullName, GRPlatform current pathSeparator, fileName
 		] ensure: [
-			(directory / fileName) delete ]
+			directory deleteFileNamed: fileName ]

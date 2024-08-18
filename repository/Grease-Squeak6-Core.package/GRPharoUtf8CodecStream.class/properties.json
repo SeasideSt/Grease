@@ -1,14 +1,15 @@
 {
-	"commentStamp" : "pmm 2/20/2009 12:27",
-	"super" : "GRPharoConverterCodecStream",
 	"category" : "Grease-Squeak6-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classinstvars" : [
+		 ],
 	"classvars" : [
 		"Latin1ToUtf8Encodings",
-		"Latin1ToUtf8Map"
-	],
-	"instvars" : [ ],
+		"Latin1ToUtf8Map" ],
+	"commentStamp" : "pmm 2/20/2009 12:27",
+	"instvars" : [
+		 ],
 	"name" : "GRPharoUtf8CodecStream",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "GRPharoConverterCodecStream",
+	"type" : "normal" }
