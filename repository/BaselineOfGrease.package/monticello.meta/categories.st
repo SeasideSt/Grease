@@ -1,1 +1,1 @@
-self packageOrganizer ensurePackage: #BaselineOfGrease withTags: #()!
+SystemOrganization addCategory: #BaselineOfGrease!
