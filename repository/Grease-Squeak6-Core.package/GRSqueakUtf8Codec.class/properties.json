@@ -1,0 +1,14 @@
+{
+	"category" : "Grease-Squeak6-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "pmm 2/20/2009 12:51",
+	"instvars" : [
+		 ],
+	"name" : "GRSqueakUtf8Codec",
+	"pools" : [
+		 ],
+	"super" : "GRCodec",
+	"type" : "normal" }
