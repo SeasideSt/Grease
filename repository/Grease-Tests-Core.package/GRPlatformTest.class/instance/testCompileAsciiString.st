@@ -1,4 +1,4 @@
-tests-file library
+tests-mop
 testCompileAsciiString
 	| selector expected source |
 	

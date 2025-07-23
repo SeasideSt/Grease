@@ -1,4 +1,4 @@
-tests-file library
+tests-mop
 testCompileUnicodeString
 	| selector expected source |
 	selector := #stringMethod.
