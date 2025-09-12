@@ -1,3 +1,4 @@
 accessing-repositories
 seasideAddonsUrl
-	^ 'http://smalltalkhub.com/mc/Seaside/Seaside30Addons/main'
+	"The original URL http://smalltalkhub.com/mc/Seaside/Seaside30Addons/main"
+	^ 'https://github.com/SeasideSt/Seaside'
