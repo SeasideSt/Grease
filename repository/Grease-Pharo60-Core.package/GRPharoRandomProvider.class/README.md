@@ -1,1 +1,0 @@
-I make GRPlatform use Random as a random number generator.

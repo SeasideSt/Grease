@@ -1,3 +1,0 @@
-conversion
-encodedStringClass
-	^ String

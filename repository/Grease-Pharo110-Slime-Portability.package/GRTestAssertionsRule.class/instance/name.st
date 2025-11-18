@@ -1,4 +1,0 @@
-accessing
-name
-
-	^ 'TestCase >> #fail'

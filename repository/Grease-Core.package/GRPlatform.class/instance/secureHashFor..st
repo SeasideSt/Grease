@@ -1,3 +1,0 @@
-cryptography
-secureHashFor: aStringOrByteArray
-	self subclassResponsibility

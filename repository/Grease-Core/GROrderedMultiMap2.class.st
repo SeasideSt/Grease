@@ -1,0 +1,82 @@
+"
+I am an implementation of an ordered multi-map. I allow multiple values to be associated with the same key and maintain the order of addition. #at: and its derivatives all operate on the first matching key, while #allAt: returns the complete list of values for a key in the order they were added.
+"
+Class {
+	#name : 'GROrderedMultiMap2',
+	#superclass : 'GRSmallDictionary2',
+	#category : 'Grease-Core-Collections',
+	#package : 'Grease-Core',
+	#tag : 'Collections'
+}
+
+{ #category : 'adding' }
+GROrderedMultiMap2 >> add: anAssociation [
+	self privateAt: anAssociation key put: anAssociation value.
+	^ anAssociation
+]
+
+{ #category : 'adding' }
+GROrderedMultiMap2 >> addAll: aDictionary [
+	aDictionary keysAndValuesDo: [ :key :value |
+			self privateAt: key put: value ].
+	^ aDictionary
+]
+
+{ #category : 'accessing' }
+GROrderedMultiMap2 >> allAt: aKey [
+	^ self privateAllAt: aKey startingAt: 1
+]
+
+{ #category : 'accessing' }
+GROrderedMultiMap2 >> allAt: aKey ifAbsent: absentBlock [
+	| results |
+	results := self allAt: aKey.
+	^ results isEmpty
+		ifTrue: [ absentBlock value ]
+		ifFalse: [ results ]
+]
+
+{ #category : 'adding' }
+GROrderedMultiMap2 >> at: aKey add: aValue [
+	"Add an association between aKey and aValue. Do not replace existing
+	values with the same key."
+
+	^ self privateAt: aKey put: aValue
+]
+
+{ #category : 'enumerating' }
+GROrderedMultiMap2 >> keysAndAllValuesDo: aTwoArgumentBlock [
+	| seenKeys |
+	seenKeys := GRSmallOrderedSet new.
+	1 to: size * 2 - 1 by: 2 do: [ :index |
+		| key |
+		key := table at: index.
+		(seenKeys includes: key) ifFalse: [
+			aTwoArgumentBlock
+				value: key
+				value: (self privateAllAt: key startingAt: index).
+			seenKeys add: key ] ]
+]
+
+{ #category : 'private ' }
+GROrderedMultiMap2 >> privateAllAt: aKey startingAt: index [
+	^ Array new: 2 streamContents: [ :stream |
+		index to: size * 2 - 1 by: 2 do: [ :i |
+			(table at: i) = aKey
+				ifTrue: [ stream nextPut: (table at: i + 1) ] ] ]
+]
+
+{ #category : 'removing' }
+GROrderedMultiMap2 >> removeKey: aKey ifAbsent: aBlock [
+	"Remove aKey from the receiver, evaluate aBlock if the element is missing."
+
+	"This is inefficient and could be optimized."
+	| removed |
+	removed := Array new: 2 streamContents: [ :stream |
+		| index |
+		[ (index := self findIndexFor: aKey) = 0 ] whileFalse: [
+			stream nextPut: (self removeIndex: index) ] ].
+	^ removed isEmpty
+		ifTrue: [ aBlock value ]
+		ifFalse: [ removed ]
+]

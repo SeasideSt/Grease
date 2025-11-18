@@ -1,0 +1,39 @@
+Class {
+	#name : 'GRAnsiStreamsRule',
+	#superclass : 'GRReSlimeTransformationRule',
+	#category : 'Grease-Pharo110-Slime-Portability',
+	#package : 'Grease-Pharo110-Slime-Portability'
+}
+
+{ #category : 'accessing' }
+GRAnsiStreamsRule >> group [
+
+	^ 'ANSI Compatibility'
+]
+
+{ #category : 'initialization' }
+GRAnsiStreamsRule >> initialize [
+
+	super initialize.
+	self
+		replace: '`{ :node :context | node isVariable and: [ (Smalltalk includesKey: node name asSymbol) not and: [ context at: ''`receiver'' ifAbsentPut: [ node ]. true ] ] } cr'
+			with: '`{ :context | context at: ''`receiver'' } nextPut: Character cr';
+		replace: '`{ :node :context | node isVariable and: [ (Smalltalk includesKey: node name asSymbol) not and: [ context at: ''`receiver'' ifAbsentPut: [ node ]. true ] ] } lf'
+			with: '`{ :context | context at: ''`receiver'' } nextPut: Character lf';
+		replace: '``@stream nextPut: Character cr; nextPut: Character lf'
+			with: '``@stream crlf';
+		replace: '``@collection writeStream'
+			with: 'WriteStream on: ``@collection'
+]
+
+{ #category : 'accessing' }
+GRAnsiStreamsRule >> name [
+
+	^ 'Streams'
+]
+
+{ #category : 'accessing' }
+GRAnsiStreamsRule >> rationale [
+
+	^ '#cr and #lf are not part of the ANSI stream protocol.'
+]
