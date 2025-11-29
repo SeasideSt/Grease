@@ -1,0 +1,4 @@
+testing
+isSqueak
+
+    ^ false
