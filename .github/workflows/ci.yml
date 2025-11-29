@@ -1,10 +1,12 @@
 name: smalltalkCI
 
-on:
+on: 
   push:
   pull_request:
+    branches:
+      master
   schedule:
-    - cron: "5 0 * * 1" # At 00:05 on Monday.
+    - cron: "15 2 7 * *" #run job on the 7th day of every month on the 15th minute of the 2nd hour
 
 jobs:
   test:
@@ -35,3 +37,9 @@ jobs:
         with:
           name: ${{ matrix.smalltalk }}
           token: ${{ secrets.CODECOV_TOKEN }}
+      - name: Slack Workflow Notification
+        uses: Gamesight/slack-workflow-status@master
+        with:
+          repo_token: ${{secrets.GITHUB_TOKEN}}
+          slack_webhook_url: ${{secrets.SLACK_DALEHENRICH}}
+          name: 'action run'
