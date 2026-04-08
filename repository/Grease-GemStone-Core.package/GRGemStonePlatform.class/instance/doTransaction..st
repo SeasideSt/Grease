@@ -1,4 +1,4 @@
-*grease-gemstone-core
+transactions
 doTransaction: aBlock
   "Evaluate aBlock in a transaction. 
 	 Return true if the transaction succeeds and false if the transaction fails.
