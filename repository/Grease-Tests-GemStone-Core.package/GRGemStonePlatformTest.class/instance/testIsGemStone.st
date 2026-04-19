@@ -1,4 +1,4 @@
-*Grease-Tests-Pharo-Core
+tests
 testIsGemStone
 	self assert: GRPlatform current isGemStone.
 	self deny: GRPlatform current isPharo.
