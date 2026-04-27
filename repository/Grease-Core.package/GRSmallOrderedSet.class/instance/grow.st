@@ -1,4 +1,4 @@
-private 
+private
 grow
 	| newTable |
 	"#replaceFrom:to:with:startingAt: would be better but not portable"
