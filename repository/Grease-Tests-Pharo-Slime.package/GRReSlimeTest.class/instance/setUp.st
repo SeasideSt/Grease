@@ -2,6 +2,5 @@ running
 setUp
 
 	super setUp.
-	factory := ClassFactoryForTestCase new.
-	model := RBNamespace new.
+	factory := ClassFactoryForTestCase environment: (ClassFactoryForTestCase environment).
 	environment := RBClassEnvironment new
