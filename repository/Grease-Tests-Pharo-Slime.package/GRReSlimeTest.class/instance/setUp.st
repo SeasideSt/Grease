@@ -2,5 +2,7 @@ running
 setUp
 
 	super setUp.
-	factory := ClassFactoryForTestCase environment: (ClassFactoryForTestCase environment).
+	factory := SystemVersion current major >= 12
+		ifTrue: [ ClassFactoryForTestCase environment: (ClassFactoryForTestCase environment) ]
+		ifFalse: [ ClassFactoryForTestCase new ].
 	environment := RBClassEnvironment new
