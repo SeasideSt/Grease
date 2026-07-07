@@ -22,5 +22,5 @@ initialize
 				argument value isCharacter
 					ifTrue: [ argument replaceWith: (RBLiteralNode value: (String with: argument value)) ] ].
 			newNode
-				selector: #subStrings:;
+				selector: (self asSelectorNode: #subStrings:);
 				yourself ]
