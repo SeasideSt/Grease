@@ -1,4 +1,4 @@
-private 
+private
 removeIndex: index
 	table at: index put: nil.
 	index to: size - 1 do: [ :i |
