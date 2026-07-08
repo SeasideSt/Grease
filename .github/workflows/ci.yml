@@ -17,6 +17,10 @@ jobs:
         include:
           - smalltalk: Pharo64-14
             experimental: true
+          - smalltalk: Squeak64-trunk
+            experimental: true
+          - smalltalk: GToolkit64-release
+            experimental: true
     continue-on-error: ${{ matrix.experimental }}
     name: ${{ matrix.smalltalk }}
     steps:
