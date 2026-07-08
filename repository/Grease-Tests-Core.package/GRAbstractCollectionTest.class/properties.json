@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GRCollectionTest",
+	"name" : "GRAbstractCollectionTest",
 	"type" : "normal"
 }
