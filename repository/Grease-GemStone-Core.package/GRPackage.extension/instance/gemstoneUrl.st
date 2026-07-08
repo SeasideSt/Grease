@@ -1,3 +1,3 @@
 *grease-gemstone-core
 gemstoneUrl
-	^ 'http://seaside.gemstone.com/ss/Seaside30'
+	^ 'http://seaside.gemtalksystems.com/ss/Seaside30'
