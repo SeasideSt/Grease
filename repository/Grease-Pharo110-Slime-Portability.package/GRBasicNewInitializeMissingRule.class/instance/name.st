@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ '#basicNew initialize is missing'
+	^ self class ruleName

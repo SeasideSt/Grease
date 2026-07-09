@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Grease-Tests-Pharo-Slime'!
+self packageOrganizer ensurePackage: #'Grease-Tests-Pharo-Slime' withTags: #()!

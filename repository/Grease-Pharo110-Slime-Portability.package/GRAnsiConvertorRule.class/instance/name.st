@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Convertors'
+	^ self class ruleName

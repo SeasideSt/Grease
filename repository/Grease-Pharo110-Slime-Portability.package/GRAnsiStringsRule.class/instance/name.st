@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Strings'
+	^ self class ruleName

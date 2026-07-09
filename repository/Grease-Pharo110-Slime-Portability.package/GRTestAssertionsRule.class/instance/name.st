@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'TestCase >> #fail'
+	^ self class ruleName

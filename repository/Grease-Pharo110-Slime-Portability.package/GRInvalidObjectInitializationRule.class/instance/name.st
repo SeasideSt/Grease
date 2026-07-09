@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Invalid object initialization'
+	^ self class ruleName

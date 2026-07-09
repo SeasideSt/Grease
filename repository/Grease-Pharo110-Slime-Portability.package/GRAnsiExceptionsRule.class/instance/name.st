@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Exceptions'
+	^ self class ruleName

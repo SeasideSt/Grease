@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Conditionals'
+	^ self class ruleName

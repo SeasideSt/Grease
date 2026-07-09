@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Uses non portable message'
+	^ self class ruleName

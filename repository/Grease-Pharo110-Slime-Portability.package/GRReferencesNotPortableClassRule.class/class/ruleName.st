@@ -1,4 +1,4 @@
 accessing
-name
+ruleName
 
 	^ 'Uses not portable class'

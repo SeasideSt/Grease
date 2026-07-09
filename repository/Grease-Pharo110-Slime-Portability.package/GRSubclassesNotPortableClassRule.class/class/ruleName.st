@@ -1,4 +1,4 @@
 accessing
-name
+ruleName
 
 	^ 'Subclasses not portable class'

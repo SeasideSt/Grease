@@ -1,0 +1,4 @@
+accessing
+ruleName
+
+	^ 'Object>>#in:'

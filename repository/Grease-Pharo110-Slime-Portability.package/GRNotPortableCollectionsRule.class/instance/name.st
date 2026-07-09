@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Collections'
+	^ self class ruleName
