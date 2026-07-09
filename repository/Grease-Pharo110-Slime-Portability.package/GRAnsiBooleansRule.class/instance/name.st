@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Booleans'
+	^ self class ruleName

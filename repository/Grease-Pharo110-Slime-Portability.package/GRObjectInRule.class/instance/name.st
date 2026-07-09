@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Object>>#in:'
+	^ self class ruleName

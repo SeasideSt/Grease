@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Characters'
+	^ self class ruleName

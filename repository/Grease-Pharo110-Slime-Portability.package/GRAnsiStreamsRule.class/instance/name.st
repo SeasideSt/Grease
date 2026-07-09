@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Streams'
+	^ self class ruleName

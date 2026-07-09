@@ -1,4 +1,4 @@
 accessing
 name
 
-	^ 'Sends #canPerform: or #canUnderstand:'
+	^ self class ruleName
